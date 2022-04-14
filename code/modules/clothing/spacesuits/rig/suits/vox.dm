@@ -1,0 +1,63 @@
+/obj/item/weapon/rig/vox
+	name = "alien hardsuit control module"
+	desc = "A strange hardsuit. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
+	suit_type = "alien rig"
+	icon_state = "vox_rig"
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RIFLE,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_SHIELDED,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	max_pressure_protection = FIRESUIT_MAX_PRESSURE
+
+	chest_type = /obj/item/clothing/suit/space/rig/vox_rig
+	helm_type = /obj/item/clothing/head/helmet/space/rig/vox_rig
+	boot_type = /obj/item/clothing/shoes/magboots/rig/vox_rig
+	glove_type = /obj/item/clothing/gloves/rig/vox_rig
+	air_type =     /obj/item/weapon/tank/nitrogen
+
+	allowed = list(/obj/item/device/flashlight, /obj/item/weapon/tank, /obj/item/ammo_magazine, /obj/item/ammo_casing, /obj/item/ammo_magazine/shotholder, /obj/item/weapon/handcuffs, /obj/item/device/radio, /obj/item/weapon/melee/baton, /obj/item/weapon/gun, /obj/item/weapon/pickaxe, /obj/item/weapon/storage/)
+
+	online_slowdown = 1
+
+	initial_modules = list(
+		/obj/item/rig_module/vision/meson,
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/cooling_unit
+		)
+
+/obj/item/clothing/head/helmet/space/rig/vox_rig
+	species_restricted = list(SPECIES_VOX)
+
+/obj/item/clothing/suit/space/rig/vox_rig
+	species_restricted = list(SPECIES_VOX)
+
+/obj/item/clothing/shoes/magboots/rig/vox_rig
+	species_restricted = list(SPECIES_VOX)
+
+/obj/item/clothing/gloves/rig/vox_rig
+	species_restricted = list(SPECIES_VOX)
+	siemens_coefficient = 0
+
+/obj/item/weapon/rig/vox/quill
+	name = "Quill's hardsuit control module"
+	desc = "The quill's hardsuit. It looks exactly like the standard one, but fancier. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
+	cell_type =  /obj/item/weapon/cell/hyper
+
+	initial_modules = list(
+		/obj/item/rig_module/vision/nvg,
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/mounted/egun,
+		/obj/item/rig_module/chem_dispenser/combat,
+		/obj/item/rig_module/device/healthscanner,
+		)
