@@ -2,7 +2,7 @@
 	name = "infantry fighting hardsuit control module"
 	desc = "The Modular Advanced Extra Vehicular Armor, or MAEVA, suit used by Sol marines. It is built from a heavy plasteel-titanium alloy. \
 	While it lacks equal protection from energy based weaponry, it has the ability to increase the wearer's strength tenfold."
-	req_access = list(access_infantry)
+	req_access = list(access_marines)
 	icon_state = "infantry_rig"
 	suit_type = "combat hardsuit"
 	armor = list(

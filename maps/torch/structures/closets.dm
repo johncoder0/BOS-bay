@@ -74,8 +74,8 @@
 //INFANTRY LOCKERS HERE - YAWET330 CHANGES BELOW AS FOLLOWS: SIDEARMS
 
 /obj/structure/closet/secure_closet/infantry
-	name = "infantry locker"
-	req_access = list(access_infantry)
+	name = "marine locker"
+	req_access = list(access_marines)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/infantry/WillContain()
@@ -92,9 +92,9 @@
 		/obj/item/gunbox/sidearm/infantry
 		)
 
-/obj/structure/closet/secure_closet/inftech
+/obj/structure/closet/secure_closet/martech
 	name = "technician's locker"
-	req_access = list(access_inftech)
+	req_access = list(access_martech)
 	closet_appearance = /decl/closet_appearance/secure_closet/engineering
 
 /obj/structure/closet/secure_closet/inftech/WillContain()
@@ -115,7 +115,7 @@
 //demolocker
 /obj/structure/closet/secure_closet/inftech/ammo
 	name = "technician's support locker"
-	req_access = list(access_inftech)
+	req_access = list(access_martech)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/inftech/ammo/WillContain()
@@ -130,7 +130,7 @@
 
 /obj/structure/closet/secure_closet/squad_lead
 	name = "squad leader's locker"
-	req_access = list(access_infcom)
+	req_access = list(access_marcom)
 	closet_appearance = /decl/closet_appearance/secure_closet/security/hos
 
 /obj/structure/closet/secure_closet/squad_lead/WillContain()
@@ -149,9 +149,9 @@
 		/obj/item/gunbox/sidearm/infantry
 		)
 
-/obj/structure/closet/secure_closet/infmed
+/obj/structure/closet/secure_closet/marmed
 	name = "medic's locker"
-	req_access = list(access_infmed)
+	req_access = list(access_marmed)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
 /obj/structure/closet/secure_closet/infmed/WillContain()
@@ -239,7 +239,7 @@
 //inf
 /obj/structure/closet/secure_closet/triagesec/inf
 	name = "triage locker"
-	req_access = list(access_infmed)
+	req_access = list(access_marmed)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
 /obj/structure/closet/secure_closet/triagesec/inf/WillContain()

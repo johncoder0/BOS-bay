@@ -150,7 +150,7 @@
 /obj/item/weapon/gun/projectile/rocket/recoilless/sec
 	name = "TVP-3"
 	desc = "A much more odd version of what the original was, this is slightly different from what the TVP-2 stood for. This incorporates a hefty locking system, increasing the weight, though ensuring safety aboard a vessel."
-	req_access = list(access_infantry)
+	req_access = list(access_marines)
 	authorized_modes = list(UNAUTHORIZED) //can't be registered, but that doesn't matter as this prevents firing regardless
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=12, burst_accuracy=null, dispersion=null),

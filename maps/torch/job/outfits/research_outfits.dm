@@ -13,11 +13,6 @@
 	id_type = /obj/item/weapon/card/id/torch/silver/research
 	pda_type = /obj/item/modular_computer/pda/heads/rd
 
-/decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
-	name = OUTFIT_JOB_NAME("Senior Scientist - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
-	id_type = /obj/item/weapon/card/id/torch/crew/research/senior_scientist
-
 /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	name = OUTFIT_JOB_NAME("Scientist - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research

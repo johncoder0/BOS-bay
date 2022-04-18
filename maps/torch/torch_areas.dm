@@ -639,7 +639,7 @@
 /area/command/disperser/odst
 	name = "\improper Drop-Pod Bays"
 	icon_state = "disperser"
-	req_access = list(access_infantry)
+	req_access = list(access_marines)
 
 /area/crew_quarters/heads
 	icon_state = "heads"
@@ -1755,41 +1755,41 @@
 */
 
 /////////
-// Infantry
+// Marines
 /////////
-/area/security/infantry
-	name = "\improper Infantry Prep"
+/area/security/marines
+	name = "\improper Marine Prep"
 	icon_state = "crew_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
-	req_access = list(access_infantry)
+	req_access = list(access_marines)
 
-/area/security/infantry/gear
+/area/security/marines/gear
 	name = "\improper Technician Prep"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
 //	req_access = list(access_inftech, access_infmed)
 
-/area/security/infantry/com
+/area/security/marines/com
 	name = "\improper Squad Leader Prep"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
-	req_access = list(access_infcom)
+	req_access = list(access_marcom)
 
-/area/security/infantry/armory
-	name = "\improper Infantry Hard Storage"
+/area/security/marines/armory
+	name = "\improper Marine Hard Storage"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
-	req_access = list(access_infcom)
+	req_access = list(access_marcom)
 
-/area/security/infantry/bunk
-	name = "\improper Infantry Barracks"
+/area/security/marines/bunk
+	name = "\improper Marine Barracks"
 	icon_state = "Sleep"
-	req_access = list(access_infantry)
+	req_access = list(access_marines)
 
-/area/security/infantry/exterior
-	name = "\improper Infantry Barracks Exterior"
+/area/security/marines/exterior
+	name = "\improper Marine Barracks Exterior"
 	icon_state = "Sleep"
-	req_access = list(access_infantry)
+	req_access = list(access_marines)
 
 /////////
 // Anom

@@ -132,7 +132,7 @@
 
 
 /obj/item/weapon/card/id/torch/crew/representative
-	job_access_type = /datum/job/solrep
+	job_access_type = /datum/job/terrep
 	detail_color = COLOR_COMMAND_BLUE
 	extra_details = list("goldstripe")
 
@@ -173,10 +173,6 @@
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_RESEARCH
 
-/obj/item/weapon/card/id/torch/crew/research/senior_scientist
-	job_access_type = /datum/job/senior_scientist
-	extra_details = list("onegoldstripe")
-
 /obj/item/weapon/card/id/torch/crew/research/scientist
 	job_access_type = /datum/job/scientist
 
@@ -192,10 +188,6 @@
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_BOTTLE_GREEN
 
-/obj/item/weapon/card/id/torch/passenger/research/senior_scientist
-	job_access_type = /datum/job/senior_scientist
-	extra_details = list("onegoldstripe")
-
 /obj/item/weapon/card/id/torch/passenger/research/nt_pilot
 	job_access_type = /datum/job/nt_pilot
 
@@ -204,15 +196,6 @@
 
 /obj/item/weapon/card/id/torch/passenger/research/mining
 	job_access_type = /datum/job/mining
-
-/obj/item/weapon/card/id/torch/passenger/corporate
-	color = COLOR_BOTTLE_GREEN
-	detail_color = COLOR_OFF_WHITE
-	job_access_type = /datum/job/bodyguard
-
-/obj/item/weapon/card/id/torch/passenger/corporate/liaison
-	job_access_type = /datum/job/liaison
-	extra_details = list("onegoldstripe")
 
 //Merchant
 /obj/item/weapon/card/id/torch/merchant
@@ -236,17 +219,4 @@
 
 /obj/item/weapon/card/id/torch/crew/infantry/infmed
 	job_access_type = /datum/job/combat_medic
-	detail_color = COLOR_NAVY_BLUE
-
-/obj/item/weapon/card/id/torch/crew/psiadvisor
-	job_access_type = /datum/job/psiadvisor
-	detail_color = COLOR_COMMAND_BLUE
-
-/obj/item/weapon/card/id/torch/crew/bailiff
-	color = COLOR_BOTTLE_GREEN
-	detail_color = COLOR_COMMAND_BLUE
-	job_access_type = /datum/job/bailiff
-
-/obj/item/weapon/card/id/torch/contractor/service/lawyer
-	job_access_type = /datum/job/lawyer
 	detail_color = COLOR_NAVY_BLUE

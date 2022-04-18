@@ -1,5 +1,5 @@
 /datum/department/exploration
-	name = "Exploration Team"
+	name = "Science"
 	flag = EXP
 	goals = list(
 		/datum/goal/department/planet_claim,
@@ -9,7 +9,7 @@
 	max_goals = 3
 
 /datum/goal/department/planet_claim
-	description = "Plant the SCG banner on the surface of an exoplanet."
+	description = "Plant the LSS banner on the surface of an exoplanet."
 
 /datum/goal/department/planet_claim/check_success()
 	return (SSstatistics.get_field(STAT_FLAGS_PLANTED) > 0)
@@ -31,7 +31,7 @@
 
 /datum/goal/department/plant_samples/update_strings()
 	description = "Scan at least [seeds] different plant\s native to exoplanets."
-	
+
 /datum/goal/department/plant_samples/get_summary_value()
 	var/scanned = SSstatistics.get_field(STAT_XENOPLANTS_SCANNED)
 	return " ([scanned ? scanned : 0 ] plant specie\s so far)"
@@ -56,7 +56,7 @@
 
 /datum/goal/department/fauna_samples/update_strings()
 	description = "Scan at least [species] different creature\s native to exoplanets."
-	
+
 /datum/goal/department/fauna_samples/get_summary_value()
 	var/scanned = length(SSstatistics.get_field(STAT_XENOFAUNA_SCANNED))
 	return " ([scanned ? scanned : 0 ] xenofauna specie\s so far)"

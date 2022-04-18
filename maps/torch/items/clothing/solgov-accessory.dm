@@ -736,7 +736,7 @@ ranks - army
 **************/
 /obj/item/clothing/accessory/solgov/rank/army
 	name = "army ranks"
-	desc = "Insignia denoting Marine rank of some kind. These appear blank."
+	desc = "Insignia denoting Army rank of some kind. These appear blank."
 	icon_state = "armyrank_enlisted"
 	on_rolled = list("down" = "none")
 
@@ -786,7 +786,7 @@ ranks - army
 	desc = "Insignia denoting the rank of Command Sergeant Major."
 
 /obj/item/clothing/accessory/solgov/rank/army/enlisted/e9_alt2
-	name = "ranks (E-9 sergeant major of the Marine Corp)"
+	name = "ranks (E-9 sergeant major of the Army)"
 	desc = "Insignia denoting the rank of Sergeant Major of the Army."
 
 /obj/item/clothing/accessory/solgov/rank/army/officer
