@@ -32,7 +32,7 @@
 /decl/hierarchy/mil_uniform/ec
 	name = "Master EC outfit"
 	hierarchy_type = /decl/hierarchy/mil_uniform/ec
-	branches = list(/datum/mil_branch/expeditionary_corps)
+//	branches = list(/datum/mil_branch/expeditionary_corps)
 
 	pt_under = /obj/item/clothing/under/solgov/pt/expeditionary
 	pt_shoes = /obj/item/clothing/shoes/black

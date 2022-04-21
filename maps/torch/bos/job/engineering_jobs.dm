@@ -11,14 +11,14 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/larmy/e6,
-		/datum/mil_rank/larmy/e7,
-		/datum/mil_rank/larmy/e8,
+		/datum/mil_rank/larfleet/e6,
+		/datum/mil_rank/larfleet/e7,
+		/datum/mil_rank/larfleet/e8,
 	)
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
 	                    SKILL_EVA          = SKILL_ADEPT,
@@ -65,13 +65,13 @@
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/e3,
-		/datum/mil_rank/larmy/e4,
-		/datum/mil_rank/larmy/e5,,
+		/datum/mil_rank/larfleet/e3,
+		/datum/mil_rank/larfleet/e4,
+		/datum/mil_rank/larfleet/e5,,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
@@ -115,11 +115,11 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/e2,
+		/datum/mil_rank/larfleet/e2,
 		/datum/mil_rank/civ/contractor,
 	)
 

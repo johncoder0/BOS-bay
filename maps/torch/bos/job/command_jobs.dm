@@ -7,11 +7,11 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
 	alt_titles = "Administrator"
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/o6,
+		/datum/mil_rank/larfleet/o6,
 		/datum/mil_rank/civ/chr
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -45,11 +45,11 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO
 	alt_titles = "Human Resources Manager"
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/o5,
+		/datum/mil_rank/larfleet/o5,
 		/datum/mil_rank/civ/chr
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -147,11 +147,11 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	allowed_branches = list(
-		/datum/mil_branch/larmy
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/o3,
-		/datum/mil_rank/larmy/o4,
+		/datum/mil_rank/larfleet/o3,
+		/datum/mil_rank/larfleet/o4,
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
@@ -189,11 +189,11 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	selection_color = "#B8733D"
 	allowed_branches = list(
-		/datum/mil_branch/larmy
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/o3,
-		/datum/mil_rank/larmy/o4
+		/datum/mil_rank/larfleet/o3,
+		/datum/mil_rank/larfleet/o4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY  = SKILL_BASIC,
 	                    SKILL_COMPUTER     = SKILL_ADEPT,
@@ -242,11 +242,11 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_VASS = 25, SPECIES_TAJ = 25, SPECIES_CUSTOM = 25, SPECIES_AKULA = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/o3,
-		/datum/mil_rank/larmy/o4
+		/datum/mil_rank/larfleet/o3,
+		/datum/mil_rank/larfleet/o4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
@@ -286,12 +286,12 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
-		/datum/mil_branch/larmy
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/e8,
-		/datum/mil_rank/larmy/e9_alt2,
-		/datum/mil_rank/larmy/e9
+		/datum/mil_rank/larfleet/e8,
+		/datum/mil_rank/larfleet/e9_alt2,
+		/datum/mil_rank/larfleet/e9
 	)
 	min_skill = list(   SKILL_EVA        = SKILL_BASIC,
 	                    SKILL_COMBAT     = SKILL_BASIC,
@@ -331,10 +331,10 @@
 	minimum_character_age = list(SPECIES_HUMAN = 21,SPECIES_UNATHI = 21,SPECIES_SERGAL = 21, SPECIES_SKRELL = 21, SPECIES_PROMETHEAN = 21, SPECIES_YEOSA = 21, SPECIES_VASS = 21, SPECIES_TAJ = 21, SPECIES_CUSTOM = 21, SPECIES_AKULA = 21)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/o1,
+		/datum/mil_rank/larfleet/o1,
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_PILOT       = SKILL_ADEPT,

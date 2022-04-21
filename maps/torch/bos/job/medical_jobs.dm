@@ -11,12 +11,12 @@
 	economic_power = 8
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/senior
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/o1,
-		/datum/mil_rank/larmy/o2,
+		/datum/mil_rank/larfleet/o1,
+		/datum/mil_rank/larfleet/o2,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -51,13 +51,13 @@
 		"Nurse")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/e3,
-		/datum/mil_rank/larmy/e4,
-		/datum/mil_rank/larmy/e5,
+		/datum/mil_rank/larfleet/e3,
+		/datum/mil_rank/larfleet/e4,
+		/datum/mil_rank/larfleet/e5,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
@@ -87,12 +87,12 @@
 	alt_titles = list()
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/virologist
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/virologist
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/o1,
-		/datum/mil_rank/larmy/o2,
+		/datum/mil_rank/larfleet/o1,
+		/datum/mil_rank/larfleet/o2,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_EVA      = SKILL_BASIC,
@@ -127,12 +127,12 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian
 	)
 
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/e2,
+		/datum/mil_rank/larfleet/e2,
 		/datum/mil_rank/civ/contractor
 	)
 

@@ -17,11 +17,11 @@
 		"Deck Chief")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
 	allowed_branches = list(
-		/datum/mil_branch/larmy
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/e6,
-		/datum/mil_rank/larmy/e7
+		/datum/mil_rank/larfleet/e6,
+		/datum/mil_rank/larfleet/e7
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_FINANCE     = SKILL_BASIC,
@@ -57,12 +57,12 @@
 		"Munitions Technician")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
 	allowed_branches = list(
-		/datum/mil_branch/larmy,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/supply/contractor
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/e2,
-		/datum/mil_rank/larmy/e3,
+		/datum/mil_rank/larfleet/e2,
+		/datum/mil_rank/larfleet/e3,
 		/datum/mil_rank/civ/contractor
 	)
 	max_pow_cat = 1
@@ -104,11 +104,11 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/research/prospector
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/larmy)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/larfleet)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor,
-								/datum/mil_rank/larmy/e3,
-								/datum/mil_rank/larmy/e4,
-								/datum/mil_rank/larmy/e5)
+								/datum/mil_rank/larfleet/e3,
+								/datum/mil_rank/larfleet/e4,
+								/datum/mil_rank/larfleet/e5)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_mining, access_mining_office, access_mining_station,
 						access_expedition_shuttle, access_guppy, access_hangar, access_guppy_helm, access_solgov_crew, access_cargo, access_eva)
@@ -132,13 +132,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/pilot
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larmy
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
 		/datum/mil_rank/civ/civ,
-		/datum/mil_rank/larmy/e6,
-		/datum/mil_rank/larmy/e7
+		/datum/mil_rank/larfleet/e6,
+		/datum/mil_rank/larfleet/e7
 	)
 
 	access = list(
@@ -168,10 +168,10 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larmy)
+		/datum/mil_branch/larfleet)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/larmy/o1)
+		/datum/mil_rank/larfleet/o1)
 
 	min_skill = list(SKILL_BUREAUCRACY = SKILL_BASIC)
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_solgov_crew, access_medical, access_maint_tunnels)
@@ -188,12 +188,12 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/janitor
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larmy
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/larmy/e2,
-		/datum/mil_rank/larmy/e3
+		/datum/mil_rank/larfleet/e2,
+		/datum/mil_rank/larfleet/e3
 	)
 	max_pow_cat = 1
 	max_cit_rank = 1
@@ -217,12 +217,12 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/cook
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larmy = /decl/hierarchy/outfit/job/torch/crew/service/cook/ec
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/service/cook/ec
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/larmy/e2,
-		/datum/mil_rank/larmy/e3
+		/datum/mil_rank/larfleet/e2,
+		/datum/mil_rank/larfleet/e3
 	)
 	min_skill = list(   SKILL_COOKING   = SKILL_ADEPT,
 	                    SKILL_BOTANY    = SKILL_BASIC,
@@ -260,11 +260,11 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(
-		/datum/mil_branch/larmy
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larmy/e1,
-		/datum/mil_rank/larmy/e2,
+		/datum/mil_rank/larfleet/e1,
+		/datum/mil_rank/larfleet/e2,
 	)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
