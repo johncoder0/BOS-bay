@@ -1,18 +1,15 @@
 /datum/job/captain
-	title = "Commanding Officer"
+	title = "Ship Commander"
 	supervisors = "Central Command and the Sol Code of Military Justice"
 	minimal_player_age = 14
 	economic_power = 15
 	minimum_character_age = list(SPECIES_HUMAN = 40,SPECIES_UNATHI = 40,SPECIES_SERGAL = 40, SPECIES_SKRELL = 40, SPECIES_PROMETHEAN = 40, SPECIES_YEOSA = 40, SPECIES_VULP = 40, SPECIES_VASS = 40, SPECIES_TAJ = 40, SPECIES_CUSTOM = 40, SPECIES_AKULA = 40)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
-	alt_titles = "Administrator"
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
-		/datum/mil_branch/civilian
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larfleet/o6,
-		/datum/mil_rank/civ/chr
+		/datum/mil_rank/larfleet/o6
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
@@ -35,22 +32,19 @@
 	..()
 
 /datum/job/hop
-	title = "Executive Officer"
-	supervisors = "the Commanding Officer"
+	title = "First Officer"
+	supervisors = "the Ship Commander"
 	department = "Command"
 	department_flag = COM
 	minimal_player_age = 8
 	economic_power = 12
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO
-	alt_titles = "Human Resources Manager"
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
-		/datum/mil_branch/civilian
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larfleet/o5,
-		/datum/mil_rank/civ/chr
+		/datum/mil_rank/larfleet/o5
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -274,7 +268,7 @@
 /datum/job/hos/get_description_blurb()
 	return "-"
 /datum/job/sea
-	title = "Senior Enlisted Advisor"
+	title = "Political Officer"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
@@ -319,7 +313,7 @@
 	return "-"
 
 /datum/job/bridgeofficer
-	title = "Navigator"
+	title = "Second Officer"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 3

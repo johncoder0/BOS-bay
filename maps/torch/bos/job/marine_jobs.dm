@@ -1,4 +1,4 @@
-	/datum/job/squad_lead
+/datum/job/squad_lead
 	title = "Marine Leader"
 	department = "Marines"
 	department_flag = INF
