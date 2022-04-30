@@ -1,9 +1,9 @@
 /datum/job/captain
-	title = "Ship Commander"
-	supervisors = "Central Command and the Sol Code of Military Justice"
+	title = "Captain"
+	supervisors = "Operational Headquarters and your conscience"
 	minimal_player_age = 14
 	economic_power = 15
-	minimum_character_age = list(SPECIES_HUMAN = 40,SPECIES_UNATHI = 40,SPECIES_SERGAL = 40, SPECIES_SKRELL = 40, SPECIES_PROMETHEAN = 40, SPECIES_YEOSA = 40, SPECIES_VULP = 40, SPECIES_VASS = 40, SPECIES_TAJ = 40, SPECIES_CUSTOM = 40, SPECIES_AKULA = 40)
+	minimum_character_age = list(SPECIES_HUMAN = 40,SPECIES_UNATHI = 40, SPECIES_SKRELL = 40, SPECIES_PROMETHEAN = 40, SPECIES_YEOSA = 40, SPECIES_TAJ = 40)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
 		/datum/mil_branch/larfleet
@@ -33,12 +33,12 @@
 
 /datum/job/hop
 	title = "First Officer"
-	supervisors = "the Ship Commander"
+	supervisors = "the Captain"
 	department = "Command"
 	department_flag = COM
 	minimal_player_age = 8
 	economic_power = 12
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_TAJ = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
 		/datum/mil_branch/larfleet
@@ -89,10 +89,10 @@
 
 /datum/job/rd
 	title = "Research Director"
-	supervisors = "the Commanding Officer"
+	supervisors = "the Captain and heads of staff"
 	economic_power = 20
 	minimal_player_age = 6
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_TAJ = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
 	allowed_branches = list(
 		/datum/mil_branch/civilian
@@ -135,10 +135,10 @@
 
 /datum/job/cmo
 	title = "Chief Medical Officer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "the Captain and the First Officer"
 	economic_power = 10
 	minimal_player_age = 6
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_TAJ = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	allowed_branches = list(
 		/datum/mil_branch/larfleet
@@ -176,9 +176,9 @@
 
 /datum/job/chief_engineer
 	title = "Chief Engineer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "the Captain and the First Officer"
 	economic_power = 9
-	minimum_character_age = list(SPECIES_HUMAN = 27,SPECIES_UNATHI = 27,SPECIES_SERGAL = 27, SPECIES_SKRELL = 27, SPECIES_PROMETHEAN = 27, SPECIES_YEOSA = 27, SPECIES_VASS = 27, SPECIES_TAJ = 27, SPECIES_CUSTOM = 27, SPECIES_AKULA = 27)
+	minimum_character_age = list(SPECIES_HUMAN = 27,SPECIES_UNATHI = 27, SPECIES_SKRELL = 27, SPECIES_PROMETHEAN = 27, SPECIES_YEOSA = 27, SPECIES_TAJ = 27)
 	minimal_player_age = 6
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	selection_color = "#B8733D"
@@ -230,10 +230,10 @@
 
 /datum/job/hos
 	title = "Chief of Security"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "the Captain and the First Officer"
 	economic_power = 8
 	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_VASS = 25, SPECIES_TAJ = 25, SPECIES_CUSTOM = 25, SPECIES_AKULA = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_TAJ = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
 		/datum/mil_branch/larfleet,
@@ -273,11 +273,11 @@
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "the Captain and the First Officer"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 6
 	economic_power = 8
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_TAJ = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
 		/datum/mil_branch/larfleet
@@ -318,11 +318,11 @@
 	department_flag = SPT
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Commanding Officer and heads of staff"
+	supervisors = "the Captain and heads of staff"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
 	economic_power = 7
-	minimum_character_age = list(SPECIES_HUMAN = 21,SPECIES_UNATHI = 21,SPECIES_SERGAL = 21, SPECIES_SKRELL = 21, SPECIES_PROMETHEAN = 21, SPECIES_YEOSA = 21, SPECIES_VASS = 21, SPECIES_TAJ = 21, SPECIES_CUSTOM = 21, SPECIES_AKULA = 21)
+	minimum_character_age = list(SPECIES_HUMAN = 21,SPECIES_UNATHI = 21, SPECIES_SKRELL = 21, SPECIES_PROMETHEAN = 21, SPECIES_YEOSA = 21, SPECIES_TAJ = 21)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
 		/datum/mil_branch/larfleet,
@@ -363,11 +363,11 @@
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Central Command and Terran Law"
+	supervisors = "Operational Headquarters and the Embassy Command"
 	selection_color = "#B00000"
 	minimal_player_age = 14
 	economic_power = 16
-	minimum_character_age = list(SPECIES_HUMAN = 23, SPECIES_CUSTOM = 23)
+	minimum_character_age = list(SPECIES_HUMAN = 23)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
 	alt_titles = list(
 		"ICCG Diplomat",
@@ -415,7 +415,7 @@
 	selection_color = "#B00000"
 	economic_power = 12
 	minimal_player_age = 2
-	minimum_character_age = list(SPECIES_HUMAN = 21, SPECIES_CUSTOM = 23)
+	minimum_character_age = list(SPECIES_HUMAN = 21)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
 	allowed_branches = list(/datum/mil_branch/terran)
 	allowed_ranks = list(
@@ -451,5 +451,3 @@
 			if(M.mind.assigned_role == "ICCG Representative")
 				to_chat(M, SPAN_NOTICE("<b>Your Agent, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()
-
-// /decl/hierarchy/outfit/job/torch/crew/command/cos/fleet
