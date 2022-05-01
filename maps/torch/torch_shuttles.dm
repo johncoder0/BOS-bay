@@ -484,7 +484,7 @@ TORCH_ESCAPE_POD(11)
 	logging_home_tag = "nav_koi_port_dock_shuttle"
 	logging_access = access_medical
 
-/obj/effect/shuttle_landmark/koi
+/obj/effect/shuttle_landmark/torch/koi
 	name = "Port Shuttle Dock"
 	landmark_tag = "nav_koi_port_dock_shuttle"
 	docking_controller = "koi_shuttle_dock_airlock"

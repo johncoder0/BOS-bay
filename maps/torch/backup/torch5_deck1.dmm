@@ -2496,7 +2496,7 @@
 "qhb" = (/obj/machinery/atmospherics/binary/pump,/obj/effect/floor_decal/industrial/warning/corner,/turf/simulated/floor/tiled/white/monotile,/area/rnd/xenobiology/xenoflora)
 "qib" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/hygiene/sink{dir = 4; pixel_x = 11; pixel_y = 5},/turf/simulated/floor/tiled/white,/area/rnd/xenobiology/xenoflora)
 "qig" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/hologram/holopad,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled/dark/monotile,/area/security/bo)
-"qiG" = (/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 4; icon_state = "map"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/shuttle_landmark/torch/koi,/turf/simulated/floor/tiled/techfloor/grid,/area/koi)
+"qiG" = (/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 4; icon_state = "map"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/shuttle_landmark/koi,/turf/simulated/floor/tiled/techfloor/grid,/area/koi)
 "qiL" = (/obj/effect/floor_decal/corner/blue/half{dir = 1},/turf/simulated/floor/tiled/monotile,/area/hallway/primary/firstdeck/fore)
 "qjb" = (/obj/machinery/atmospherics/binary/pump,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled/white,/area/rnd/misc_lab)
 "qjj" = (/obj/effect/floor_decal/borderfloor{dir = 10},/obj/effect/floor_decal/corner/grey/border{dir = 10},/obj/structure/bed/chair/shuttle{dir = 8; icon_state = "shuttle_chair_preview"; tag = "icon-shuttle_chair_preview (WEST)"},/turf/simulated/floor/tiled/steel_grid,/area/koi)
