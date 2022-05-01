@@ -1190,7 +1190,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SGV Dagon Bridge"
+	name = "\improper LRS Antares Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 

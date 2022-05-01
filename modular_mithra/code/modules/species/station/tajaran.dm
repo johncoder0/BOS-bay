@@ -5,9 +5,7 @@
 	deform = 'modular_mithra/icons/mob/human_races/species/tajaran/deformed_body.dmi'
 	husk_icon = 'modular_mithra/icons/mob/human_races/species/tajaran/husk.dmi'
 	preview_icon = 'modular_mithra/icons/mob/human_races/species/tajaran/preview.dmi'
-	modular_tail = 'modular_mithra/icons/mob/human_races/species/tajaran/tail.dmi'
 	tail = "tajtail"
-	default_ears = /datum/sprite_accessory/ears/tajhc //Variable seems to not work anyway.
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE

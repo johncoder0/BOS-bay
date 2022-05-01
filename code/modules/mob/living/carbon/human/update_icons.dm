@@ -233,7 +233,7 @@ var/global/list/damage_icon_parts = list()
 
 	// blend the individual damage states with our icons
 	for(var/obj/item/organ/external/O in organs)
-		if(isnull(O) || O.is_stump() || O.is_hidden_by_tail())
+		if(isnull(O) || O.is_stump())
 			continue
 
 		O.update_damstate()
@@ -309,7 +309,7 @@ var/global/list/damage_icon_parts = list()
 
 	for(var/organ_tag in species.has_limbs)
 		var/obj/item/organ/external/part = organs_by_name[organ_tag]
-		if(isnull(part) || part.is_stump() || part.is_hidden_by_tail()) //Edit allowing tails to prevent bodyparts rendering, granting more spriter freedom for taur/digitigrade stuff.
+		if(isnull(part) || part.is_stump())
 			icon_key += "0"
 			continue
 		for(var/M in part.markings)
@@ -328,9 +328,6 @@ var/global/list/damage_icon_parts = list()
 				icon_key += "#000000"
 			for(var/M in part.markings)
 				icon_key += "[M][part.markings[M]["color"]]"
-			if(istype(tail_style, /datum/sprite_accessory/tail/taur))
-				if(tail_style.clip_mask) //VOREStation Edit.
-					icon_key += tail_style.clip_mask_state
 		if(BP_IS_ROBOTIC(part))
 			icon_key += "2[part.model ? "-[part.model]": ""]"
 		else if(part.status & ORGAN_DEAD)
@@ -349,55 +346,12 @@ var/global/list/damage_icon_parts = list()
 		var/obj/item/organ/external/chest = get_organ(BP_CHEST)
 		base_icon = chest.get_icon()
 
-		var/icon/Cutter = null
-
-		if(istype(tail_style, /datum/sprite_accessory/tail/taur))	// Tail icon 'cookie cutters' are filled in where icons are preserved. We need to invert that.
-			if(tail_style.clip_mask) //VOREStation Edit.
-				Cutter = new(icon = tail_style.icon, icon_state = tail_style.clip_mask_state)
-
-				Cutter.Blend("#000000", ICON_MULTIPLY)	// Make it all black.
-
-				Cutter.SwapColor("#00000000", "#FFFFFFFF")	// Everywhere empty, make white.
-				Cutter.SwapColor("#000000FF", "#00000000")	// Everywhere black, make empty.
-
-				Cutter.Blend("#000000", ICON_MULTIPLY)	// Black again.
-
-
 		for(var/obj/item/organ/external/part in (organs-chest))
 			var/icon/temp = part.get_icon()
 			//That part makes left and right legs drawn topmost and lowermost when human looks WEST or EAST
 			//And no change in rendering for other parts (they icon_position is 0, so goes to 'else' part)
 			if(part.icon_position & (LEFT | RIGHT))
 				var/icon/temp2 = new('icons/mob/human.dmi',"blank")
-				temp2.Insert(new/icon(temp,dir=NORTH),dir=NORTH)
-				temp2.Insert(new/icon(temp,dir=SOUTH),dir=SOUTH)
-				if(!(part.icon_position & LEFT))
-					temp2.Insert(new/icon(temp,dir=EAST),dir=EAST)
-				if(!(part.icon_position & RIGHT))
-					temp2.Insert(new/icon(temp,dir=WEST),dir=WEST)
-				base_icon.Blend(temp2, ICON_OVERLAY)
-				if(part.icon_position & LEFT)
-					temp2.Insert(new/icon(temp,dir=EAST),dir=EAST)
-				if(part.icon_position & RIGHT)
-					temp2.Insert(new/icon(temp,dir=WEST),dir=WEST)
-				base_icon.Blend(temp2, ICON_UNDERLAY)
-			else if(part.icon_position & UNDER)
-				base_icon.Blend(temp, ICON_UNDERLAY)
-			else
-				base_icon.Blend(temp, ICON_OVERLAY)
-
-		for(var/obj/item/organ/external/part in organs)
-			if(isnull(part) || part.is_stump() || part.is_hidden_by_tail()) //VOREStation Edit allowing tails to prevent bodyparts rendering, granting more spriter freedom for taur/digitigrade stuff.
-				continue
-			var/icon/temp = part.get_icon(skeleton)
-
-			if((part.organ_tag in list(BP_L_LEG, BP_R_LEG, BP_L_FOOT, BP_R_FOOT)) && Cutter)
-				temp.Blend(Cutter, ICON_AND, x = -16)
-
-			//That part makes left and right legs drawn topmost and lowermost when human looks WEST or EAST
-			//And no change in rendering for other parts (they icon_position is 0, so goes to 'else' part)
-			if(part.icon_position & (LEFT | RIGHT))
-				var/icon/temp2 = new(species.icon_template ? species.icon_template : 'icons/mob/human.dmi', icon_state = "blank")
 				temp2.Insert(new/icon(temp,dir=NORTH),dir=NORTH)
 				temp2.Insert(new/icon(temp,dir=SOUTH),dir=SOUTH)
 				if(!(part.icon_position & LEFT))
@@ -439,7 +393,6 @@ var/global/list/damage_icon_parts = list()
 
 	//tail
 	update_tail_showing(0)
-	update_wing_showing() // BastionStation edit
 
 	if(update_icons)
 		queue_icon_update()
@@ -663,11 +616,9 @@ var/global/list/damage_icon_parts = list()
 	if(wear_suit)
 		overlays_standing[HO_SUIT_LAYER]	= wear_suit.get_mob_overlay(src,slot_wear_suit_str)
 		update_tail_showing(0)
-		update_wing_showing()	//BastionStation edit
 	else
 		overlays_standing[HO_SUIT_LAYER]	= null
 		update_tail_showing(0)
-		update_wing_showing()	//BastionStation edit
 		update_inv_w_uniform(0)
 		update_inv_shoes(0)
 		update_inv_gloves(0)
@@ -743,26 +694,16 @@ var/global/list/damage_icon_parts = list()
 
 /mob/living/carbon/human/proc/update_tail_showing(var/update_icons=1)
 	overlays_standing[HO_TAIL_LAYER] = null
-// BastionStation Edit - START
-	var/used_tail_layer = tail_alt ? TAIL_LAYER_ALT : HO_TAIL_LAYER
+
 	var/species_tail = species.get_tail(src)
-	var/image/vr_tail_image = get_tail_image()
 
-	if(vr_tail_image)
-		vr_tail_image.layer = used_tail_layer
-		overlays_standing[HO_TAIL_LAYER] = vr_tail_image
-		animate_tail_reset(0)
-		if(update_icons)
-			queue_icon_update()
-
-	else if(species_tail && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
+	if(species_tail && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
 		var/icon/tail_s = get_tail_icon()
 		overlays_standing[HO_TAIL_LAYER] = image(tail_s, icon_state = "[species_tail]_s")
 		animate_tail_reset(0)
-		if(update_icons)
-			queue_icon_update()
 
-// BastionStation Edit - END
+	if(update_icons)
+		queue_icon_update()
 
 /mob/living/carbon/human/proc/get_tail_icon()
 	var/icon_key = "[species.get_race_key(src)][r_skin][g_skin][b_skin][r_hair][g_hair][b_hair]"
@@ -770,12 +711,7 @@ var/global/list/damage_icon_parts = list()
 	if(!tail_icon)
 		//generate a new one
 		var/species_tail_anim = species.get_tail_animation(src)
-////////// BastionStation edit -start- Modular species tail memes
-		if(species.modular_tail)
-			species_tail_anim = species.modular_tail
-		else if(!species_tail_anim)
-			species_tail_anim = 'icons/effects/species.dmi'
-////////// BastionStation edit -end-
+		if(!species_tail_anim) species_tail_anim = 'icons/effects/species.dmi'
 		tail_icon = new/icon(species_tail_anim)
 		tail_icon.Blend(rgb(r_skin, g_skin, b_skin), species.tail_blend)
 		// The following will not work with animated tails.
@@ -842,17 +778,6 @@ var/global/list/damage_icon_parts = list()
 
 	if(update_icons)
 		queue_icon_update()
-
-//BastionStation edit START - Wings
-/mob/living/carbon/human/proc/update_wing_showing()
-	if(QDESTROYING(src))
-		return
-
-	var/image/vr_wing_image = get_wing_image()
-	if(vr_wing_image)
-		vr_wing_image.layer = WING_LAYER
-		overlays_standing[WING_LAYER] = vr_wing_image
-//BastionStation edit END - Wings
 
 //Adds a collar overlay above the helmet layer if the suit has one
 //	Suit needs an identically named sprite in icons/mob/collar.dmi

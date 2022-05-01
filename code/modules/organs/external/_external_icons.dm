@@ -59,7 +59,6 @@ var/list/limb_icon_cache = list()
 	for(var/M in markings)
 		var/datum/sprite_accessory/marking/mark_style = markings[M]["datum"]
 		var/icon/mark_s = new/icon("icon" = mark_style.icon, "icon_state" = "[mark_style.icon_state]-[organ_tag]")
-		mark_s.Blend(markings[M]["color"], mark_style.color_blend_mode) // BastionStation edit
 		overlays |= mark_s //So when it's not on your body, it has icons
 		mob_icon.Blend(mark_s, mark_style.layer_blend) //So when it's on your body, it has icons
 		icon_cache_key += "[M][markings[M]["color"]]"
@@ -77,15 +76,6 @@ var/list/limb_icon_cache = list()
 	icon_state = "[icon_name][gender]"
 	if(species.base_skin_colours && !isnull(species.base_skin_colours[s_base]))
 		icon_state += species.base_skin_colours[s_base]
-
-	//BastionStation edit - START
-
-	if(species.selects_bodytype && !BP_IS_ROBOTIC(src))
-		icon_cache_key = "[icon_state]_[custom_species_override]"
-	else
-		icon_cache_key = "[icon_state]_[species ? species.name : SPECIES_HUMAN]"
-
-	//BastionStation edit - END
 
 	if(force_icon)
 		icon = force_icon
@@ -106,7 +96,6 @@ var/list/limb_icon_cache = list()
 	for(var/M in markings)
 		var/datum/sprite_accessory/marking/mark_style = markings[M]["datum"]
 		var/icon/mark_s = new/icon("icon" = mark_style.icon, "icon_state" = "[mark_style.icon_state]-[organ_tag]")
-		mark_s.Blend(markings[M]["color"], mark_style.color_blend_mode) // BastionStation edit
 		overlays |= mark_s //So when it's not on your body, it has icons
 		mob_icon.Blend(mark_s, ICON_OVERLAY) //So when it's on your body, it has icons
 		icon_cache_key += "[M][markings[M]["color"]]"
