@@ -2,7 +2,8 @@
 Модификация модификации, да. Вы всё правильно поняли.
 
 Оригинал - [Baystation12](https://github.com/baystation12/baystation12)
-Модифицируемая модификация - [Bastion of Hestia] (https://github.com/BoHBranch/BoH-Bay)
+
+Модифицируемая модификация - [Bastion of Hestia](https://github.com/BoHBranch/BoH-Bay) 
 
 ### LICENSE
 
