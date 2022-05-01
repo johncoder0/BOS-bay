@@ -422,6 +422,16 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	req_access = list(access_guppy)
 
+//Koi
+
+/area/koi
+	name = "\improper MUP Koi"
+	icon_state = "shuttlered"
+	requires_power = 1
+	dynamic_lighting = 1
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	req_access = list(access_medical)
+
 
 //Petrov
 
@@ -684,8 +694,8 @@
 
 /area/crew_quarters/heads/office/cl
 	icon_state = "heads_cl"
-	name = "\improper Command - CL's Office"
-	req_access = list(access_liaison)
+	name = "\improper Command - Representative's Guard Office"
+	req_access = list(access_representative)
 
 /area/crew_quarters/heads/office/solrep
 	icon_state = "heads_sol"
@@ -1128,7 +1138,7 @@
 	name = "\improper Virology"
 
 /area/crew_quarters/safe_room/medical
-	name = "\improper Medical Safe Room"
+	name = "\improper Medbay lounge"
 
 // Shield Rooms
 /area/shield
@@ -1190,7 +1200,7 @@
 // Command
 
 /area/bridge
-	name = "\improper LRS Antares Bridge"
+	name = "\improper SGV Dagon Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 
@@ -1794,17 +1804,16 @@
 /////////
 // Anom
 /////////
+
 /area/rnd/anom_storage
-	name = "\improper Anomaly LTS"
+	name = "\improper Anomaly storage"
 	icon_state = "misclab"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-	req_access = list(list(access_explorer, access_xenoarch))
 
 /area/rnd/anom_storage/gas
-	name = "\improper LTS Gas Runoff"
+	name = "\improper LTS Gas storage"
 	icon_state = "misclab"
 
 /area/rnd/anom_storage/living
-	name = "\improper Biological LTS"
+	name = "\improper Biological storage"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"

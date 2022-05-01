@@ -51,7 +51,7 @@ TORCH_ESCAPE_POD(11)
 //Petrov
 
 /datum/shuttle/autodock/ferry/petrov
-	name = "LRL Petrov"
+	name = "NTRL Petrov"
 	warmup_time = 10
 	dock_target = "petrov_shuttle_airlock"
 	waypoint_station = "nav_petrov_start"
@@ -342,7 +342,7 @@ TORCH_ESCAPE_POD(11)
 	base_turf = /turf/simulated/floor/plating
 
 /datum/shuttle/autodock/overmap/exploration_shuttle
-	name = "LSS Charon"
+	name = "SGEV Charon"
 	move_time = 90
 	shuttle_area = list(/area/exploration_shuttle/cockpit, /area/exploration_shuttle/atmos, /area/exploration_shuttle/power, /area/exploration_shuttle/crew, /area/exploration_shuttle/cargo, /area/exploration_shuttle/airlock)
 	dock_target = "calypso_shuttle"
@@ -355,7 +355,7 @@ TORCH_ESCAPE_POD(11)
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
 
 /obj/effect/shuttle_landmark/torch/hangar/exploration_shuttle
-	name = "LSS Charon Hangar"
+	name = "SGEV Charon Hangar"
 	landmark_tag = "nav_hangar_calypso"
 	base_area = /area/quartermaster/hangar
 	base_turf = /turf/simulated/floor/plating
@@ -385,7 +385,7 @@ TORCH_ESCAPE_POD(11)
 	landmark_tag = "nav_transit_calypso"
 
 /datum/shuttle/autodock/overmap/guppy
-	name = "GUP Santoro"
+	name = "SGRP Guppy"
 	warmup_time = 5
 	move_time = 30
 	shuttle_area = /area/guppy_hangar/start
@@ -401,7 +401,7 @@ TORCH_ESCAPE_POD(11)
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
 
 /obj/effect/shuttle_landmark/torch/hangar/guppy
-	name = "GUP Santoro Hangar"
+	name = "SGRP Guppy Hangar"
 	landmark_tag = "nav_hangar_guppy"
 	base_area = /area/quartermaster/hangar
 	base_turf = /turf/simulated/floor/plating
@@ -431,7 +431,7 @@ TORCH_ESCAPE_POD(11)
 	landmark_tag = "nav_transit_guppy"
 
 /datum/shuttle/autodock/overmap/aquila
-	name = "LAS Aquila"
+	name = "SGGS Aquila"
 	move_time = 60
 	shuttle_area = list(/area/aquila/cockpit, /area/aquila/maintenance, /area/aquila/storage, /area/aquila/secure_storage, /area/aquila/mess, /area/aquila/passenger, /area/aquila/medical, /area/aquila/head, /area/aquila/airlock)
 	current_location = "nav_hangar_aquila"
@@ -443,7 +443,7 @@ TORCH_ESCAPE_POD(11)
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
 
 /obj/effect/shuttle_landmark/torch/hangar/aquila
-	name = "LAS Aquila Hangar"
+	name = "SGGS Aquila Hangar"
 	landmark_tag = "nav_hangar_aquila"
 	docking_controller = "aquila_shuttle_dock_airlock"
 	base_turf = /turf/simulated/floor/reinforced/airless
@@ -471,6 +471,48 @@ TORCH_ESCAPE_POD(11)
 /obj/effect/shuttle_landmark/transit/torch/aquila
 	name = "In transit"
 	landmark_tag = "nav_transit_aquila"
+
+/datum/shuttle/autodock/overmap/koi
+	name = "MOP Koi"
+	range = 1
+	fuel_consumption = 3
+	warmup_time = 7
+	shuttle_area = /area/koi
+	dock_target ="koi_shuttle"
+	current_location = "nav_koi_port_dock_shuttle"
+	landmark_transition = "nav_transit_koi"
+	logging_home_tag = "nav_koi_port_dock_shuttle"
+	logging_access = access_medical
+
+/obj/effect/shuttle_landmark/koi
+	name = "Port Shuttle Dock"
+	landmark_tag = "nav_koi_port_dock_shuttle"
+	docking_controller = "koi_shuttle_dock_airlock"
+
+/obj/effect/shuttle_landmark/transit/torch/koi
+	name = "In transit"
+	landmark_tag = "nav_transit_koi"
+
+/obj/effect/shuttle_landmark/torch/deck1/koi
+	name = "Space near Forth Deck"
+	landmark_tag = "nav_deck1_koi"
+
+/obj/effect/shuttle_landmark/torch/deck2/koi
+	name = "Space near Third Deck"
+	landmark_tag = "nav_deck2_koi"
+
+/obj/effect/shuttle_landmark/torch/deck3/koi
+	name = "Space near Second Deck"
+	landmark_tag = "nav_deck3_koi"
+
+/obj/effect/shuttle_landmark/torch/deck4/koi
+	name = "Space near First Deck"
+	landmark_tag = "nav_deck4_koi"
+
+/obj/effect/shuttle_landmark/torch/deck5/koi
+	name = "Space near Bridge"
+	landmark_tag = "nav_bridge_koi"
+
 
 //Makes the deck management program use hangar access
 /datum/nano_module/deck_management

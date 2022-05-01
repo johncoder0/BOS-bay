@@ -3744,13 +3744,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
-"hf" = (
-/obj/structure/sign/solgov{
-	pixel_x = 32;
-	pixel_y = 32
-	},
-/turf/space,
-/area/space)
 "hg" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -11810,13 +11803,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/prototype/control)
-"wb" = (
-/obj/structure/sign/solgov{
-	pixel_x = 32;
-	pixel_y = -32
-	},
-/turf/space,
-/area/space)
 "wc" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 8;
@@ -12412,7 +12398,6 @@
 	pixel_y = -24
 	},
 /obj/machinery/light/small,
-/obj/item/weapon/book/manual/military_law,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_monitoring)
 "xp" = (
@@ -15745,6 +15730,10 @@
 "GW" = (
 /turf/simulated/wall/r_wall/hull,
 /area/storage/tech)
+"GX" = (
+/obj/effect/shuttle_landmark/torch/deck2/koi,
+/turf/space,
+/area/space)
 "GY" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -19007,13 +18996,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/engineering/engine_smes)
-"Te" = (
-/obj/structure/lattice,
-/obj/structure/sign/solgov{
-	pixel_y = -32
-	},
-/turf/space,
-/area/space)
 "Ti" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -20742,13 +20724,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
-"Zk" = (
-/obj/structure/lattice,
-/obj/structure/sign/solgov{
-	pixel_y = 32
-	},
-/turf/space,
-/area/space)
 "Zl" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -30146,7 +30121,7 @@ aa
 aa
 aa
 aa
-hf
+aa
 aa
 aa
 aa
@@ -30168,7 +30143,7 @@ aa
 aa
 aa
 aa
-wb
+aa
 aa
 aa
 aa
@@ -34960,7 +34935,7 @@ aa
 aa
 aa
 aa
-aa
+GX
 aa
 aa
 aa
@@ -35387,7 +35362,7 @@ aa
 aa
 aa
 aa
-wb
+aa
 uZ
 lk
 lk
@@ -39831,7 +39806,7 @@ ag
 ag
 am
 ag
-Te
+ag
 aD
 aD
 aD
@@ -39875,7 +39850,7 @@ Dv
 Ir
 Ir
 Ir
-Zk
+ag
 ag
 EE
 ag
