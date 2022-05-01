@@ -1,33 +1,12 @@
-# Bastion of Hestia
+# Bastion of Slavs
+Модификация модификации, да. Вы всё правильно поняли.
 
-[Website]() - [Code](https://github.com/BoHBranch/BoH-Bay) - [Discord]() - [IRC]()
-
-This is a heavily modified fork of Baystation12's code for BYOND on Space Station 13.
-
----
-
-### CONTRIBUTING GUIDELINES
-
-**Please refrain from making non code related comments in pull requests on GitHub.**
--Basically:
-Don't be a dick.
-Make a logical argument.
-Maintainer has final say on code issues.
-
-Maintainers have the right to punish you for breaking these rules.
-
-
----
-
-### SECURITY
-
-Please see [/docs/SECURITY.md](/docs/SECURITY.md) for this repository's security policy, and how to report security issues.
-
----
+Оригинал - [Baystation12](https://github.com/baystation12/baystation12)
+Модифицируемая модификация - [Bastion of Hestia] (https://github.com/BoHBranch/BoH-Bay)
 
 ### LICENSE
 
-The code for Baystation12 and Bastion of Hestia is licensed under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl.html), which can be found in full in [/LICENSE](/LICENSE).
+The code for Baystation12, Bastion of Hestia and Bastion of Slavs is licensed under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl.html), which can be found in full in [/LICENSE](/LICENSE).
 
 Code with a git authorship date prior to `1420675200 +0000` (2015/01/08 00:00 GMT) is licensed under the GNU General Public License version 3, which can be found in full in [/docs/GPL3.txt](/docs/GPL3.txt)
 
@@ -42,8 +21,6 @@ The TGS DMAPI is licensed as a subproject under the [MIT license](https://en.wik
 Please see additional LICENSE files for license information.
 
 All assets including icons and sound are under a [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/) unless otherwise indicated.
-
----
 
 ### GETTING THE CODE AND INSTALLING
 
