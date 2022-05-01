@@ -1,8 +1,8 @@
-/obj/structure/sign/dedicationplaque
+/obj/structure/sign/antarplaque
 	name = "\improper LRS Antares dedication plaque"
 	icon_state = "lightplaque"
 
-/obj/structure/sign/dedicationplaque/Initialize()
+/obj/structure/sign/antarplaque/Initialize()
 	. = ..()
 	desc = "LRS Antares - Mako Class Scout - LSSF Registry 95631 - Port-Vengeance, Nouveaulyon - First Vessel To Bear The Name - Launched [game_year-5] - Lordanian Sovereign Systems - 'On the front lines of new achievements for Sovereign Lordania, thanks to each and every one of us.'"
 
