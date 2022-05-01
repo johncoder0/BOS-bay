@@ -16,3 +16,5 @@
 		/obj/item/clothing/accessory/storage/pouches, 
 		/obj/item/clothing/accessory/armor/tag/solgov/sec
 	)
+/turf/simulated/wall/r_wall/hull
+	color = COLOR_DARK_GUNMETAL
