@@ -1346,6 +1346,7 @@
 /obj/machinery/camera/network/exploration_shuttle{
 	dir = 1
 	},
+/obj/item/bodybag/rescue/loaded,
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/crew)
 "cw" = (
@@ -5416,7 +5417,7 @@
 	pixel_x = -6;
 	pixel_y = 6
 	},
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/corp,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/punitelli,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/pilot)
 "jH" = (
@@ -7556,6 +7557,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/closet/wardrobe/xenos,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "nv" = (
@@ -9626,12 +9628,6 @@
 /obj/structure/closet/crate/secure/large/phoron/experimentalsm,
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/phoron)
-"qW" = (
-/obj/effect/floor_decal/ntlogo{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/petrov/phoron)
 "qX" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/light{
@@ -9679,9 +9675,6 @@
 /area/maintenance/substation/fifthdeck)
 "ra" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/obj/effect/floor_decal/ntlogo{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
@@ -11028,11 +11021,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/toxins)
-"tO" = (
-/obj/effect/floor_decal/industrial/warning,
-/obj/effect/floor_decal/ntlogo,
-/turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/petrov/phoron)
 "tP" = (
 /obj/effect/floor_decal/industrial/hatch/orange,
 /obj/machinery/power/port_gen/pacman/super/potato{
@@ -11073,9 +11061,6 @@
 /area/shuttle/petrov/analysis)
 "tS" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/effect/floor_decal/ntlogo{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/phoron)
 "tT" = (
@@ -12985,7 +12970,6 @@
 "AS" = (
 /obj/structure/table/glass,
 /obj/item/modular_computer/tablet/lease/preset/command,
-/obj/item/weapon/book/manual/nt_regs,
 /turf/simulated/floor/lino,
 /area/shuttle/petrov/rd)
 "AT" = (
@@ -46219,7 +46203,7 @@ Cy
 KD
 wm
 ra
-tO
+tS
 rh
 rm
 qM
@@ -46420,7 +46404,7 @@ qO
 uK
 zs
 YJ
-qW
+YJ
 tS
 Rc
 rf

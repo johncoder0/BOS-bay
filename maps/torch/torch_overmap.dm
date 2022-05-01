@@ -12,6 +12,8 @@
 		"LSS Charon" = list("nav_hangar_calypso"), 	//can't have random shuttles popping inside the ship
 		"GUP Santoro" = list("nav_hangar_guppy"),
 		"LAS Aquila" = list("nav_hangar_aquila"),
+		"MUP Koi" = list("nav_koi_port_dock_shuttle"),
+
 
 		"Skrellian Scout" = list("nav_skrellscoutsh_dock", "nav_skrellscoutsh_altdock"),
 		"Rescue" = list("nav_ert_dock"),
@@ -30,6 +32,7 @@
 		"nav_bridge_calypso",
 		"nav_bridge_guppy",
 		"nav_bridge_aquila",
+		"nav_bridge_koi",
 
 		//start First Deck
 		"nav_merc_deck1",
@@ -39,6 +42,7 @@
 		"nav_deck4_calypso",
 		"nav_deck4_guppy",
 		"nav_deck4_aquila",
+		"nav_deck4_koi",
 
 		//start Second Deck
 		"nav_merc_deck2",
@@ -48,6 +52,7 @@
 		"nav_deck3_calypso",
 		"nav_deck3_guppy",
 		"nav_deck3_aquila",
+		"nav_deck3_koi",
 
 		//start Third Deck
 		"nav_merc_deck3",
@@ -57,6 +62,7 @@
 		"nav_deck2_calypso",
 		"nav_deck2_guppy",
 		"nav_deck2_aquila",
+		"nav_deck2_koi",
 
 		//start Forth Deck
 		"nav_merc_deck4",
@@ -66,6 +72,7 @@
 		"nav_deck1_calypso",
 		"nav_deck1_guppy",
 		"nav_deck1_aquila",
+		"nav_deck1_koi",
 
 		//start Hanger Deck
 		"nav_merc_hanger",
@@ -125,3 +132,8 @@
 	name = "Santoro control console"
 	shuttle_tag = "GUP Santoro"
 	req_access = list(access_guppy_helm)
+
+/obj/machinery/computer/shuttle_control/explore/koi
+	name = "Koi control console"
+	shuttle_tag = "Koi shuttle"
+	req_access = list(access_medical)

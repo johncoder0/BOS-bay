@@ -472,6 +472,47 @@ TORCH_ESCAPE_POD(11)
 	name = "In transit"
 	landmark_tag = "nav_transit_aquila"
 
+/datum/shuttle/autodock/overmap/koi
+	name = "MOP Koi"
+	range = 1
+	fuel_consumption = 3
+	warmup_time = 7
+	shuttle_area = /area/koi
+	dock_target ="koi_shuttle"
+	current_location = "nav_koi_port_dock_shuttle"
+	landmark_transition = "nav_transit_koi"
+	logging_home_tag = "nav_koi_port_dock_shuttle"
+	logging_access = access_medical
+
+/obj/effect/shuttle_landmark/koi
+	name = "Port Shuttle Dock"
+	landmark_tag = "nav_koi_port_dock_shuttle"
+	docking_controller = "koi_shuttle_dock_airlock"
+
+/obj/effect/shuttle_landmark/transit/torch/koi
+	name = "In transit"
+	landmark_tag = "nav_transit_koi"
+
+/obj/effect/shuttle_landmark/torch/deck1/koi
+	name = "Space near Forth Deck"
+	landmark_tag = "nav_deck1_koi"
+
+/obj/effect/shuttle_landmark/torch/deck2/koi
+	name = "Space near Third Deck"
+	landmark_tag = "nav_deck2_koi"
+
+/obj/effect/shuttle_landmark/torch/deck3/koi
+	name = "Space near Second Deck"
+	landmark_tag = "nav_deck3_koi"
+
+/obj/effect/shuttle_landmark/torch/deck4/koi
+	name = "Space near First Deck"
+	landmark_tag = "nav_deck4_koi"
+
+/obj/effect/shuttle_landmark/torch/deck5/koi
+	name = "Space near Bridge"
+	landmark_tag = "nav_bridge_koi"
+
 //Makes the deck management program use hangar access
 /datum/nano_module/deck_management
 	default_access = list(access_hangar, access_cargo, access_heads)
