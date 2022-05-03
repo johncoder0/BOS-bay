@@ -37,6 +37,15 @@
 	item_state = "greenutility"
 	worn_state = "greenutility"
 
+/obj/item/clothing/under/lordan/utility/green/command
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/command/marine)
+
+/obj/item/clothing/under/lordan/utility/green/engineering
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/engineering/marine)
+
+/obj/item/clothing/under/lordan/utility/green/medical
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/medical/marine)
+
 
 //Service
 

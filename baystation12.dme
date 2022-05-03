@@ -3433,6 +3433,7 @@
 #include "maps\torch\items\clothing\lordanian-accessory.dm"
 #include "maps\torch\items\clothing\terran-accessory.dm"
 #include "maps\torch\job\misc_jobs.dm"
+#include "maps\torch\job\outfits\marine_outfits.dm"
 #include "maps\~mapsystem\map_preferences.dm"
 #include "maps\~mapsystem\map_ranks.dm"
 #include "maps\~mapsystem\maps.dm"
