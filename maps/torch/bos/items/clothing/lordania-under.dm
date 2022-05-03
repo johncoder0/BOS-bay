@@ -78,15 +78,8 @@
 
 /obj/item/clothing/under/lordan/mildress
 	name = "dress uniform"
-	desc = "A dress uniform of some kind."
-	icon_state = "blackdress"
-	item_state = "blackdress"
-	worn_state = "blackdress"
-	siemens_coefficient = 0.9
-
-/obj/item/clothing/under/solgov/mildress/army
-	name = "marine dress uniform"
 	desc = "The dress uniform of the LSS Marine Corps, class given form."
 	icon_state = "blackdress"
 	item_state = "blackdress"
 	worn_state = "blackdress"
+	siemens_coefficient = 0.9
