@@ -3,8 +3,6 @@
 	desc = "You should never see this."
 	item_icons = list(slot_shoes_str = 'maps/torch/bos/icons/mob/onmob_feet_lordania.dmi')
 	icon = 'maps/torch/bos/icons/obj/obj_feet_lordania.dmi'
-	icon_state = "marcombat"
-	item_state = "marcombat"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
@@ -18,3 +16,4 @@
 	item_state = "marcombat"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		)
