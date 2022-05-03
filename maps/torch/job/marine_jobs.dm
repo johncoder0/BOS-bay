@@ -10,6 +10,7 @@
 	economic_power = 7
 	skill_points = 26
 	minimum_character_age = list(SPECIES_HUMAN = 25)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_EVA         = SKILL_ADEPT,
 						SKILL_COMBAT      = SKILL_ADEPT,
@@ -46,6 +47,7 @@
 	minimal_player_age = 8
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 20)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
 						SKILL_ELECTRICAL   = SKILL_ADEPT,
 						SKILL_MEDICAL      = SKILL_BASIC,
@@ -89,6 +91,7 @@
 	minimal_player_age = 8
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 20)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_medic
 	min_skill = list(SKILL_EVA    = SKILL_BASIC,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_COMBAT  = SKILL_ADEPT,
@@ -131,6 +134,7 @@
 	selection_color = "#557e38"
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
 	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
 						SKILL_WEAPONS      = SKILL_ADEPT,
 						SKILL_EVA          = SKILL_BASIC)
