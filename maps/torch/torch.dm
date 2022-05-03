@@ -120,7 +120,7 @@
 	#include "job/outfits/supply_outfits.dm"
 	#include "job/outfits/boh_outfits.dm"
 	#include "job/outfits/unused_outfits.dm"
-	#include "job/outfits/hestia_outfits.dm"
+	#include "job/outfits/marine_outfits.dm"
 
 	#include "language/human/euro.dm"
 	#include "language/human/misc/spacer.dm"
