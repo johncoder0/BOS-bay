@@ -1,5 +1,5 @@
 /datum/job/warden
-	title = "Brig Chief"
+	title = "Commandant"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief of Security"
@@ -8,14 +8,14 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/brig_chief
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/brig_chief/fleet
+		/datum/mil_branch/larfleet,
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/larfleet/e6,
+		/datum/mil_rank/larfleet/e7,
+		/datum/mil_rank/larfleet/e8,
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
@@ -37,23 +37,22 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective
-	title = "Federal Agent"
+	title = "Psi-Investigator"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the SolGov Registry"
+	supervisors = "the Chief of Security"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 21)
+	alt_titles = list(
+	"Psi-Interrogator")
 	skill_points = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet,
-		/datum/mil_branch/solgov = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sol/agent
+		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -75,8 +74,13 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
+/datum/job/detective/equip(var/mob/living/carbon/human/H)
+	psi_faculties = list("[PSI_COERCION]" = PSI_RANK_MASTER)
+	return ..()
+
+
 /datum/job/officer
-	title = "Master at Arms"
+	title = "Security Guard"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Chief of Security"
@@ -86,14 +90,14 @@
 	alt_titles = list() // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
+		/datum/mil_branch/larfleet,
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/larfleet/e2,
+		/datum/mil_rank/larfleet/e3,
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/larfleet/e4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
