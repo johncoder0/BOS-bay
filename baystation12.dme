@@ -163,6 +163,7 @@
 #include "code\bos\game\objects\effects\decals\posters\posters.dm"
 #include "code\bos\game\objects\structures\barrier.dm"
 #include "code\bos\modules\guns\revolver.dm"
+#include "code\bos\modules\mob\cat.dm"
 #include "code\controllers\admin.dm"
 #include "code\controllers\autotransfer.dm"
 #include "code\controllers\communications.dm"
