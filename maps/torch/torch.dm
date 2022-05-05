@@ -106,6 +106,7 @@
 	#include "job/security_jobs.dm"
 	#include "job/marine_jobs.dm"
 	#include "job/aux_jobs.dm"
+	#include "job/research_jobs.dm"
 
 	#include "job/outfits/torch_outfits.dm"
 	#include "job/outfits/command_outfits.dm"
