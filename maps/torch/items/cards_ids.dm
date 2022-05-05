@@ -136,8 +136,8 @@
 	detail_color = COLOR_COMMAND_BLUE
 	extra_details = list("goldstripe")
 
-/obj/item/weapon/card/id/torch/crew/solguard
-	job_access_type = /datum/job/solguard
+/obj/item/weapon/card/id/torch/crew/terguard
+	job_access_type = /datum/job/terguard
 	detail_color = COLOR_COMMAND_BLUE
 
 /obj/item/weapon/card/id/torch/crew/sea

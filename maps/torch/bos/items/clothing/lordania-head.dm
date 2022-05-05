@@ -1,3 +1,5 @@
+//нужно больше флотских шапок
+
 /obj/item/clothing/head/lordan
 	name = "lordanian hat parent object"
 	desc = "You shouldn't be seeing this."
@@ -14,6 +16,16 @@
 	icon_state = "marcap"
 	icon = 'maps/torch/bos/icons/obj/obj_head_lordania.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/bos/icons/mob/onmob_head_lordania.dmi')
+
+/obj/item/clothing/head/lordan/utility/fleet
+	name = "fleet utility cap"
+	desc = "A white utility cap bearing the crest of the LSS Fleet."
+	icon_state = "fleetcap"
+
+/obj/item/clothing/head/lordan/utility/fleet/dress
+	name = "fleet dress cap"
+	desc = "A black dress cap bearing the crest of the LSS Fleet."
+	icon_state = "fleetcap_dress"
 
 
 //Dress
@@ -34,11 +46,11 @@
 	item_icons = list(slot_head_str = 'maps/torch/bos/icons/mob/onmob_head_lordania.dmi')
 
 /obj/item/clothing/head/beret/lordan/white
-	name = "white beret"
+	name = "marine white beret"
 	desc = "A white beret denoting service in the LSS Marine Corps."
 	icon_state = "beret_marwhite"
 
 /obj/item/clothing/head/beret/lordan/green
-	name = "green beret"
+	name = "marine green beret"
 	desc = "A green beret denoting service in the LSS Marine Corps."
 	icon_state = "beret_margreen"

@@ -6,9 +6,6 @@
 	allowed = list(/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll, /obj/item/weapon/gun)
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND,ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_INSIGNIA,ACCESSORY_SLOT_RANK,ACCESSORY_SLOT_DEPT)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
-	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
-		)
 
 
 //Service
@@ -19,6 +16,9 @@
 	icon_state = "greenservice"
 	body_parts_covered = UPPER_TORSO|ARMS
 	siemens_coefficient = 0.9
+	allowed = list (/obj/item/weapon/gun, /obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/device/scanner/gas, /obj/item/device/flashlight, /obj/item/device/multitool, /obj/item/device/pipe_painter, /obj/item/device/radio, /obj/item/device/t_scanner, \
+	/obj/item/weapon/crowbar, /obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench, /obj/item/weapon/tank/emergency, \
+	/obj/item/clothing/mask/gas, /obj/item/taperoll/engineering,/obj/item/clothing/head/hardhat)
 
 /obj/item/clothing/suit/storage/toggle/lordan/service/marine
 	name = "marine coat"
@@ -52,6 +52,30 @@
 	icon_closed = "greenservice_com"
 	icon_open = "greenservice_com_open"
 
+/obj/item/clothing/suit/storage/toggle/lordan/service/fleet
+	name = "fleet service jacket"
+	desc = "A navy LSS Fleet service jacket."
+	icon_state = "navyservice"
+	item_state = "navyservice"
+	icon_closed = "navyservice"
+	icon_open = "navyservice_open"
+
+/obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	name = "fleet officer's service jacket"
+	desc = "A navy LSS Fleet service jacket with gold accents."
+	icon_state = "navyservice_comm"
+	item_state = "navyservice_comm"
+	icon_closed = "navyservice_comm"
+	icon_open = "navyservice_comm_open"
+
+/obj/item/clothing/suit/storage/toggle/lordan/service/fleet/captain
+	name = "fleet senior officer's service jacket"
+	desc = "A navy LSS Fleet service jacket with red accents."
+	icon_state = "navyservice_cap"
+	item_state = "navyservice_cap"
+	icon_closed = "navyservice_cap"
+	icon_open = "navyservice_cap_open"
+
 //Dress - don't murder me with a gun
 
 /obj/item/clothing/suit/storage/toggle/lordan/dress
@@ -66,22 +90,36 @@
 
 
 /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
-	name = "marine dress coat"
-	desc = "A black dress coat belonging to the LSS Marine Corps. Fashionable, for the 25th century at least."
+	name = "marine dress jacket"
+	desc = "A black dress jacket belonging to the LSS Marine Corps. Fashionable, for the 24th century at least."
 	icon_state = "blackdress"
 	icon_closed = "blackdress"
 	icon_open = "blackdress_open"
 
 /obj/item/clothing/suit/storage/toggle/lordan/dress/command
-	name = "command dress coat"
-	desc = "A black dress coat belonging to the LSS Marine Corps. These one has a command stripes."
+	name = "command dress jacket"
+	desc = "A black dress jacket belonging to the LSS Marine Corps. These one has a command stripes."
 	icon_state = "blackdress_com"
 	icon_closed = "blackdress_com"
 	icon_open = "blackdress_com_open"
 
 /obj/item/clothing/suit/storage/toggle/lordan/dress/general
-	name = "general dress coat"
-	desc = "A black dress coat belonging to the LSS Marine Corps. These one has a general stripes. Very impressive."
+	name = "general dress jacket"
+	desc = "A black dress jacket belonging to the LSS Marine Corps. These one has a general stripes. Very impressive."
 	icon_state = "blackdress_gen"
 	icon_closed = "blackdress_gen"
 	icon_open = "blackdress_gen_open"
+
+/obj/item/clothing/suit/storage/toggle/lordan/dress/fleet
+	name = "fleet dress jacket"
+	desc = "A black dress jacket belonging to the LSS Fleet. Fashionable, for the 24th century at least."
+	icon_state = "fldress"
+	icon_closed = "fldress"
+	icon_open = "fldress_open"
+
+/obj/item/clothing/suit/storage/toggle/lordan/dress/fleet/officer
+	name = "fleet dress jacket"
+	desc = "A black dress coat belonging to the LSS Fleet. Fashionable, for the 24th century at least."
+	icon_state = "fldress_comm"
+	icon_closed = "fldress_com"
+	icon_open = "fldress_com_open"

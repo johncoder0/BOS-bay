@@ -368,7 +368,7 @@
 	minimal_player_age = 14
 	economic_power = 16
 	minimum_character_age = list(SPECIES_HUMAN = 23, SPECIES_CUSTOM = 23)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/terrep
 	alt_titles = list(
 		"ICCG Diplomat",
 		"ICCG Negotiator")
@@ -416,7 +416,7 @@
 	economic_power = 12
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 21, SPECIES_CUSTOM = 23)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/ter_bodyguard
 	allowed_branches = list(/datum/mil_branch/terran)
 	allowed_ranks = list(
 		/datum/mil_rank/terran/e4,
@@ -434,7 +434,7 @@
 	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew, access_sec_guard)
 	defer_roundstart_spawn = TRUE
 
-/datum/job/solguard/is_position_available()
+/datum/job/terguard/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "ICCG Representative")

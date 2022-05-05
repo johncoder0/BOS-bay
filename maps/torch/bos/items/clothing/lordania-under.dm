@@ -46,6 +46,54 @@
 /obj/item/clothing/under/lordan/utility/green/medical
 	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/medical/marine)
 
+/obj/item/clothing/under/lordan/utility/fleet
+	name = "lordanian fleet utility uniform"
+	desc = "The utility uniform of the LSS Fleet, made from an insulated material."
+	icon_state = "navyutility"
+	item_state = "navyutility"
+	worn_state = "navyutility"
+
+/obj/item/clothing/under/lordan/utility/fleet/command
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/command/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/command/pilot
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/specialty/pilot)
+
+/obj/item/clothing/under/lordan/utility/fleet/engineering
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/engineering/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/security
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/security/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/medical
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/medical/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/supply
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/supply/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/service
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/service/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/exploration
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/exploration/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/combat
+	name = "fleet fatigues"
+	desc = "Alternative utility uniform of the LSS Fleet, for when coveralls are impractical."
+	icon_state = "navycombat"
+	worn_state = "navycombat"
+
+/obj/item/clothing/under/lordan/utility/fleet/combat/security
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/security/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/combat/medical
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/medical/fleet, /obj/item/clothing/accessory/armband/medblue)
+
+/obj/item/clothing/under/lordan/utility/fleet/combat/command
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/command/fleet)
+
+/obj/item/clothing/under/lordan/utility/fleet/combat/exploration
+	starting_accessories = list(/obj/item/clothing/accessory/lordan/department/exploration/fleet)
 
 //Service
 
@@ -82,6 +130,35 @@
 	item_state = "greenservicefem_com"
 	worn_state = "greenservicefem_com"
 
+/obj/item/clothing/under/lordan/service/fleet
+	name = "fleet service uniform"
+	desc = "The service uniform of the LSS Fleet, made from immaculate white fabric."
+	icon_state = "whiteservice"
+	item_state = "nursesuit"
+	worn_state = "whiteservice"
+	starting_accessories = list(/obj/item/clothing/accessory/navy)
+
+/obj/item/clothing/under/lordan/service/fleet/skirt
+	name = "fleet service skirt"
+	desc = "The service uniform skirt of the LSS Fleet, made from immaculate white fabric."
+	icon_state = "whiteservicefem"
+	item_state = "nursesuit"
+	worn_state = "whiteservicefem"
+
+/obj/item/clothing/under/lordan/service/fleet/officer
+	name = "fleet service uniform"
+	desc = "The service uniform of the LSS Fleet, made from immaculate white fabric."
+	icon_state = "whiteservice"
+	item_state = "nursesuit"
+	worn_state = "whiteservicecom"
+
+
+/obj/item/clothing/under/lordan/service/fleet/skirt/officer
+	name = "fleet service skirt"
+	desc = "The service uniform skirt of the LSS Fleet, made from immaculate white fabric."
+	icon_state = "whiteservicefem"
+	item_state = "nursesuit"
+	worn_state = "whiteservicefemcom"
 
 //Dress
 
@@ -92,3 +169,52 @@
 	item_state = "blackdress"
 	worn_state = "blackdress"
 	siemens_coefficient = 0.9
+
+/obj/item/clothing/under/lordan/mildress/officer
+	name = "dress uniform"
+	desc = "The dress uniform of the LSS Marine Corps, class given form. This one has gold trim."
+	icon_state = "blackdress_com"
+	item_state = "blackdress_com"
+	worn_state = "blackdress_com"
+
+/obj/item/clothing/under/lordan/mildress/skirt
+	name = "dress skirt uniform"
+	desc = "The dress skirt uniform of the LSS Marine Corps, class given form."
+	icon_state = "blackdressfem"
+	item_state = "blackdressfem"
+	worn_state = "blackdressfem"
+
+/obj/item/clothing/under/lordan/mildress/skirt/officer
+	name = "dress skirt uniform"
+	desc = "The dress skirt uniform of the LSS Marine Corps, class given form. This one has gold trim."
+	icon_state = "blackdressfem_com"
+	item_state = "blackdressfem_com"
+	worn_state = "blackdressfem_com"
+
+/obj/item/clothing/under/lordan/dress/fleet
+	name = "dress uniform"
+	desc = "The dress uniform of the LSS Fleet, class given form."
+	icon_state = "fldress"
+	item_state = "fldress"
+	worn_state = "fldress"
+
+/obj/item/clothing/under/lordan/dress/fleet/skirt
+	name = "dress skirt uniform"
+	desc = "The dress skirt uniform of the LSS Fleet, class given form."
+	icon_state = "fldressfem"
+	item_state = "fldressfem"
+	worn_state = "fldressfem"
+
+/obj/item/clothing/under/lordan/dress/fleet/officer
+	name = "dress uniform"
+	desc = "The dress uniform of the LSS Fleet, class given form. This one has gold trim."
+	icon_state = "fldress"
+	item_state = "fldress"
+	worn_state = "fldress_com"
+
+/obj/item/clothing/under/lordan/dress/fleet/skirt/officer
+	name = "dress skirt uniform"
+	desc = "The dress skirt uniform of the LSS Fleet, class given form. This one has gold trim."
+	icon_state = "fldressfem"
+	item_state = "fldressfem"
+	worn_state = "fldressfem_com"

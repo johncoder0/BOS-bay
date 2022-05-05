@@ -5,6 +5,3 @@
 	icon = 'maps/torch/bos/icons/obj/obj_feet_lordania.dmi'
 	icon_state = "marcombat"
 	item_state = "marcombat"
-	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
-		)

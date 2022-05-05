@@ -15,7 +15,7 @@
 	selection_color = "#755C48"
 	alt_titles = list(
 		"Deck Chief")
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet
 	allowed_branches = list(
 		/datum/mil_branch/larfleet
 	)
@@ -55,7 +55,7 @@
 	selection_color = "#755C48"
 	alt_titles = list(
 		"Munitions Technician")
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech/fleet
 	allowed_branches = list(
 		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/supply/contractor
@@ -63,6 +63,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/larfleet/e2,
 		/datum/mil_rank/larfleet/e3,
+		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/civ/contractor
 	)
 	max_pow_cat = 1
@@ -104,8 +105,10 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/research/prospector
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/larfleet)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor,
+	allowed_branches = list(/datum/mil_branch/civilian,
+	/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/passenger/research/prospector/fleet)
+	allowed_ranks = list( /datum/mil_rank/civ/civ,
+								/datum/mil_rank/civ/contractor,
 								/datum/mil_rank/larfleet/e3,
 								/datum/mil_rank/larfleet/e4,
 								/datum/mil_rank/larfleet/e5)
