@@ -37,7 +37,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective
-	title = "Psi-Investigator"
+	title = "Psi-Interrogator"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief of Security"
@@ -45,7 +45,7 @@
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 21)
 	alt_titles = list(
-	"Psi-Interrogator")
+	"Detective" = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor)
 	skill_points = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	allowed_branches = list(
@@ -75,7 +75,8 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective/equip(var/mob/living/carbon/human/H)
-	psi_faculties = list("[PSI_COERCION]" = PSI_RANK_MASTER)
+	if(H.mind.role_alt_title == "Psi-Interrogator")
+		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_MASTER)
 	return ..()
 
 
@@ -90,7 +91,7 @@
 	alt_titles = list() // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(

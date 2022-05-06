@@ -72,8 +72,7 @@
 	)
 	allowed_ranks = list(,
 		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
-		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
+		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	)
 
 	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov, access_petrov_helm,

@@ -58,3 +58,7 @@
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/supply
 	shoes = /obj/item/clothing/shoes/lordan
 	head = /obj/item/clothing/head/beret/lordan/fleet
+
+/decl/hierarchy/outfit/job/torch/passenger/research/prospector/scav
+	name = OUTFIT_JOB_NAME("Scavenger")
+	uniform = /obj/item/clothing/under/serviceoveralls

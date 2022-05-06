@@ -130,6 +130,9 @@
 /obj/item/weapon/card/id/torch/contractor/service/bartender
 	job_access_type = /datum/job/bartender
 
+/obj/item/weapon/card/id/torch/crew/service/canworker
+	job_access_type = /datum/job/canworker
+
 
 /obj/item/weapon/card/id/torch/crew/representative
 	job_access_type = /datum/job/terrep

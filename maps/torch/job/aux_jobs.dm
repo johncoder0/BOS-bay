@@ -96,7 +96,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	selection_color = "#755C48"
 	alt_titles = list(
-		"Scavenger")
+		"Scavenger" = /decl/hierarchy/outfit/job/torch/passenger/research/prospector/scav)
 
 	min_skill = list(   SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_EVA     = SKILL_BASIC,
@@ -135,10 +135,10 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/pilot
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larfleet
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
+		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/larfleet/e6,
 		/datum/mil_rank/larfleet/e7
@@ -171,7 +171,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larfleet)
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/service/chaplain/fleet)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/larfleet/o1)
@@ -191,7 +191,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/janitor
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larfleet
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/service/janitor/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
@@ -205,7 +205,7 @@
 	access = list(access_maint_tunnels, access_emergency_storage, access_janitor, access_solgov_crew, access_hangar)
 	minimal_access = list()
 
-/datum/job/chef
+/datum/job/canworker
 	title = "Canteen Worker"
 	department = "Auxiliary"
 	department_flag = SRV
@@ -214,13 +214,13 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	supervisors = "the Executive Officer"
 	alt_titles = list(
-		"Chef",
-		"Bartender"
+		"Chef" = /decl/hierarchy/outfit/job/torch/crew/service/cook,
+		"Bartender" = /decl/hierarchy/outfit/job/torch/crew/service/bartender
 		)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/cook
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/canworker
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/service/cook/ec
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/service/canworker/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
