@@ -18,7 +18,7 @@
 	name = OUTFIT_JOB_NAME("Deck Chief - Fleet")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/supply
 	shoes = /obj/item/clothing/shoes/lordan
-	head = /obj/item/clothing/head/lordan/utility/fleet
+	head = /obj/item/clothing/head/beret/lordan/fleet
 
 /decl/hierarchy/outfit/job/torch/crew/supply/tech
 	name = OUTFIT_JOB_NAME("Deck Technician")
@@ -31,7 +31,7 @@
 	name = OUTFIT_JOB_NAME("Deck Technician - Fleet")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/supply
 	shoes = /obj/item/clothing/shoes/lordan
-	head = /obj/item/clothing/head/lordan/utility/fleet
+	head = /obj/item/clothing/head/beret/lordan/fleet
 
 /decl/hierarchy/outfit/job/torch/crew/supply/contractor
 	name = OUTFIT_JOB_NAME("Supply Assistant")
@@ -57,4 +57,4 @@
 	name = OUTFIT_JOB_NAME("Field Support - Fleet")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/supply
 	shoes = /obj/item/clothing/shoes/lordan
-	head = /obj/item/clothing/head/lordan/utility/fleet
+	head = /obj/item/clothing/head/beret/lordan/fleet

@@ -60,6 +60,14 @@
 	icon_closed = "navyservice"
 	icon_open = "navyservice_open"
 
+/obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+	name = "fleet PO service jacket"
+	desc = "A navy blue LSS Fleet service jacket with silver cuffs."
+	icon_state = "navyservice_po"
+	item_state = "navyservice_po"
+	icon_closed = "navyservice_po"
+	icon_open = "navyservice_po_open"
+
 /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 	name = "fleet officer's service jacket"
 	desc = "A navy LSS Fleet service jacket with gold accents."
@@ -110,16 +118,22 @@
 	icon_closed = "blackdress_gen"
 	icon_open = "blackdress_gen_open"
 
-/obj/item/clothing/suit/storage/toggle/lordan/dress/fleet
+/obj/item/clothing/suit/storage/lordan/dress/fleet
 	name = "fleet dress jacket"
 	desc = "A black dress jacket belonging to the LSS Fleet. Fashionable, for the 24th century at least."
+	icon = 'maps/torch/bos/icons/obj/obj_suit_lordania.dmi'
 	icon_state = "fldress"
-	icon_closed = "fldress"
-	icon_open = "fldress_open"
+	item_state = "fldress"
 
-/obj/item/clothing/suit/storage/toggle/lordan/dress/fleet/officer
-	name = "fleet dress jacket"
+/obj/item/clothing/suit/storage/lordan/dress/fleet/po
+	name = "fleet PO dress jacket"
+	desc = "A black dress jacket belonging to the LSS Fleet. Fashionable, for the 24th century at least."
+	icon = 'maps/torch/bos/icons/obj/obj_suit_lordania.dmi'
+	icon_state = "fldress_po"
+	item_state = "fldress_po"
+
+/obj/item/clothing/suit/storage/lordan/dress/fleet/officer
+	name = "fleet officer dress jacket"
 	desc = "A black dress coat belonging to the LSS Fleet. Fashionable, for the 24th century at least."
 	icon_state = "fldress_comm"
-	icon_closed = "fldress_com"
-	icon_open = "fldress_com_open"
+	item_state = "fldress_comm"
