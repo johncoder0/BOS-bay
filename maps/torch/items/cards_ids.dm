@@ -242,5 +242,7 @@
 	fingerprint_hash = md5(registered_name)
 	dna_hash = md5(fingerprint_hash)
 	blood_type = RANDOM_BLOOD_TYPE
-	military_branch = pick(global.mil_branches.branches)
-	military_rank = pick(military_branch.ranks)
+	military_branch = pick(global.mil_branches.spawn_branches_)
+	military_branch = global.mil_branches.get_branch(military_branch)
+	military_rank = pick(military_branch.spawn_ranks_)
+	military_rank = global.mil_branches.get_rank(military_branch.name, military_rank)
