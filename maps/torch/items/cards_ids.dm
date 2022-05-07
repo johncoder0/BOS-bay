@@ -220,3 +220,27 @@
 /obj/item/weapon/card/id/torch/crew/infantry/infmed
 	job_access_type = /datum/job/combat_medic
 	detail_color = COLOR_NAVY_BLUE
+
+//Stowaway
+/obj/item/weapon/card/id/torch/stowaway
+	desc = "A card issued to passengers aboard the SGV Dagon. Looks like the photo fell off this one."
+	job_access_type = /datum/job/stowaway
+	detail_color = COLOR_PAKISTAN_GREEN
+
+/obj/item/weapon/card/id/torch/stowaway/New()
+	..()
+	var/species = SPECIES_HUMAN
+	if(prob(25))
+		species = pick(SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_IPC)
+	var/datum/species/S = all_species[species]
+	var/decl/cultural_info/culture/C = SSculture.get_culture(S.default_cultural_info[TAG_CULTURE])
+	var/gender = pick(MALE,FEMALE)
+	assignment = "Passenger"
+	registered_name = C.get_random_name(gender)
+	sex = capitalize(gender)
+	age = rand(7,77)
+	fingerprint_hash = md5(registered_name)
+	dna_hash = md5(fingerprint_hash)
+	blood_type = RANDOM_BLOOD_TYPE
+	military_branch = pick(global.mil_branches.branches)
+	military_rank = pick(military_branch.ranks)

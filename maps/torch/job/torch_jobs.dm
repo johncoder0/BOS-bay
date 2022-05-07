@@ -23,7 +23,7 @@
 						 /datum/job/chaplain, /datum/job/janitor, /datum/job/chef, /datum/job/bartender,
 						/datum/job/pathfinder, /datum/job/explorer, /datum/job/scientist, /datum/job/scientist_assistant,
 						/datum/job/ai, /datum/job/cyborg,
-						/datum/job/crew, /datum/job/assistant,
+						/datum/job/crew, /datum/job/assistant, /datum/job/stowaway,
 						/datum/job/merchant
 						)
 
