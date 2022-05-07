@@ -20,7 +20,7 @@
 						/datum/job/senior_doctor, /datum/job/doctor/virologist, /datum/job/doctor, /datum/job/chemist, /datum/job/medical_trainee,
 						/datum/job/psychiatrist,
 						/datum/job/qm, /datum/job/cargo_tech, /datum/job/nt_pilot, /datum/job/mining,
-						 /datum/job/chaplain, /datum/job/janitor, /datum/job/canworker, /datum/job/bartender,
+						 /datum/job/chaplain, /datum/job/janitor, /datum/job/canworker,
 						/datum/job/pathfinder, /datum/job/explorer, /datum/job/scientist, /datum/job/scientist_assistant,
 						/datum/job/ai, /datum/job/cyborg,
 						/datum/job/crew, /datum/job/assistant,

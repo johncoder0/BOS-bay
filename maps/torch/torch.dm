@@ -110,17 +110,14 @@
 
 	#include "job/outfits/torch_outfits.dm"
 	#include "job/outfits/command_outfits.dm"
-	#include "job/outfits/corporate_outfits.dm"
+	#include "job/outfits/sortthislater_outfits.dm"
 	#include "job/outfits/engineering_outfits.dm"
 	#include "job/outfits/exploration_outfits.dm"
 	#include "job/outfits/medical_outfits.dm"
 	#include "job/outfits/misc_outfits.dm"
-	#include "job/outfits/research_outfits.dm"
 	#include "job/outfits/security_outfits.dm"
 	#include "job/outfits/service_outfits.dm"
 	#include "job/outfits/supply_outfits.dm"
-	#include "job/outfits/boh_outfits.dm"
-	#include "job/outfits/unused_outfits.dm"
 	#include "job/outfits/marine_outfits.dm"
 
 	#include "language/human/euro.dm"

@@ -37,7 +37,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective
-	title = "Psi-Interrogator"
+	title = "Psi-Investigator"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief of Security"
@@ -75,7 +75,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective/equip(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title == "Psi-Interrogator")
+	if(H.mind.role_alt_title == "Psi-Investigator")
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_MASTER)
 	return ..()
 

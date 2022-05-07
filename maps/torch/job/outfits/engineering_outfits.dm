@@ -31,8 +31,8 @@
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
 	name = OUTFIT_JOB_NAME("Engineer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
+	shoes = /obj/item/clothing/shoes/lordan
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
 	name = OUTFIT_JOB_NAME("Engineering Assistant")
@@ -43,8 +43,8 @@
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/fleetassistant
 	name = OUTFIT_JOB_NAME("Engineering Assistant - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
+	shoes = /obj/item/clothing/shoes/lordan
 	id_type = /obj/item/weapon/card/id/torch/contractor/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
 
