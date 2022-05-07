@@ -49,10 +49,10 @@
 	alt_titles = list(
 		"Paramedic",
 		"Nurse")
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
 	allowed_branches = list(
 		/datum/mil_branch/larfleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/larfleet/e3,
@@ -87,8 +87,8 @@
 	alt_titles = list()
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/virologist
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/virologist
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/medical/virologist/fleet,
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/larfleet/o1,
@@ -127,7 +127,7 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet,
 		/datum/mil_branch/civilian
 	)
 
@@ -213,7 +213,7 @@
 	)
 
 	alt_titles = list(
-		"Redactor"
+		"Redactor" = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/redactor
 	)
 
 /datum/job/psychiatrist/get_description_blurb()

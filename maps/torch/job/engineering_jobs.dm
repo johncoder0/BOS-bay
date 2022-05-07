@@ -11,7 +11,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
@@ -65,8 +65,8 @@
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet,
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/larfleet/e3,
@@ -113,9 +113,9 @@
 	selection_color = "#A25F2A"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/engineering/fleetassistant,
 		/datum/mil_branch/civilian,
 	)
 	allowed_ranks = list(

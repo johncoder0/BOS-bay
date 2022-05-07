@@ -71,8 +71,7 @@
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(,
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/crew/research/scientist
+		/datum/mil_rank/civ/contractor
 	)
 
 	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov, access_petrov_helm,
@@ -99,12 +98,12 @@
 		"Clerk",
 		"Field Assistant")
 
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist //временно
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist
+		/datum/mil_rank/civ/contractor
 	)
 	max_pow_cat = 2
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
@@ -125,10 +124,11 @@
 	supervisors = "the Commanding Officer, Executive Officer, and Exploration Operations Leader"
 	selection_color = "#68099e"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 
 	allowed_branches = list(/datum/mil_branch/civilian)
 	alt_titles = list(
-		"Explorer",
+		"Explorer" = /decl/hierarchy/outfit/job/torch/crew/exploration/explorer,
 		"Xenoarchaeologist")
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,

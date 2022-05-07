@@ -33,9 +33,10 @@
 /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	name = OUTFIT_JOB_NAME("Chief Medical Officer - Antares")
 	l_ear  =/obj/item/device/radio/headset/heads/cmo
-	uniform = /obj/item/clothing/under/rank/chief_medical_officer
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/cmo
-	shoes = /obj/item/clothing/shoes/brown
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/medical
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat/blue
+	head = /obj/item/clothing/head/beret/lordan/fleet
+	shoes = /obj/item/clothing/shoes/lordan
 	id_type = /obj/item/weapon/card/id/torch/silver/medical
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
 	pda_slot = slot_l_store
@@ -48,6 +49,7 @@
 	name = OUTFIT_JOB_NAME("Chief Engineer - Antares")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/lordan
+	suit = /obj/item/clothing/suit/storage/hazardvest/white
 	head = /obj/item/clothing/head/beret/lordan/fleet
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	id_type = /obj/item/weapon/card/id/torch/silver/engineering
@@ -63,6 +65,7 @@
 	name = OUTFIT_JOB_NAME("Chief of Security")
 	l_ear = /obj/item/device/radio/headset/heads/cos
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/combat/security
+	suit = /obj/item/clothing/suit/armor/pcarrier/medium
 	head = /obj/item/clothing/head/beret/lordan/fleet
 	shoes = /obj/item/clothing/shoes/lordan
 	id_type = /obj/item/weapon/card/id/torch/silver/security

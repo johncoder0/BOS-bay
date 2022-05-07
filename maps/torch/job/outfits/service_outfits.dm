@@ -13,7 +13,6 @@
 	name = OUTFIT_JOB_NAME("Sanitation Technician - Fleet")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/service
 	shoes = /obj/item/clothing/shoes/lordan
-	head = /obj/item/clothing/head/beret/lordan/fleet
 
 /decl/hierarchy/outfit/job/torch/crew/service/canworker
 	name = OUTFIT_JOB_NAME("Canteen Worker")
@@ -25,7 +24,6 @@
 /decl/hierarchy/outfit/job/torch/crew/service/canworker/fleet
 	name = OUTFIT_JOB_NAME("Canteen Worker - Fleet")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/service
-	head = /obj/item/clothing/head/beret/lordan/fleet
 	shoes = /obj/item/clothing/shoes/lordan
 
 /decl/hierarchy/outfit/job/torch/crew/service/cook
@@ -64,4 +62,3 @@
 	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 	shoes = /obj/item/clothing/shoes/lordan
-	head = /obj/item/clothing/head/beret/lordan/fleet
