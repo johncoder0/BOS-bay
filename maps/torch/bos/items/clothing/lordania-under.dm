@@ -4,7 +4,6 @@
 	icon = 'maps/torch/bos/icons/obj/obj_under_lordania.dmi'
 	item_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_under_lordania.dmi')
 	siemens_coefficient = 0.8
-	gender_icons = 1
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)

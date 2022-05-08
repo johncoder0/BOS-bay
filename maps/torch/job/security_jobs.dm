@@ -8,14 +8,12 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/brig_chief
 	allowed_branches = list(
-		/datum/mil_branch/larfleet,
-		/datum/mil_branch/civilian
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/larfleet/e6,
 		/datum/mil_rank/larfleet/e7,
-		/datum/mil_rank/larfleet/e8,
+		/datum/mil_rank/larfleet/e8
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,

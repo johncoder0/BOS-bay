@@ -20,7 +20,6 @@
 		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/larfleet/e6,
 		/datum/mil_rank/larfleet/e7
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -140,8 +139,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/civ/civ,
-		/datum/mil_rank/larfleet/e6,
-		/datum/mil_rank/larfleet/e7
+		/datum/mil_rank/larfleet/e6
 	)
 
 	access = list(

@@ -126,7 +126,7 @@
 	item_state = "fldress"
 
 /obj/item/clothing/suit/storage/lordan/dress/fleet/po
-	name = "fleet PO dress jacket"
+	name = "fleet senior dress jacket"
 	desc = "A black dress jacket belonging to the LSS Fleet. Fashionable, for the 24th century at least."
 	icon = 'maps/torch/bos/icons/obj/obj_suit_lordania.dmi'
 	icon_state = "fldress_po"
