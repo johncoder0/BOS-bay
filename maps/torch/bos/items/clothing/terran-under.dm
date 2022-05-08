@@ -1,10 +1,10 @@
 //Terrans
 
 /obj/item/clothing/under/terran
-	name = "master UCGNF uniform"
-	desc = "You shouldn't be seeing this."
-	icon = 'maps/torch/icons/obj/obj_under_terran.dmi'
-	item_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_under_terran.dmi')
+	name = "terran PT uniform"
+	desc = "Shirt and pants. Horosho, very good."
+	icon = 'maps/torch/bos/icons/obj/obj_under_terran.dmi'
+	item_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_under_terran.dmi')
 
 /obj/item/clothing/under/terran/navy/utility
 	name = "UCGNF utility uniform"

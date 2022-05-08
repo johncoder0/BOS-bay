@@ -401,12 +401,12 @@
 	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Representative's Guard")]"]"
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
-			if(M.mind.assigned_role == "Representative's Guard")
+			if(M.mind.assigned_role == "ICCG Guard")
 				to_chat(M, SPAN_NOTICE("<b>Your supervisor, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()
 
 /datum/job/terguard
-	title = "Representative's Guard"
+	title = "ICCG Guard"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
@@ -449,5 +449,5 @@
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
 			if(M.mind.assigned_role == "ICCG Representative")
-				to_chat(M, SPAN_NOTICE("<b>Your Agent, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+				to_chat(M, SPAN_NOTICE("<b>Your Guard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()

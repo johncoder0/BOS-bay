@@ -98,7 +98,7 @@
 		/obj/item/device/tape/random = 3,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/weapon/rig/light/internalaffairs,
-		/obj/item/device/radio/headset/federal,
+		/obj/item/device/radio/headset/terran,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain/solgov,
 		/obj/item/clothing/suit/storage/toggle/suit/black,
@@ -132,7 +132,7 @@ obj/structure/closet/secure_closet/solguard
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/device/flashlight/maglight,
-		/obj/item/device/radio/headset/federal
+		/obj/item/device/radio/headset/terran
 		)
 
 

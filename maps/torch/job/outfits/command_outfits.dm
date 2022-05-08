@@ -105,18 +105,18 @@
 
 /decl/hierarchy/outfit/job/torch/crew/command/terrep
 	name = OUTFIT_JOB_NAME("ICCG Representative")
-	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
-	shoes = /obj/item/clothing/shoes/dress
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black
+	uniform = /obj/item/clothing/under/terran/navy/service/command
+	suit = /obj/item/clothing/suit/storage/terran/service/navy/command
+	shoes = /obj/item/clothing/shoes/terran
+	head = /obj/item/clothing/head/terran/navy/service/command
 	id_type = /obj/item/weapon/card/id/torch/crew/representative
 	pda_type = /obj/item/modular_computer/pda/heads
-	l_ear = /obj/item/device/radio/headset/federal
+	l_ear = /obj/item/device/radio/headset/terran
 
 /decl/hierarchy/outfit/job/torch/crew/command/ter_bodyguard
 	name = OUTFIT_JOB_NAME("ICCG Bodyguard")
-	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
-	shoes = /obj/item/clothing/shoes/dress
+	uniform = /obj/item/clothing/under/terran/navy/utility
+	shoes = /obj/item/clothing/shoes/terran
+	head = /obj/item/clothing/head/terran/navy/utility
 	id_type = /obj/item/weapon/card/id/torch/crew/terguard
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black/sfp
-	glasses = /obj/item/clothing/glasses/sunglasses
-	l_ear = /obj/item/device/radio/headset/federal
+	l_ear = /obj/item/device/radio/headset/terran

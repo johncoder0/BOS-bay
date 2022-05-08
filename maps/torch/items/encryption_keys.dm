@@ -4,24 +4,14 @@
 	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
 
 /obj/item/device/encryptionkey/headset_torchnt
-	name = "corporate radio encryption key"
+	name = "science radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("Science" = 1)
 
 /obj/item/device/encryptionkey/headset_torchrd
-	name = "chief science officer radio encryption key"
+	name = "research radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("Science" = 1, "Command" = 1, "Exploration" = 1)
-
-/obj/item/device/encryptionkey/headset_torchcorp
-	name = "corporate radio encryption key"
-	icon_state = "nt_cypherkey"
-	channels = list("Science" = 1, "Service" = 1)
-
-/obj/item/device/encryptionkey/headset_torchcl
-	name = "corporate liaison radio encryption key"
-	icon_state = "nt_cypherkey"
-	channels = list("Science" = 1, "Service" = 1, "Command" = 1)
 
 /obj/item/device/encryptionkey/headset_deckofficer
 	name = "deck chief's encryption key"
@@ -29,7 +19,7 @@
 	channels = list("Supply" = 1, "Command" = 1, "Exploration" = 1, "Infantry" = 1)
 
 /obj/item/device/encryptionkey/bridgeofficer
-	name = "bridge officer's encryption key"
+	name = "second officer's encryption key"
 	icon_state = "com_cypherkey"
 	channels = list("Command" = 1, "Infantry" = 1, "Engineering" = 1, "Exploration" = 1)
 
@@ -50,7 +40,7 @@
 	channels = list("Exploration" = 1, "Supply" = 1, "Science" = 1)
 
 /obj/item/device/encryptionkey/headset_mining
-	name = "prospector radio encryption key"
+	name = "field support radio encryption key"
 	icon_state = "srv_cypherkey"
 	channels = list("Exploration" = 1, "Supply" = 1)
 
@@ -60,7 +50,7 @@
 	startswith = list(/obj/item/weapon/screwdriver, /obj/item/device/encryptionkey/exploration = 5)
 
 /obj/item/device/encryptionkey/pathfinder
-	name = "pathfinder's encryption key"
+	name = "EOL's encryption key"
 	icon_state = "com_cypherkey"
 	channels = list("Exploration" = 1, "Command" = 1, "Science" = 1)
 
@@ -77,11 +67,11 @@
 	make_exact_fit()
 
 /obj/item/device/encryptionkey/heads/sea
-	name = "senior enlisted advisor's encryption key"
+	name = "political officer's encryption key"
 	icon_state = "com_cypherkey"
 	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
 
-/obj/item/device/encryptionkey/federal
-	name = "federal encryption key"
+/obj/item/device/encryptionkey/terran
+	name = "terran encryption key"
 	icon_state = "com_cypherkey"
 	channels = list("Command" = 1)
