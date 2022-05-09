@@ -97,10 +97,11 @@
 	С момента заступления на должность, Вы несете всю ответственность за судно, его экипаж и своих подчиненных.
 	Ваша основная обязанность - контролировать выполнение Миссии ЛРС «Антарес», а также убедиться, что судно безопасно вернется в порт ЛСС по окончании Миссии.
 	Миссия ЛРС «Антарес» включает в себя следующие цели:
-	<list><*>Сбор сведений о военных объектах противника в регионе
-	<*>Организация и проведение специальных диверсионных операций, направленных на снижение военного, экономического, или научного потенциала противника
-	<*>Подготовка плацдарма для расширения зоны влияния ЛСС в регионе
-	<*>Изучение объектов и артефактов, способных дать ЛСС военное, экономическое, или научное преимущество над противником</list>
+
+	-<b>Сбор сведений</b> о военных объектах противника в регионе
+	-Организация и проведение специальных <b>диверсионных операций</b>, направленных на снижение военного, экономического, или научного потенциала противника
+	-Подготовка <b>плацдарма</b> для расширения зоны влияния ЛСС в регионе
+	-Изучение <b>объектов</b> и <b>артефактов</b>, способных дать ЛСС военное, экономическое, или научное преимущество над противником
 	<hr>
 	Требуется посетить следующие системы:
 	<li>[generate_system_name()]</li>
@@ -128,28 +129,30 @@
 	new/obj/item/weapon/paper/umbra(src)
 
 /obj/item/weapon/paper/umbra
-	name = "UMBRA Protocol"
+	name = "ПРОТОКОЛ МОЛЧАНИЕ"
 	info = {"
-	<tt><center><b><font color='red'>TOP SECRET - CODE WORDS: DAGON UMBRA</font></b>
-	<h3>OFFICE OF THE SECRETARY GENERAL OF THE SOLGOV FLEET</h3>
-	<img src = sollogo.png>
-	</center>
-	<b>FROM:</b> Johnathan Smitherson, Special Aide of the Secretary General<br>
-	<b>TO:</b> Commanding Officer of the SGV Dagon<br>
-	<b>CC:</b> Special Representative aboard the SGV Dagon<br>
-	<b>SUBJECT:</b> UMBRA protocol<br>
-	<hr>
-	This is a small addendum to the usual operating procedures. Unlike the rest of SOP, this is not left to the Commanding Officer's discretion and is mandatory. As unconventional as this is, we felt it is essential for smooth operation of this mission.<br>
-	Procedure can be initiated only by transmission from SolGov Command via secure channel. The sender may not introduce themselves, but you shouldn't have trouble confirming the transmission source, I believe.<br>
-	The signal to initiate the procedure are codewords 'GOOD NIGHT WORLD' used in this order as one phrase. You do not need to send acknowledgement.
-	<li>Information about this expedition's findings is to be treated as secret and vital to NTF security, and is protected under codeword UMBRA. Crew aboard the SGV Dagon are allowed access to this information on a need-to-know basis.</li>
-	<li>The secrecy of this information is to be applied retroactively. Any non-cleared personnel who were exposed to such information are to be secured and transferred to DIA on arrival at home port.</li>
-	<li>Any devices capable of transmitting or receiving data at interstellar range are to be confiscated from private possession.</li>
-	<li>Disregard any systems remaining in your flight plan and set course for Sol, Neptune orbit. You will be contacted upon your arrival. Do not make stops in ports on the way unless absolutely necessary.</li>
-	<br>
-	While drastic, I assure you this is a simple precaution, lest any issues. Just keep the option open, and carry on with your normal duties.
-	<i>Regards, John.</i></tt>
-	<i>This paper has been stamped with the stamp of Office of the General Secretary of SGF.</i>
+	<tt><center><b><font color='red'>СОВЕРШЕННО СЕКРЕТНО - КОДОВЫЕ СЛОВА: АНТАРЕС МОЛЧАНИЕ</font></b>
+    <h3>КАНЦЕЛЯРИЯ ГЕНЕРАЛЬНОГО СЕКРЕТАРЯ МИНИСТЕРСТВА ОБОРОНЫ.</h3>
+    logo lordanii naidi cake
+    </center>
+    <b>ОТ:</b> Дэрил Андерсон, Специальный помощник генерального секретаря<br>
+    <b>ДЛЯ:</b> Командующий Офицер ЛРС Антарес<br>
+    <b>CC:</b> Специальный Представитель от Гильгамешской Колониальной Конфедерации на борту ЛРС Антарес<br>
+    <b>ТЕМА:</b> протокол МОЛЧАНИЕ<br>
+    <hr>
+    Это небольшое дополнение к Стандартным Операционным Процедурам. В отличии от остальной части СОПа, вопрос выполнения данного протокола не оставлен на усмотрение командующему офицеру и является обязательным к исполнению. Как бы непривычно это не смотрелось, мы посчитали, что данный протокол необходим для бесперебойного выполнения Миссии.<br>
+    Процедура может быть запущена только через передачу сообщения от Лорданианского Коммандования через защищенный канал. Отправитель может не представить себя, однако у Вас не должно возникнуть проблем с опознаванием источника передачи. По-крайней мере, я на это надеюсь.
+    <br>
+    Сигналом для начала протокола является последовательность кодовых слов 'ВСЕМ ДОБРОЙ НОЧИ'. Вам не нужно отправлять подтверждение о получении сообщения.
+    <li>IЛюбой информации о находках и разведданных, полученных в процессе Миссии, должен быть присвоин статус секретной и жизненно важной для безопасности Лордании. Любое упоминание данной информации должно скрываться за словами 'протокол МОЛЧАНИЕ'.
+    Разрешено предоставлять экипажу на борту ЛРС Антарес информацию о протоколе МОЛЧАНИЕ по мере необходимости.</li>
+    Любой вызывающие подозрения член персонала, получивший доступ к протоколу МОЛЧАНИЕ должен быть защищен и безопасно доставлен в конечный порт, после чего передан в руки КВД.
+    <li>Любые девайсы, способные принимать или передавать информацию на межзвездном расстоянии должны быть конфискованы из частного пользования.</li>
+    <li>Игнорируйте любые системы, оставшиеся в планах Миссии. Заместо этого возьмите курс в систему Новелион, орбиту Леона. .</li>
+    <br>
+    Хоть это и звучит странно, я уверяю, что все это простые меры предосторожности. Просто держите памятку при себе и продолжайте ежедневные обязанности.
+    <i>С уважением, Дэрил.</i></tt>
+	<i>This paper has been stamped with the stamp of Office of the General Secretary of LSSF.</i>
 	"}
 
 /////////
