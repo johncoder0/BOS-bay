@@ -42,7 +42,7 @@
 	title = "Marine Technician"
 	supervisors = "the Marine Leader"
 	department = "Marines"
-	department_flag = INF|ENG
+	department_flag = INF
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = "#557e38"
@@ -89,7 +89,7 @@
 	title = "Marine Combat Medic"
 	supervisors = "the Marine Leader"
 	department = "Marines"
-	department_flag = INF|MED
+	department_flag = INF
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = "#557e38"

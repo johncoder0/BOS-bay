@@ -46,7 +46,7 @@
 
 /obj/item/clothing/suit/storage/toggle/lordan/service/command
 	name = "command marine coat"
-	desc = "An LSS Marine service coat with bloody red accents."
+	desc = "An LSS Marine service coat with yellow accents."
 	icon_state = "greenservice_com"
 	item_state = "greenservice_com"
 	icon_closed = "greenservice_com"
@@ -61,7 +61,7 @@
 	icon_open = "navyservice_open"
 
 /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
-	name = "fleet PO service jacket"
+	name = "fleet senior service jacket"
 	desc = "A navy blue LSS Fleet service jacket with silver cuffs."
 	icon_state = "navyservice_po"
 	item_state = "navyservice_po"
@@ -128,9 +128,8 @@
 /obj/item/clothing/suit/storage/lordan/dress/fleet/po
 	name = "fleet senior dress jacket"
 	desc = "A black dress jacket belonging to the LSS Fleet. Fashionable, for the 24th century at least."
-	icon = 'maps/torch/bos/icons/obj/obj_suit_lordania.dmi'
-	icon_state = "fldress_po"
-	item_state = "fldress_po"
+	icon_state = "fldresspo"
+	item_state = "fldresspo"
 
 /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	name = "fleet officer dress jacket"

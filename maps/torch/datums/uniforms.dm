@@ -37,12 +37,12 @@
 	utility_under = list(/obj/item/clothing/under/lordan/utility/fleet, /obj/item/clothing/under/lordan/utility/fleet/combat)
 	utility_shoes = /obj/item/clothing/shoes/lordan
 	utility_hat = /obj/item/clothing/head/beret/lordan/fleet
-	utility_extra = /obj/item/clothing/gloves/marinewhite
 
 	service_under = /obj/item/clothing/under/lordan/service/fleet
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet
 	service_hat = /obj/item/clothing/head/lordan/fleet
+	service_gloves = /obj/item/clothing/gloves/marinewhite
 
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt
