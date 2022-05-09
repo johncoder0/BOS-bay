@@ -26,6 +26,7 @@
 	#include "datums/access.dm"
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_fleet.dm"
+	#include "datums/uniforms_terran.dm"
 	#include "datums/uniforms_marine-corps.dm"
 	#include "datums/reports/command.dm"
 	#include "datums/reports/corporate.dm"

@@ -3,8 +3,8 @@
 
 /obj/item/clothing/accessory/lordan
 	name = "master lordan accessory"
-	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
+	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi', slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi')
 	w_class = ITEM_SIZE_TINY
 
 /*****
@@ -13,8 +13,8 @@ medals
 /obj/item/clothing/accessory/medal/lordan
 	name = "master lordan medal"
 	desc = "You shouldn't be seeing this."
-	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
+	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi', slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi')
 
 /obj/item/clothing/accessory/medal/lordan/iron/star
 	name = "iron star medal"
@@ -70,8 +70,8 @@ ribbons
 	icon_state = "ribbon_marksman"
 	on_rolled = list("down" = "none")
 	slot = ACCESSORY_SLOT_MEDAL
-	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
+	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi', slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi')
 	w_class = ITEM_SIZE_TINY
 
 /*************
@@ -138,8 +138,8 @@ badges
 *****/
 /obj/item/clothing/accessory/badge/lordan
 	name = "master lordan badge"
-	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
+	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi', slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi')
 
 /obj/item/clothing/accessory/badge/lordan/security
 	name = "security forces badge"
@@ -190,8 +190,8 @@ armbands
 
 /obj/item/clothing/accessory/armband/lordan
 	name = "master lordan armband"
-	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
+	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi', slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi')
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_accessories_sol_unathi.dmi'
 		)
@@ -217,9 +217,9 @@ armour attachments
 /obj/item/clothing/accessory/armor/tag/lordan
 	name = "\improper SCG Flag"
 	desc = "An emblem depicting the LSS flag."
-	icon_override = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
-	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
+	icon_override = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
+	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi', slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi')
 	icon_state = "solflag"
 	slot = ACCESSORY_SLOT_ARMOR_M
 
@@ -415,7 +415,7 @@ ranks - ec
 	slot = ACCESSORY_SLOT_RANK
 	gender = PLURAL
 	high_visibility = 1
-	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi' // change this when the time comes
+	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_accessories_sol_unathi.dmi'
 		)
