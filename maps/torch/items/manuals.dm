@@ -76,7 +76,7 @@
 	"}
 
 /obj/item/weapon/folder/envelope/captain
-	desc = "A thick envelope. The SGF crest is stamped in the corner."
+	desc = "A thick envelope. The LSSF crest is stamped in the corner."
 
 /obj/item/weapon/folder/envelope/captain/Initialize()
 	..()
@@ -84,18 +84,25 @@
 
 /obj/item/weapon/folder/envelope/captain/LateInitialize()
 	..()
-	var/obj/effect/overmap/visitable/torch = map_sectors["[z]"]
 	var/memo = {"
-	<tt><center><b><font color='red'>SECRET - CODE WORDS: DAGON</font></b>
-	<h3>SOLGOV FLEET COMMAND</h3>
-	<img src = sollogo.png>
+	<tt><center><b><font color='red'>СЕКРЕТНО - КОДОВОЕ СЛОВО: АНТАРЕС</font></b>
+	<h3>КОМАНДОВАНИЕ ФЛСС</h3>
 	</center>
-	<b>FROM:</b> ADM William Lau<br>
-	<b>TO:</b> Commanding Officer of SGV Dagon<br>
-	<b>SUBJECT:</b> Standing Orders<br>
+	<b>ОТ:</b> АДМ Дэниэла Швартовского<br>
+	<b>КОМУ:</b> Командующему Офицеру ЛРК Антарес<br>
+	<b>ТЕМА:</b> Действующие указания<br>
 	<hr>
-	Captain.<br>
-	Your orders are to visit the following star systems. Keep in mind that your supplies are limited; ration exploration time accordingly.
+	Капитан.<br>
+	Решением военного совета Новелионского военного округа, Вы назначаетесь Командующим Офицером ЛРС «Антарес» - разведывательного корвета класса Мако.
+	С момента заступления на должность, Вы несете всю ответственность за судно, его экипаж и своих подчиненных.
+	Ваша основная обязанность - контролировать выполнение Миссии ЛРС «Антарес», а также убедиться, что судно безопасно вернется в порт ЛСС по окончании Миссии.
+	Миссия ЛРС «Антарес» включает в себя следующие цели:
+	<list><*>Сбор сведений о военных объектах противника в регионе
+	<*>Организация и проведение специальных диверсионных операций, направленных на снижение военного, экономического, или научного потенциала противника
+	<*>Подготовка плацдарма для расширения зоны влияния ЛСС в регионе
+	<*>Изучение объектов и артефактов, способных дать ЛСС военное, экономическое, или научное преимущество над противником</list>
+	<hr>
+	Требуется посетить следующие системы:
 	<li>[generate_system_name()]</li>
 	<li>[generate_system_name()]</li>
 	<li>[generate_system_name()]</li>
@@ -106,15 +113,9 @@
 	<li>[generate_system_name()]</li>
 	<li>[generate_system_name()]</li>
 	<br>
-	Priority targets are artifacts of uncontacted alien species and signal sources of unknown origin.<br>
-	None of these systems are claimed by any entity recognized by the SCG, so you have full salvage rights on any derelicts discovered.<br>
-	Investigate and mark any prospective colony worlds as per usual procedures.<br>
-	There is no SGF presence in that area. In case of distress calls, you will be the only vessel available; do not ignore them. We cannot afford any more PR backlash.<br>
-	The current docking code is: [torch.docking_codes]<br>
-	Report all findings via bluespace comm buoys during inter-system jumps.<br>
-
-	<i>ADM Lau.</i></tt>
-	<i>This paper has been stamped with the stamp of SGF Command.</i>
+	<b>Слава Суверенной Лордании!</b>
+	<i>АДМ Швартовский.</i></tt>
+	<i>This paper has been stamped with the stamp of LSSF Command.</i>
 	"}
 	new/obj/item/weapon/paper(src, memo, "Standing Orders")
 //	new/obj/item/weapon/paper/umbra(src)
@@ -157,11 +158,10 @@
 /obj/item/weapon/paper/inf
 	name = "note"
 	info = {"
-	<i>Hey, don't wear your suits or carry the firearms outside of the prep unless deploying.
+	<i>Эй, не нужно выносить свои костюмы и пушки за пределы этой комнаты, если вы не собираетесь на высадку.
 	<hr>
-	It scares every chickenshit here to Coraba-V. Seriously. Don't do it.<br>
-	Next person I catch on cameras doing it will be discharged, and relocated. This is your final and only warning.<br>
-	Keep the gear locked up. Do your duty.<br>
-	Love, Steven. From Accounting.</i>
-	<i>This paper has been stamped with the stamp of SGF Command.</i>
+	Это пиздец как пугает людей. Серьёзно. Не надо.<br>
+	Если я ещё кого-то поймаю на камерах, то одним отстранением вы не обойдётесь. Это единственное и последнее предупреждение.<br>
+	Запирайте своё снаряжение, делайте свою работу.. Do your duty.<br>
+	С любовью, Стивен из бухгалтерии.</i>
 	"}

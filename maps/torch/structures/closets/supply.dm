@@ -23,7 +23,7 @@
 	)
 
 /obj/structure/closet/secure_closet/decktech
-	name = "deck technician's locker"
+	name = "supply technician's locker"
 	req_access = list(access_cargo)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/cargo/worker
 
@@ -49,7 +49,7 @@
 	)
 
 /obj/structure/closet/secure_closet/deckofficer
-	name = "deck officer's locker"
+	name = "gunnery chief's locker"
 	req_access = list(access_qm)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/cargo/deck_officer
 
@@ -78,7 +78,7 @@
 	)
 
 /obj/structure/closet/secure_closet/prospector
-	name = "prospector's locker"
+	name = "field support locker"
 	req_access = list(access_mining)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/cargo
 

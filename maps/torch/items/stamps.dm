@@ -3,11 +3,11 @@
 	icon_state = "stamp-cap"
 
 /obj/item/weapon/stamp/xo
-	name = "executive officer's rubber stamp"
+	name = "first officer's rubber stamp"
 	icon_state = "stamp-xo"
 
 /obj/item/weapon/stamp/sea
-	name = "senior enlisted advisor's rubber stamp"
+	name = "political officer's rubber stamp"
 	icon_state = "stamp-xo"
 
 /obj/item/weapon/stamp/cos
@@ -15,11 +15,11 @@
 	icon_state = "stamp-cos"
 
 /obj/item/weapon/stamp/brig
-	name = "brig chief's rubber stamp"
+	name = "commandant's rubber stamp"
 	icon_state = "stamp-brig"
 
 /obj/item/weapon/stamp/solgov
-	name = "\improper Sol Central Government rubber stamp"
+	name = "\improper Lordanian Sovereign Systems Fleet OPHQ rubber stamp"
 	icon_state = "stamp-solgov"
 
 /obj/item/weapon/stamp/nt
@@ -35,5 +35,5 @@
 	icon_state = "stamp-cargo"
 
 /obj/item/weapon/stamp/path
-	name = "pathfinder's rubber stamp"
+	name = "EOL's rubber stamp"
 	icon_state = "stamp-pf"
