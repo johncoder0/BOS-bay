@@ -1817,3 +1817,11 @@
 	name = "\improper Biological storage"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
+
+/////////
+// Memorial
+/////////
+/area/mempark
+	name = "\improper Memorial Park"
+	icon = 'icons/bos/area.dmi'
+	icon_state = "mempark"
