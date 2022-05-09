@@ -473,7 +473,7 @@ TORCH_ESCAPE_POD(11)
 	landmark_tag = "nav_transit_aquila"
 
 /datum/shuttle/autodock/overmap/koi
-	name = "MOP Koi"
+	name = "MUP Koi"
 	range = 1
 	fuel_consumption = 3
 	warmup_time = 7
