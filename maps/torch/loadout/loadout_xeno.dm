@@ -24,13 +24,6 @@
 	allowed_branches = null
 
 // Patches
-/datum/gear/accessory/cultex_patch
-	display_name = "Cultural Exchange patch"
-	path = /obj/item/clothing/accessory/solgov/cultex_patch
-	description = "A shoulder patch representing exploration members."
-	allowed_branches = NT_BRANCHES
-	whitelisted = list(SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_IPC)
-	sort_category = "Xenowear"
 
 /datum/gear/accessory/nabber_gloves
 	display_name = "GAS Insuls"

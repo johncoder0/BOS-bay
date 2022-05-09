@@ -38,6 +38,13 @@ patches
 	on_rolled = list("down" = "none")
 	slot = ACCESSORY_SLOT_INSIGNIA
 	check_codex_val = FACTION_EXPEDITIONARY
+
+/obj/item/clothing/accessory/lordan/torch_patch
+	name = "\improper LRS Antares mission patch"
+	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Antares Project."
+	icon_state = "torchpatch"
+	on_rolled = list("down" = "none")
+	slot = ACCESSORY_SLOT_INSIGNIA
 /*****
 scarves
 *****/

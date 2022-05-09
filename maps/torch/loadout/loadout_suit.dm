@@ -12,7 +12,7 @@
 /datum/gear/suit/poncho
 
 /datum/gear/suit/security_poncho
-	allowed_roles = list(/datum/job/merchant, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/seccadet)
+	allowed_roles = list(/datum/job/merchant, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer)
 
 /datum/gear/suit/medical_poncho
 	allowed_roles = list(/datum/job/senior_doctor, /datum/job/doctor/virologist, /datum/job/doctor, /datum/job/psychiatrist, /datum/job/merchant, /datum/job/chemist)
@@ -21,10 +21,10 @@
 	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/merchant)
 
 /datum/gear/suit/science_poncho
-	allowed_roles = list(/datum/job/scientist, /datum/job/submap/unishi_researcher, /datum/job/senior_scientist, /datum/job/scientist_assistant)
+	allowed_roles = list(/datum/job/scientist, /datum/job/submap/unishi_researcher, /datum/job/scientist_assistant)
 
 /datum/gear/suit/nanotrasen_poncho
-	allowed_roles = list(/datum/job/scientist, /datum/job/liaison, /datum/job/bodyguard, /datum/job/scientist_assistant, /datum/job/senior_scientist, /datum/job/merchant)
+	allowed_roles = list(/datum/job/scientist, /datum/job/scientist_assistant, /datum/job/merchant)
 
 /datum/gear/suit/cargo_poncho
 	allowed_roles = list(/datum/job/cargo_tech, /datum/job/qm, /datum/job/mining, /datum/job/merchant)
@@ -54,19 +54,9 @@
 /datum/gear/suit/labcoat_blue
 	allowed_roles = DOCTOR_ROLES
 
-/datum/gear/suit/labcoat_ec
-	display_name = "labcoat, Expeditionary Corps"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat/science/ec
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/suit/labcoat_ec_cso
-	display_name = "labcoat, chief science officer, Expeditionary Corps"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec
-	allowed_roles = list(/datum/job/rd)
-
 /datum/gear/suit/wintercoat_dais
 	display_name = "winter coat, DAIS"
-	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/rd)
+	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/rd)
 
 /datum/gear/suit/coat
 	allowed_branches = CASUAL_BRANCHES

@@ -36,26 +36,10 @@
 	display_name = "dog tags"
 	path = /obj/item/clothing/accessory/badge/solgov/tags
 
-/datum/gear/accessory/ec_scarf
-	display_name = "Surveyor Corps scarf"
-	path = /obj/item/clothing/accessory/solgov/ec_scarf
-	description = "A section-specific scarf for Survey Corps uniforms."
-	cost = 0
-	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/accessory/ec_patch
-	display_name = "Surveyor Corps patch"
-	path = /obj/item/clothing/accessory/solgov/ec_patch
-	description = "A shoulder patch representing the Survey Corps."
-	cost = 0
-	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = NT_BRANCHES
-
 /datum/gear/accessory/torch_patch
-	display_name = "SGV Dagon mission patch"
+	display_name = "LRS Antares mission patch"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
-	description = "A shoulder patch representing the SGV Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
+	description = "A shoulder patch representing the LRS Antares and its mission. Given to all the oddjobs pulled from various branches to work on the Antares."
 
 /datum/gear/accessory/pilot_pin
 	display_name = "pilot's qualification pin"
@@ -67,7 +51,7 @@
 	path = /obj/item/clothing/accessory/solgov/fleet_patch
 	flags = GEAR_HAS_TYPE_SELECTION
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_branches = list(/datum/mil_branch/larfleet)
 
 /datum/gear/accessory/fleetpatch/New()
 	..()
@@ -109,12 +93,6 @@
 
 /datum/gear/accessory/armband_hydro
 	allowed_roles = list(/datum/job/rd, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/assistant)
-
-/datum/gear/accessory/armband_nt
-	allowed_branches = CASUAL_BRANCHES
-
-/datum/gear/accessory/ntaward
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/accessory/tie
 	allowed_branches = CASUAL_BRANCHES

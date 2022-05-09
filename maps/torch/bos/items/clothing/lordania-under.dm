@@ -12,7 +12,7 @@
 //Utility
 
 /obj/item/clothing/under/lordan/utility
-	name = "utility uniform"
+	name = "marine urban utility uniform"
 	desc = "The utility uniform of the LSS Marine Corps, made from durable material."
 	icon_state = "greyutility"
 	item_state = "greyutility"
@@ -23,7 +23,7 @@
 		)
 
 /obj/item/clothing/under/lordan/utility/tan
-	name = "marine utility uniform"
+	name = "marine tan utility uniform"
 	desc = "A tan version of the LSS Marine utility uniform, made from durable material."
 	icon_state = "tanutility"
 	item_state = "tanutility"
