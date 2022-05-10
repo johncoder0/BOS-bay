@@ -122,7 +122,7 @@
 //	new/obj/item/weapon/paper/umbra(src)
 
 /obj/item/weapon/folder/envelope/rep
-	desc = "A thick envelope. The SCG crest is stamped in the corner, along with 'TOP SECRET - UMBRA'."
+	desc = "A thick envelope. The LSS crest is stamped in the corner, along with 'TOP SECRET - UMBRA'."
 
 /obj/item/weapon/folder/envelope/rep/Initialize()
 	. = ..()
@@ -173,6 +173,6 @@
 	name = "gift shop note"
 	info = {"
 	Блять, это не сувенирная лавка, а склад "бери-хватай". Кому мы вообще должны продавать всё это? Пассажирам?
-	Все пассажиры - шпионы ЛРА, на кой хрен им футболки с флагом Лордании покупать?
+	Все пассажиры - шпионы ЛРА, на кой хрен им футболки с флагом Суверенной Лордании покупать?
 	Кто-то ещё и постоянно створки открывает, все блины так рано или поздно расхватают.
 	"}
