@@ -1,5 +1,5 @@
 /obj/structure/memstatue
 	name = "statue placeholder"
 	desc = "vlades pidoras sdelai shtuki."
-	icon = 'icons/bos/obj/statue.dmi'
+	icon = 'maps/torch/bos/icons/obj/structures/statue.dmi'
 	icon_state = "placeholder"

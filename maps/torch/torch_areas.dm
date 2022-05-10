@@ -1200,7 +1200,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SGV Dagon Bridge"
+	name = "\improper LRS Antares Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 
@@ -1825,3 +1825,9 @@
 	name = "\improper Memorial Park"
 	icon = 'icons/bos/area.dmi'
 	icon_state = "mempark"
+
+/area/mempark/gift
+	name = "\improper Memorial Gift Shop"
+	icon = 'icons/bos/area.dmi'
+	icon_state = "giftshop"
+	req_access = list(access_cargo)

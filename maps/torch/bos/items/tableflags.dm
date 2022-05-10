@@ -1,6 +1,6 @@
 /obj/item/weapon/tableflag/antar
 	name = "table flag"
-	icon = 'maps/torch/bos/icons/obj/tableflags.dmi'
+	icon = 'maps/torch/bos/icons/obj/items/tableflags.dmi'
 	icon_state = "lordflag"
 	desc = "The rebellious flag of the Sovereign Lordania."
 
