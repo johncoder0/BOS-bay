@@ -77,7 +77,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/research/cso
 	name = OUTFIT_JOB_NAME("Research Director - Antares")
-	uniform = /obj/item/clothing/under/rank/research_director
+	uniform = /obj/item/clothing/under/suit_jacket/really_black
 	l_ear = /obj/item/device/radio/headset/heads/torchntdirector
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec/lordan
 	id_type = /obj/item/weapon/card/id/torch/silver/research

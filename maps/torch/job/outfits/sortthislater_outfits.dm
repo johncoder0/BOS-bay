@@ -12,7 +12,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	name = OUTFIT_JOB_NAME("Scientist - Antares")
-	uniform = /obj/item/clothing/under/rank/scientist
+	uniform = /obj/item/clothing/under/rank/medical/scrubs
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/white
 	id_type = /obj/item/weapon/card/id/torch/crew/research/scientist
@@ -23,7 +23,7 @@
 
 /decl/hierarchy/outfit/job/torch/passenger/research/assist
 	name = OUTFIT_JOB_NAME("Research Assistant - Antares")
-	uniform = /obj/item/clothing/under/rank/scientist
+	uniform = /obj/item/clothing/under/rank/medical/scrubs
 	shoes = /obj/item/clothing/shoes/white
 	pda_type = /obj/item/modular_computer/pda/science
 	id_type = /obj/item/weapon/card/id/torch/passenger/research

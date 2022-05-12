@@ -87,7 +87,7 @@
 /obj/structure/closet/secure_closet/representative
 	name = "\improper ICCG representative's locker"
 	req_access = list(access_representative)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/hos
 
 /obj/structure/closet/secure_closet/representative/WillContain()
 	return list(
@@ -111,7 +111,7 @@
 obj/structure/closet/secure_closet/solguard
 	name = "\improper ICCG guard's locker"
 	req_access = list(access_sec_guard)
-	closet_appearance = /decl/closet_appearance/secure_closet/sol/two
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/solguard/WillContain()
 	return list(

@@ -561,19 +561,19 @@
 	decals = list(
 		"crate_stripe_left" = COLOR_YELLOW
 	)
-	
+
 /decl/closet_appearance/crate/munitions/payload
 	color = COLOR_GREEN_GRAY
 	decals = list(
 		"crate_stripe_left" = COLOR_RED
 	)
-	
+
 /decl/closet_appearance/crate/munitions/equipment
 	color = COLOR_GREEN_GRAY
 	decals = list(
 		"crate_stripe_left" = COLOR_PALE_BLUE_GRAY
 	)
-	
+
 
 
 /decl/closet_appearance/crate/secure
