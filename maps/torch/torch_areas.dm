@@ -1831,3 +1831,11 @@
 	icon = 'icons/bos/area.dmi'
 	icon_state = "giftshop"
 	req_access = list(access_cargo)
+
+/////////
+// New Secpoint
+/////////
+/area/security/secpointhal
+	name = "\improper Security Checkpoint - Hallway"
+	icon_state = "security"
+	req_access = list(access_brig)
