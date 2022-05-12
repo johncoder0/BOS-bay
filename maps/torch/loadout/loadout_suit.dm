@@ -23,9 +23,6 @@
 /datum/gear/suit/science_poncho
 	allowed_roles = list(/datum/job/scientist, /datum/job/submap/unishi_researcher, /datum/job/scientist_assistant)
 
-/datum/gear/suit/nanotrasen_poncho
-	allowed_roles = list(/datum/job/scientist, /datum/job/scientist_assistant, /datum/job/merchant)
-
 /datum/gear/suit/cargo_poncho
 	allowed_roles = list(/datum/job/cargo_tech, /datum/job/qm, /datum/job/mining, /datum/job/merchant)
 
@@ -47,9 +44,6 @@
 
 /datum/gear/suit/labcoat
 
-/datum/gear/suit/labcoat_corp
-	allowed_roles = DOCTOR_ROLES
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/labcoat_blue
 	allowed_roles = DOCTOR_ROLES
@@ -86,8 +80,3 @@
 	armors["green plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green
 	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan
 	gear_tweaks += new/datum/gear_tweak/path(armors)
-
-/datum/gear/suit/sfp
-	display_name = "Agent's jacket"
-	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
-	allowed_roles = list(/datum/job/detective)

@@ -111,7 +111,7 @@
 	return list(
 		/obj/item/clothing/under/rank/guard,
 		/obj/item/clothing/suit/armor/pcarrier/medium,
-		/obj/item/clothing/head/helme,
+		/obj/item/clothing/head/helmet,
 		/obj/item/clothing/head/beret/guard,
 		/obj/item/clothing/accessory/armband/whitered,
 		/obj/item/device/radio/headset/torchnanotrasen,
