@@ -176,7 +176,6 @@
 	deform = 'icons/mob/human_races/species/monkey/protostok_body.dmi'
 
 	tail = "stoktail"
-	greater_form = SPECIES_OLDUNATHI
 	flesh_color = "#34af10"
 	base_color = "#066000"
 	reagent_tag = IS_OLDUNATHI
