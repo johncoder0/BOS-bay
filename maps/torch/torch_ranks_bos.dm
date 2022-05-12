@@ -31,6 +31,8 @@
 	species_to_branch_blacklist = list(
 		/datum/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
 		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
+		/datum/species/plasmasans = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/larmarine, /datum/mil_branch/larfleet),
+		/datum/species/plasmasans = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/larmarine, /datum/mil_branch/larfleet),
 		/datum/species/vox     = list(
 
 			/datum/mil_branch/army,
