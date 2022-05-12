@@ -118,37 +118,6 @@
 				lovers -= lover
 	return lovers
 
-/datum/relation/xenolover
-	name = "Xenophilic Lover"
-	desc = "You have a thing going, despite the fact you are different."
-	incompatible = list(/datum/relation/lover, /datum/relation/ex)
-
-/datum/relation/xenolover/get_desc_string()
-	return "[holder] and [other.holder] seem to have a thing going, though they look alien to each other."
-
-/datum/relation/xenolover/get_candidates()
-	var/list/xlovers = ..()
-	var/mob/living/carbon/human/holdermob = holder.current
-
-	if(istype(holdermob))
-		for(var/datum/relation/xlover in xlovers)
-			var/mob/living/carbon/human/xlovermob = xlover.holder.current
-			if(!istype(xlovermob))
-				continue
-			var/loverspecies 	= xlovermob.get_species()
-			var/holderspecies 	= holdermob.get_species()
-			if(loverspecies && holderspecies && loverspecies == holderspecies)
-				xlovers -= xlover
-	return xlovers
-
-/datum/relation/xenolover/wholesome
-	name = "Alien Friend"
-	desc = "You have known the fellow for a while now, and differences only boost your friendship."
-	incompatible = list(/datum/relation/enemy)
-
-/datum/relation/xenolover/wholesome/get_desc_string()
-	return "[holder] and [other.holder] seem to be on good terms, even if they differ from each other."
-
 /datum/relation/so
 	name = "Significiant Other"
 	desc = "You are romantically involved."
