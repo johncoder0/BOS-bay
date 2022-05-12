@@ -98,7 +98,7 @@
 /datum/relation/lover
 	name = "Lover"
 	desc = "You have a thing going."
-	incompatible = list(/datum/relation/xenolover, /datum/relation/ex)
+	incompatible = list(/datum/relation/ex)
 
 /datum/relation/lover/get_desc_string()
 	return "[holder] and [other.holder] seem to have a thing going."
@@ -129,7 +129,7 @@
 /datum/relation/ex
 	name = "Ex"
 	desc = "You used to be romantically involved, but not anymore."
-	incompatible = list(/datum/relation/lover, /datum/relation/xenolover, /datum/relation/so)
+	incompatible = list(/datum/relation/lover, /datum/relation/so)
 
 /datum/relation/ex/get_desc_string()
 	return "[holder] and [other.holder] used to be an item, but not anymore."

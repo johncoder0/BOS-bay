@@ -318,34 +318,6 @@ var/const/NO_EMAG_ACT = -50
 	dat += text("Fingerprint: []</A><BR>\n", fingerprint_hash)
 	dat += text("Blood Type: []<BR>\n", blood_type)
 	dat += text("DNA Hash: []<BR>\n", dna_hash)
-	if(pow_cat && GLOB.using_map.flags & MAP_HAS_RANK)
-		var/pow_roman = ""
-		switch(pow_cat)
-			if(1)
-				pow_roman = "I"
-			if(2)
-				pow_roman = "II"
-			if(3)
-				pow_roman = "III"
-			if(4)
-				pow_roman = "IV"
-			if(5)
-				pow_roman = "V"
-		dat += text("Galilei Convention: Cat []<BR>\n", pow_roman)
-	if(cit_rank && GLOB.using_map.flags & MAP_HAS_RANK)
-		var/cit_ranking = ""
-		switch(cit_rank)
-			if(1)
-				cit_ranking = "Integrated Sentient"
-			if(2)
-				cit_ranking = "Second Civilian"
-			if(3)
-				cit_ranking = "First Civilian"
-			if(4)
-				cit_ranking = "Second Citizen"
-			if(5)
-				cit_ranking = "First Citizen"
-		dat += text("Citizenship Ranking: T-[]<BR>\n", cit_ranking)
 	dat += text("<BR>\n")
 	if(front && side)
 		dat +="<td align = center valign = top>Photo:<br><img src=front.png height=80 width=80 border=4><img src=side.png height=80 width=80 border=4></td>"
