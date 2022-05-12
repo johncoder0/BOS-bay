@@ -47,8 +47,8 @@
 	species_to_branch_whitelist = list(
 		/datum/species/diona      = list(/datum/mil_branch/civilian),
 		/datum/species/nabber     = list(/datum/mil_branch/civilian),
-		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/skrell_fleet),
-		/datum/species/unathi     = list(/datum/mil_branch/civilian),
+		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/skrell_fleet, /datum/mil_branch/larmarine, /datum/mil_branch/larfleet),
+		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/larmarine, /datum/mil_branch/larfleet),
 		/datum/species/adherent   = list(/datum/mil_branch/civilian),
 	)
 /*
