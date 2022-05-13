@@ -104,6 +104,7 @@
 		/obj/item/clothing/suit/dress/terran/navy/command,
 		/obj/item/clothing/head/terran/navy/service/command,
 		/obj/item/gunbox/pol,
+		/obj/item/weapon/reagent_containers/pill/cyanide,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
 	)
