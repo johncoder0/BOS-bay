@@ -21,6 +21,56 @@ medals
 	desc = "An iron star, awarded for meritorious achievement or service in a combat zone."
 	icon_state = "iron_star"
 
+/obj/item/clothing/accessory/medal/lordan/iron/sol
+	name = "expeditionary medal"
+	desc = "An iron medal, awarded for service outside of the borders of the Lordanian Sovereign Systems."
+	icon_state = "iron_sol"
+
+/obj/item/clothing/accessory/medal/lordan/bronze/heart
+	name = "bronze heart medal"
+	desc = "A bronze heart, awarded for injury or death in the line of duty."
+	icon_state = "bronze_heart"
+
+/obj/item/clothing/accessory/medal/lordan/bronze/sol
+	name = "defensive operations medal"
+	desc = "A bronze medal, awarded for service defending the border regions."
+	icon_state = "bronze_sol"
+
+/obj/item/clothing/accessory/medal/lordan/silver/sword
+	name = "combat action medal"
+	desc = "A silver medal, awarded for honorable service while under enemy fire."
+	icon_state = "silver_sword"
+
+/obj/item/clothing/accessory/medal/lordan/silver/sol
+	name = "valor medal"
+	desc = "A silver medal, awarded for acts of exceptional valor."
+	icon_state = "silver_sol"
+
+/obj/item/clothing/accessory/medal/lordan/gold/star
+	name = "gold star medal"
+	desc = "A gold star, awarded for acts of heroism in a combat zone."
+	icon_state = "gold_star"
+
+/obj/item/clothing/accessory/medal/lordan/gold/sun
+	name = "solar service medal"
+	desc = "A gold medal, awarded to members of the LSS by the Secretary General for significant contributions to the Sovereign Lordania."
+	icon_state = "gold_sun"
+
+/obj/item/clothing/accessory/medal/lordan/gold/crest
+	name = "solar honor medal"
+	desc = "A gold medal, awarded to members of the Defense Forces by the Secretary General for personal acts of valor and heroism above and beyond the call of duty."
+	icon_state = "gold_crest"
+
+/obj/item/clothing/accessory/medal/lordan/gold/sol
+	name = "sapientarian medal"
+	desc = "A gold medal, awarded for significant contributions to sapient rights."
+	icon_state = "gold_sol"
+
+/obj/item/clothing/accessory/medal/lordan/heart
+	name = "medical medal"
+	desc = "A white heart emblazoned with a red cross, awarded for service as a medical professional in a combat zone."
+	icon_state = "white_heart"
+
 /obj/item/clothing/accessory/lordan
 	var/check_codex_val = FACTION_FLEET
 
@@ -80,6 +130,26 @@ ribbons
 	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi', slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi')
 	w_class = ITEM_SIZE_TINY
+
+/obj/item/clothing/accessory/ribbon/lordan/marksman
+	name = "marksmanship ribbon"
+	desc = "A military decoration, awarded for good marksmanship scores in training. Common in the days of energy weapons."
+	icon_state = "ribbon_marksman"
+
+/obj/item/clothing/accessory/ribbon/lordan/peace
+	name = "peacekeeping ribbon"
+	desc = "A military decoration, awarded for service during a peacekeeping operation."
+	icon_state = "ribbon_peace"
+
+/obj/item/clothing/accessory/ribbon/lordan/frontier
+	name = "frontier ribbon"
+	desc = "A military decoration, awarded for service along the frontier."
+	icon_state = "ribbon_frontier"
+
+/obj/item/clothing/accessory/ribbon/lordan/instructor
+	name = "instructor ribbon"
+	desc = "A military decoration, awarded for service as an instructor."
+	icon_state = "ribbon_instructor"
 
 /*************
 specialty pins

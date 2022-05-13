@@ -3410,7 +3410,7 @@
 #include "maps\random_ruins\space_ruins\space_ruins.dm"
 #include "maps\torch\torch.dm"
 #include "maps\torch\torch_define.dm"
-#include "maps\torch\torch_ranks_bos.dm"
+#include "maps\torch\torch_ranks.dm"
 #include "maps\torch\bos\effects\decal.dm"
 #include "maps\torch\bos\items\choco.dm"
 #include "maps\torch\bos\items\tableflags.dm"

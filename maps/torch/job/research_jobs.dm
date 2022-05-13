@@ -11,9 +11,9 @@
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 21)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/exploration/pathfinder
-	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/scientist
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
@@ -68,10 +68,10 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	allowed_branches = list(
-		/datum/mil_branch/civilian
+		/datum/mil_branch/civilian, /datum/mil_branch/lord
 	)
 	allowed_ranks = list(,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/scientist
 	)
 
 	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov, access_petrov_helm,
@@ -100,10 +100,10 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist //временно
 	allowed_branches = list(
-		/datum/mil_branch/civilian
+		/datum/mil_branch/civilian, /datum/mil_branch/lord
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/scientist
 	)
 	max_pow_cat = 2
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
@@ -126,12 +126,12 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 
-	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
 	alt_titles = list(
 		"Explorer" = /decl/hierarchy/outfit/job/torch/crew/exploration/explorer,
 		"Xenoarchaeologist")
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/scientist
 	)
 	min_skill = list(   SKILL_EVA = SKILL_BASIC)
 

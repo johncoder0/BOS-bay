@@ -1,13 +1,13 @@
 /datum/gear/head/veteranhat
 	display_name = "veteran hat"
 	path = /obj/item/clothing/head/soft/solgov/veteranhat
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/larmarine)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/lord, /datum/mil_branch/larmarine)
 
 /datum/gear/head/surgical
 	allowed_roles = STERILE_ROLES
 
 /datum/gear/head/beret
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/larmarine)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/lord, /datum/mil_branch/larmarine)
 
 /datum/gear/mask/bandana
 	allowed_branches = CASUAL_BRANCHES

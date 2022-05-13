@@ -95,10 +95,10 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
 	allowed_branches = list(
-		/datum/mil_branch/civilian
+		/datum/mil_branch/lord
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/lord/scientist
 	)
 
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,

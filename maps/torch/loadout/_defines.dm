@@ -60,9 +60,9 @@
 
 #define UNIFORMED_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine)
 
-#define CASUAL_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/solgov)
+#define CASUAL_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
 
-#define CIVILIAN_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/solgov)
+#define CIVILIAN_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
 
 #define LORDANIA_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine)
 

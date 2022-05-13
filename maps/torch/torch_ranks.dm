@@ -9,7 +9,7 @@
 	branch_types = list(
 		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
+		/datum/mil_branch/lord,
 		/datum/mil_branch/army,
 		/datum/mil_branch/larmarine,
 		/datum/mil_branch/alien,
@@ -22,7 +22,7 @@
 		/datum/mil_branch/army,
 		/datum/mil_branch/larmarine,
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
+		/datum/mil_branch/lord,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/terran
@@ -38,7 +38,7 @@
 			/datum/mil_branch/larmarine,
 			/datum/mil_branch/larfleet,
 			/datum/mil_branch/civilian,
-			/datum/mil_branch/solgov,
+			/datum/mil_branch/lord,
 			/datum/mil_branch/skrell_fleet,
 			/datum/mil_branch/terran
 		)
@@ -59,7 +59,7 @@
 /datum/mil_branch/larfleet
 	name = "Lordanian Sovereign Systems Fleet"
 	name_short = "LSSF"
-	email_domain = "dagon.lssf.sec"
+	email_domain = "antar.lssf.mil"
 
 	rank_types = list(
 		/datum/mil_rank/larfleet/e1,
@@ -170,19 +170,19 @@
 		/datum/mil_rank/civ/synthetic
 	)
 
-/datum/mil_branch/solgov
-	name = "SolGov Employee"
-	name_short = "SCG"
-	email_domain = "dagon.exp"
+/datum/mil_branch/lord
+	name = "Lordanian Systems Employee"
+	name_short = "LSS"
+	email_domain = "antar.lordgov"
 
 	rank_types = list(
-		/datum/mil_rank/sol/gov,
-		/datum/mil_rank/sol/scientist
+		/datum/mil_rank/lord/gov,
+		/datum/mil_rank/lord/scientist
 	)
 
 	spawn_rank_types = list(
-		/datum/mil_rank/sol/gov,
-		/datum/mil_rank/sol/scientist
+		/datum/mil_rank/lord/gov,
+		/datum/mil_rank/lord/scientist
 	)
 
 /datum/mil_branch/terran
@@ -237,7 +237,7 @@
 /datum/mil_branch/larmarine
 	name = "Lordanian Marine Corps"
 	name_short = "LMC"
-	email_domain = "dagon.oorah.mil"
+	email_domain = "antar.oorah.mil"
 
 	rank_types = list(
 		/datum/mil_rank/larmarine/e1,
@@ -776,22 +776,17 @@
 	cit_rank = 1
 
 /*
- *  SolGov Employees
+ *  Lordanian Employees
  *  ====== =========
  */
 
-/datum/mil_rank/sol/gov
-	name = "Sol Gov Representative"
-	name_short = "SGR"
-	accessory = list(/obj/item/clothing/accessory/badge/solgov/representative)
-	pow_cat = 5
-	cit_rank = 5
+/datum/mil_rank/lord/gov
+	name = "Sov Lordania Representative"
+	name_short = "SLR"
 
-/datum/mil_rank/sol/scientist
+/datum/mil_rank/lord/scientist
 	name = "Government Scientist"
 	name_short = "GOVT"
-	pow_cat = 3
-	cit_rank = 4
 
 /*
  *  Terrans
