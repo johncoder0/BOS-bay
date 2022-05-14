@@ -1,4 +1,4 @@
-# Bastion of Slavs
+# BoS-BAY - Сломавшийся Чатик Edition
 Модификация модификации, да. Вы всё правильно поняли.
 
 Оригинал - [Baystation12](https://github.com/baystation12/baystation12)

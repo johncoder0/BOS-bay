@@ -63,7 +63,7 @@
 				if(CanUseTopic(user))
 					pref.flavor_texts[href_list["flavor_text"]] = msg
 			if("naked")
-				var/msg = sanitize(input(usr,"Update your naked description. Feel free to put OOC and NSFW information here.", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Мне было слишком лень удалять это", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
 				pref.flavor_texts[href_list["flavor_text"]] = msg
 			else
 				var/msg = sanitize(input(usr,"Set the flavor text for your [href_list["flavor_text"]].","Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
