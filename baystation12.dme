@@ -167,7 +167,6 @@
 #include "code\bos\modules\guns\revolver.dm"
 #include "code\bos\modules\mob\cat.dm"
 #include "code\bos\modules\mob\language\lordanian.dm"
-#include "code\bos\modules\power\lighting.dm"
 #include "code\controllers\admin.dm"
 #include "code\controllers\autotransfer.dm"
 #include "code\controllers\communications.dm"

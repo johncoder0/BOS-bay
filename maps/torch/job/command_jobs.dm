@@ -25,7 +25,10 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/captain/get_description_blurb()
-	return "-"
+	return "Ты - Командующий Офицер. Выше тебя только Оперативный Штаб, военно-полевой суд, ну и морально-этические нормы, с чем ты можешь спорить.\
+	Ты опытный и эффективный руководитель и менеджер прекрасного корабля Лордании, и именно с тебя будет спрос за всё, что происходит с ним, либо на нём.\
+	Твоя задача состоит в том, чтобы [GLOB.using_map.full_name] в полной мере выполнял свою боевую задачу - разведку территорий.\
+	 Пользуйтесь помощью Первого Офицера, глав отделов , (и вашего политрука) для эффективного управления кораблём, но не пренебрегайте собственным опытом."
 /datum/job/captain/post_equip_rank(var/mob/person, var/alt_title)
 	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
 	captain_announcement.Announce("All hands, [alt_title || title] [person.real_name] on deck!", new_sound = announce_sound)
@@ -85,7 +88,11 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hop/get_description_blurb()
-	return "-"
+	return "Ты - Первый ОФицер.\
+	Будучи опытным старшим офицером, ты являешься буквально вторым по значимости на всём корабле, с вытекающей ответственностью за бесперебойную работу на корабле, \
+	под взором командующего офицера, которого ты заменяешь в его отсутствии.\
+	Твоей основной обязанностью является (!)непосредственное управление руководителями отделов и всеми теми, кто не перебывает в каком-либо отделе.\
+	Вы также несете ответственность за подрядчиков и пассажиров на борту корабля. Не пренебрегайте помощью Мостовых Офицеров и политрука!"
 
 /datum/job/rd
 	title = "Research Director"
@@ -313,7 +320,7 @@
 	return "-"
 
 /datum/job/bridgeofficer
-	title = "Second Officer"
+	title = "Bridge Officer"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 3

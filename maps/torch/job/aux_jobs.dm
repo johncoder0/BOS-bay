@@ -122,7 +122,7 @@
 
 /datum/job/nt_pilot
 	title = "Pilot"
-	supervisors = "the Executive Officer "
+	supervisors = "the Gunnery Chief"
 	department = "Auxiliary"
 	department_flag = SUP
 	total_positions = 1
@@ -151,6 +151,11 @@
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
+
+/datum/job/pilot/get_description_blurb()
+	return "Вы - Пилот. Вашим прямым начальством является Мастер Артилерии.\
+	В Ваши обязанности входит управление и обслуживание корабельных шаттлов на операциях морпехов и экспедиционных миссиях научного персонала.\
+	Выпивайте в баре, заботьтесь о шаттлах, как о своих детях, будьте самым быстрым пилотом во всей Лордании."
 
 	//////
 ///SERVICE///

@@ -46,7 +46,10 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/senior_engineer/get_description_blurb()
-	return "You are the Senior Engineer. You are a veteran SNCO. You are subordinate to the Chief Engineer though you may have many years more experience than them and your subordinates are the rest of engineering. You should be an expert in practically every engineering area and familiar and possess leadership skills. Coordinate the team and ensure the smooth running of the department along with the Chief Engineer."
+	return "Вы - Старший Инженер. Вашим прямым начальством является Главный Инженер, в то время как Вашими подчиненными являются остальные инженеры.\
+	Несмотря на это, у Вас может быть больше практического опыта, чем у Главного Инженера.\
+	Вы должны быть как минимум экспертом в широком списке инженерных специальностей.\
+	Координируйте отдел вместе с Главным Инженером, обеспечивая слаженную работу всего департамента, словно огромного механизма."
 
 /datum/job/engineer
 	title = "Engineer"
@@ -101,8 +104,9 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/engineer/get_description_blurb()
-	return "You are an Engineer. You operate under one of many titles and may be highly specialised in a specific area of engineering. You probably have at least a general familiarity with most other areas though this is not expected. You are subordinate to the Senior Engineer and the Chief Engineer and are expected to follow them."
-
+	return "Вы - Инженер. Вашим прямым начальством является Старший и Главный Инженер.\
+	Вы можете быть узкоспециализированным специалистом в определенной области инженерии,\
+	но в тоже время быть в общих чертах знакомы с большинством других областей, хотя этого и не ожидается."
 /datum/job/engineer_trainee
 	title = "Engineer Trainee"
 	department = "Engineering"
@@ -152,7 +156,9 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/engineer_trainee/get_description_blurb()
-	return "You are an Engineer Trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard."
+	return "Вы - Инженер-Стажер. Вашим прямым начальством являются все остальные члены инженерного отдела,\
+	хотя приказы Старшего и Главного инженера Вы должны выполнять с приоритетом.\
+	Вы постигаете искусство управления различными бортовыми системами от более опытных коллег. Постарайтесь ничего не взорвать!"
 
 /datum/job/roboticist
 	title = "Roboticist"
@@ -196,4 +202,6 @@
 	minimal_access = list()
 
 /datum/job/roboticist/get_description_blurb()
-	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Corporate Liaison and the Chief Engineer."
+	return "Вы - Робототехник. Вашим прямым начальством является Старший и Главный инженеры.\
+	 В Ваши обязанности входит создание, обслуживание и апгрейд корабельных синтов и разумных существ с Полным Протезом Тела.\
+	 Кроме этого, Вы вольны создавать Экзокостюмы, называемые мехами, а также небольших ботов для различных отделов."
