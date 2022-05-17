@@ -199,7 +199,7 @@ var/list/obj/machinery/newscaster/allCasters = list() //Global list that will co
 	if(istype(user, /mob/living/carbon/human) || istype(user,/mob/living/silicon) )
 		var/mob/living/human_or_robot_user = user
 		var/dat
-		dat = text("<HEAD><TITLE>Newscaster</TITLE></HEAD><H3>Newscaster Unit #[src.unit_no]</H3>")
+		dat = text("<meta charset='utf-8'/><HEAD><TITLE>Newscaster</TITLE></HEAD><H3>Newscaster Unit #[src.unit_no]</H3>")
 
 		src.scan_user(human_or_robot_user) //Newscaster scans you
 
@@ -444,7 +444,6 @@ var/list/obj/machinery/newscaster/allCasters = list() //Global list that will co
 				dat+="<A href='?src=\ref[src];setScreen=[0]'>Return</A>"
 			else
 				dat+="I'm sorry to break your immersion. This shit's bugged. Report this bug to Agouri, polyxenitopalidou@gmail.com"
-
 
 		human_or_robot_user << browse(dat, "window=newscaster_main;size=400x600")
 		onclose(human_or_robot_user, "newscaster_main")

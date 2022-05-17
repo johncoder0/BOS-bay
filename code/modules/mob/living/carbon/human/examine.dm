@@ -384,11 +384,11 @@
 	HTML += "<a href='byond://?src=\ref[src];flavor_change=feet'>Feet:</a> "
 	HTML += TextPreview(flavor_texts["feet"])
 	HTML += "<br>"
-	HTML += "<a href='byond://?src=\ref[src];flavor_change=naked'>Naked (NSFW):</a> "
-	HTML += TextPreview(flavor_texts["naked"])
-	HTML += "<br>"
-	HTML += "<a href='byond://?src=\ref[src];flavor_change=NSFW/OOC'>OOC:</a> "
-	HTML += TextPreview(flavor_texts["NSFW/OOC"])
+//	HTML += "<a href='byond://?src=\ref[src];flavor_change=naked'>Naked (NSFW):</a> "
+//	HTML += TextPreview(flavor_texts["naked"])
+//	HTML += "<br>"
+	HTML += "<a href='byond://?src=\ref[src];flavor_change=OOC'>OOC:</a> "
+	HTML += TextPreview(flavor_texts["OOC"])
 	HTML += "<br>"
 	HTML += "<hr />"
 	HTML +="<a href='?src=\ref[src];flavor_change=done'>\[Done\]</a>"
