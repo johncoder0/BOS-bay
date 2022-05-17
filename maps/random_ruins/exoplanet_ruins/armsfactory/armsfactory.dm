@@ -18,7 +18,6 @@
 	name = "LRA Arms Factory"
 	archetype = /decl/submap_archetype/armsfactory
 
-
 /datum/job/submap/armsfactory_loyalengi
 	title = "LRA Weapons Engineer"
 	info = "Ты - оружейник завода, принадлежащего Лорданианской Республиканской Армиии, мятежным силам в стане Суверенной Лордании.\
@@ -71,10 +70,10 @@
 	suit = /obj/item/clothing/suit/armor/pcarrier/medium
 
 /obj/effect/submap_landmark/spawnpoint/armsfactory_loyalengi
-	name = "LRA Weapons Engineer"
+	name = "Weapons Engineer"
 
 /obj/effect/submap_landmark/spawnpoint/armsfactory_loyalguard
-	name = "LRA Guard"
+	name = "Guard"
 
 // Areas //
 /area/map_template/armsfactory

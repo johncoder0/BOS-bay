@@ -1,4 +1,3 @@
-"aa" = (/turf/simulated/wall/r_wall,/area/map_template/armsfactory/engineering)
 "ab" = (/obj/effect/paint/brown,/turf/simulated/wall/r_wall,/area/template_noop)
 "ac" = (/obj/effect/paint/brown,/turf/simulated/wall/r_wall,/area/map_template/armsfactory/command)
 "ad" = (/obj/machinery/door/firedoor,/obj/effect/wallframe_spawn/reinforced_phoron,/obj/effect/paint/brown,/turf/simulated/floor/plating,/area/map_template/armsfactory/command)
@@ -8,7 +7,6 @@
 "ah" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/implantcase/imprinting,/obj/item/weapon/implantcase/imprinting,/obj/item/weapon/implantcase/imprinting,/obj/item/weapon/implanter,/obj/effect/floor_decal/corner/red{dir = 9},/obj/effect/floor_decal/corner/red{icon_state = "corner_white"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/tcomms)
 "ai" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/implantpad,/obj/item/weapon/reagent_containers/syringe/drugs,/obj/item/weapon/reagent_containers/syringe/drugs,/obj/item/weapon/reagent_containers/syringe/drugs,/obj/machinery/alarm{locked = 0; pixel_y = 20},/obj/effect/floor_decal/corner/red{dir = 5},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/tcomms)
 "aj" = (/obj/structure/catwalk,/turf/simulated/floor/exoplanet/concrete,/area/template_noop)
-"ak" = (/obj/effect/paint/brown,/turf/simulated/wall,/area/map_template/armsfactory/tcomms)
 "al" = (/obj/machinery/power/solar,/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/template_noop)
 "am" = (/obj/effect/floor_decal/corner/red{dir = 9},/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/tcomms)
 "an" = (/obj/structure/table/steel_reinforced,/obj/effect/floor_decal/corner/red{dir = 5},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/tcomms)
@@ -64,7 +62,6 @@
 "bl" = (/obj/effect/floor_decal/techfloor{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/commons)
 "bm" = (/obj/machinery/door/firedoor,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/wallframe_spawn/reinforced_phoron,/obj/effect/paint/brown,/turf/simulated/floor/plating,/area/map_template/armsfactory/engineering)
 "bn" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/command)
-"bo" = (/obj/effect/floor_decal/corner/research{dir = 10},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 1},/obj/structure/reagent_dispensers/acid{step_y = 31},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/engineering)
 "bp" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/item/device/radio/intercom{dir = 1; pixel_y = -28},/obj/effect/floor_decal/corner/brown{dir = 1},/obj/effect/floor_decal/techfloor{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/command)
 "bq" = (/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/atmospherics)
 "br" = (/turf/simulated/floor/carpet/green,/area/map_template/armsfactory/messhall)
@@ -134,9 +131,9 @@
 "cD" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/engineering)
 "cE" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/atmospherics)
 "cF" = (/obj/effect/floor_decal/techfloor/hole/right,/obj/effect/floor_decal/techfloor,/obj/effect/floor_decal/corner/brown{dir = 5},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/command)
-"cG" = (/obj/machinery/light/small{icon_state = "bulb1"; dir = 8},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
+"cG" = (/obj/machinery/light/small{icon_state = "bulb1"; dir = 8},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/obj/effect/submap_landmark/spawnpoint/armsfactory_loyalguard{name = "Guard"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
 "cH" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{icon_state = "intact"; dir = 9},/obj/machinery/atmospherics/unary/outlet_injector{frequency = 1441; id = "co2n"},/turf/simulated/floor/reinforced/oxygen,/area/map_template/armsfactory/atmospherics)
-"cI" = (/obj/machinery/light/small{dir = 4},/obj/effect/floor_decal/techfloor{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
+"cI" = (/obj/machinery/light/small{dir = 4},/obj/effect/floor_decal/techfloor{dir = 4},/obj/effect/submap_landmark/spawnpoint/armsfactory_loyalengi{name = "Weapons Engineer"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
 "cJ" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 5; icon_state = "intact"},/obj/machinery/atmospherics/unary/outlet_injector{frequency = 1441; id = "cco2n"},/turf/simulated/floor/reinforced/carbon_dioxide,/area/map_template/armsfactory/atmospherics)
 "cK" = (/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/exoplanet/concrete,/area/template_noop)
 "cL" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/atmospherics)
@@ -180,8 +177,8 @@
 "dx" = (/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/door/airlock/multi_tile/mining,/obj/effect/floor_decal/corner/brown,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory)
 "dy" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/reagent_dispensers/fueltank,/obj/machinery/light{dir = 8},/obj/effect/floor_decal/corner/orange/border{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/engineering)
 "dz" = (/obj/machinery/door/firedoor,/obj/effect/wallframe_spawn/reinforced_phoron,/obj/effect/paint/brown,/turf/simulated/floor/plating,/area/map_template/armsfactory/atmospherics)
-"dA" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/brown,/obj/effect/floor_decal/techfloor{dir = 10},/obj/effect/submap_landmark/spawnpoint/armsfactory_loyalguard,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
-"dB" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/brown,/obj/effect/floor_decal/techfloor{dir = 6},/obj/effect/submap_landmark/spawnpoint/armsfactory_loyalguard,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
+"dA" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/brown,/obj/effect/floor_decal/techfloor{dir = 10},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
+"dB" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/brown,/obj/effect/floor_decal/techfloor{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
 "dC" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/freezer,/area/map_template/armsfactory/surgery)
 "dD" = (/obj/machinery/alarm{locked = 0; pixel_y = 20},/obj/effect/floor_decal/corner/research{dir = 10},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/engineering)
 "dE" = (/obj/machinery/door/firedoor,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory)
@@ -296,7 +293,7 @@
 "fJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/freezer,/area/map_template/armsfactory/messhall)
 "fK" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/structure/bed/chair/comfy/brown{dir = 8},/obj/machinery/light{dir = 4},/obj/effect/floor_decal/spline/fancy/wood{icon_state = "spline_fancy"; dir = 5},/turf/simulated/floor/wood,/area/map_template/armsfactory/messhall)
 "fL" = (/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/airlock/engineering{name = "Engineering Lab"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/engineering)
-"fM" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/obj/structure/bed/padded,/obj/item/weapon/bedsheet/brown,/obj/effect/submap_landmark/spawnpoint/armsfactory_loyalengi,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
+"fM" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/obj/structure/bed/padded,/obj/item/weapon/bedsheet/brown,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
 "fN" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/atmospherics)
 "fO" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner/orange{dir = 9},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/atmospherics)
 "fP" = (/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/airlock/engineering{name = "Atmos"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/atmospherics)
@@ -461,7 +458,7 @@
 "iS" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/steel_grid,/area/map_template/armsfactory/armory)
 "iT" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/industrial/warning{dir = 4; icon_state = "warning"},/turf/simulated/floor/tiled/steel_grid,/area/map_template/armsfactory/armory)
 "iU" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/obj/effect/floor_decal/corner/red{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/jail)
-"iV" = (/obj/structure/cable,/obj/machinery/porta_turret{id_tag = "colonyt"},/turf/simulated/floor/exoplanet/concrete,/area/map_template/armsfactory/mineralprocessing)
+"iV" = (/obj/structure/mech_wreckage,/turf/simulated/floor/exoplanet/concrete,/area/map_template/armsfactory/mineralprocessing)
 "iW" = (/obj/machinery/atmospherics/pipe/manifold/visible{dir = 8},/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/atmospherics)
 "iX" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/hygiene/drain,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/jail)
 "iY" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/obj/structure/table/rack,/obj/item/device/scanner/gas,/obj/item/device/scanner/gas,/obj/item/device/scanner/gas,/obj/item/clamp,/obj/item/clamp,/obj/item/clamp,/obj/item/clamp,/obj/effect/floor_decal/corner/orange{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/atmospherics)
@@ -586,7 +583,7 @@
 "lq" = (/obj/structure/closet/crate/medical,/turf/simulated/floor/plating,/area/map_template/armsfactory/commons)
 "lr" = (/obj/effect/floor_decal/techfloor,/obj/effect/floor_decal/techfloor/hole/right,/obj/machinery/light,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory)
 "ls" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/firedoor,/obj/effect/paint/brown,/turf/simulated/floor/plating,/area/map_template/armsfactory/jail)
-"lt" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/decal/cleanable/dirt,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/catwalk,/turf/simulated/floor/exoplanet/concrete,/area/map_template/armsfactory/mineralprocessing)
+"lt" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/decal/cleanable/dirt,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/catwalk,/turf/simulated/floor/exoplanet/concrete,/area/map_template/armsfactory/mineralprocessing)
 "lu" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/catwalk,/obj/effect/floor_decal/industrial/warning/dust{dir = 5},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/exoplanet/concrete,/area/map_template/armsfactory/mineralprocessing)
 "lv" = (/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/exoplanet/concrete,/area/map_template/armsfactory/mineralprocessing)
 "lw" = (/obj/machinery/door/firedoor,/obj/effect/wallframe_spawn/reinforced_phoron,/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 8; icon_state = "map"},/obj/effect/paint/brown,/turf/simulated/floor/plating,/area/map_template/armsfactory/airlock)
@@ -604,7 +601,7 @@
 "lK" = (/obj/machinery/atmospherics/omni/filter{tag_east = 2; tag_north = 3; tag_west = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/atmospherics)
 "lL" = (/obj/machinery/atmospherics/omni/filter{tag_east = 2; tag_north = 5; tag_west = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/atmospherics)
 "lM" = (/obj/machinery/airlock_sensor{frequency = 2222; id_tag = "playablecolonymain_sensor_chamber"; pixel_x = 22},/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 2; frequency = 2222; id_tag = "playablecolonymain_pump"; power_rating = 25000; tag = "playablecolonymain_pump"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/airlock)
-"lN" = (/turf/simulated/wall/r_wall,/area/map_template/armsfactory/medbay)
+"lN" = (/obj/effect/paint/brown,/obj/structure/reagent_dispensers/acid,/turf/simulated/wall/r_wall,/area/map_template/armsfactory/engineering)
 "lO" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/jail)
 "lP" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/obj/effect/floor_decal/corner/red{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory)
 "lQ" = (/obj/machinery/portable_atmospherics/canister/air/airlock,/obj/machinery/atmospherics/portables_connector,/obj/machinery/access_button/airlock_interior{frequency = 2222; master_tag = "playablecolonymain"; pixel_x = -22; pixel_y = 5},/obj/effect/floor_decal/corner/yellow{icon_state = "corner_white"; dir = 5},/obj/machinery/airlock_sensor/airlock_interior{frequency = 2222; id_tag = "playablecolonymain_sensor_interior"; pixel_x = -22},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/airlock)
@@ -701,7 +698,6 @@
 "nE" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/light{dir = 4},/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 1; icon_state = "railing0-1"},/obj/structure/closet/emcloset,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/airlock)
 "nF" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/obj/effect/floor_decal/corner/research{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory)
 "nG" = (/obj/structure/table/rack/shelf,/obj/item/weapon/storage/box/ammo/machine_pistol,/obj/item/weapon/storage/box/ammo/machine_pistol,/turf/simulated/floor/tiled/steel_grid,/area/map_template/armsfactory/armory)
-"nH" = (/obj/effect/paint/brown,/obj/effect/paint/brown,/turf/simulated/wall/r_wall,/area/template_noop)
 "nI" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/door/airlock/glass/civilian,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
 "nJ" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/portable_atmospherics/hydroponics,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/hydroponics)
 "nK" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light,/turf/simulated/floor/exoplanet/concrete,/area/map_template/armsfactory/mineralprocessing)
@@ -793,13 +789,11 @@
 "NK" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/jail)
 "Og" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"; tag = "icon-railing0 (EAST)"},/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/concrete,/area/map_template/armsfactory/mineralprocessing)
 "Ot" = (/turf/simulated/floor/tiled/white,/area/map_template/armsfactory/bathroom)
-"Po" = (/turf/simulated/wall/r_wall,/area/map_template/armsfactory)
 "PD" = (/obj/machinery/r_n_d/destructive_analyzer,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/engineering)
 "RR" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 5},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/hydroponics)
 "Te" = (/obj/structure/grille,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/obj/structure/grille,/turf/simulated/floor/exoplanet/concrete,/area/template_noop)
 "Vk" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/window/reinforced,/obj/machinery/constructable_frame/machine_frame,/obj/item/stack/cable_coil,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/hydroponics)
 "VQ" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/command)
-"Wh" = (/obj/machinery/turretid{pixel_x = -5; id_tag = "colonyt"},/obj/effect/paint/brown,/turf/simulated/wall/r_wall,/area/map_template/armsfactory/hydroponics)
 "WV" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 1},/obj/effect/floor_decal/corner/red{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory)
 "Xh" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 4},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/hydroponics)
 "YV" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/hydroponics)
@@ -807,14 +801,14 @@
 (1,1,1) = {"
 aqafafafafafafafafafafafafafafafafafafajaqadadadadadadadacaqaeaeaeaeaeaqaqaqaqaq
 aqafIAaMalaMalaMalaMalaMalaMalaMalaMalaMadadaxavagayaAaDacacaeahaianaeaqaqaqaqaq
-aqafIAaZalaZalaZalaZalaZalaZalaZalaZalaZadmiapaRaVaWaXaVaYbbakamasaEaeaqaqaqaqaq
+aqafIAaZalaZalaZalaZalaZalaZalaZalaZalaZadmiapaRaVaWaXaVaYbbaeamasaEaeaqaqaqaqaq
 aqafIAaZalaZalaZalaZalaZalaZalaZalaZalaZhRbsaCbxbnmxbfbkbkbpmzbubvbwaeaqaqaqaqaq
 aqafbcaZalaZalaZalaZalaZalaZalaZalaZalaZbibgaCnDbDbEbUbCacacaebXbGcjaeaqaqaqaqaq
 aqafIAbealaZalaZalaZalaZalaZalaZalaZalaZbimmaCnDnNbEcknfacaHaeaeaeaeaecdcqcqcqcr
 aqafIAbealaZalaZalaZalaZalaZalaZalaZalaZbimiaCbxmlVQdadcaceGaccfdndndndnehehehcs
-aqafIAbealaZalaZalaZalaZbBbIbMbIbRbTbMcibicnaTcxcCcFbKbVPoeDmCeZeZfcfceZeZfcfccs
-aqafajcKcPdldmelbMdlcPeociararaLbmaLarararaaarararardxdElNaubzbzauauawbZawawfccs
-aqabababababababababepabewarbAbtdGcbcamLtebodDfdGtaNdIgtccdRdUdVdWaBebdKdLawdFcs
+aqafIAbealaZalaZalaZalaZbBbIbMbIbRbTbMcibicnaTcxcCcFbKbVbdeDmCeZeZfcfceZeZfcfccs
+aqafajcKcPdldmelbMdlcPeociararaLbmaLararlNararararardxdEauaubzbzauauawbZawawfccs
+aqabababababababababepabewarbAbtdGcbcamLtetedDfdGtaNdIgtccdRdUdVdWaBebdKdLawdFcs
 aqaFbHbSbHbJbWbLbJbYbNaFeLarcgbObPbQheazPDnLEknCnMaNeketeceeefegezexeFdCdNawfccs
 aqaFcelcchaFcAcHaFcJdbaFfiardydZdZdZeMazdjdYnunCKcaNdHdOcceSeOeYeaaBejdQawawfccs
 aqaFctcucvaFcvcyaFcycvaFczaFeHcwcDcTeMazatnLeqnCdZaNfvfxaBaBaBaBaBaBaGaGawfcfccs
@@ -830,7 +824,7 @@ aFaFaFaFaFaFaFaFaFaFaFaFaFaFdshwhAaPaPaPaPaPaPaPjRaohWhYaQiRjahyiOjjnvjcabajaqmK
 aUhBhLieieifaUhChQiniuivixhMlsicibaPjkaPidaPijaPksaodtiEigjljsimhSjtjelqabajaqmK
 aUiiishViGiTiziUiHiIiXiJkFiZhriLihaPbyaPOtaPbyaPjdjpdphOaQjuiOiPhIjvlyiOabajaqmK
 aUiAiSkXkXjfaUjhjijmjojrjyjzlsjgirjFjHjIjJjwjLjnjMkTjqjNaQjEjGhTiOkancblabajaqmK
-aUkpjxnGkXjSaUgvhrhrhrjAhrhrhrjBjPaPioiyipjDlIaPjQlkaoyNaQaQaQaQaQaQaSaSnHajaqcs
+aUkpjxnGkXjSaUgvhrhrhrjAhrhrhrjBjPaPioiyipjDlIaPjQlkaoyNaQaQaQaQaQaQaSaSabajaqcs
 aUkrjWkXkXjVaUjZkukOhrlfWVoDljllhAaPaPaPaPaPaPaPlmaolphOnglxkfklkmkxBcbabaajaqcs
 aUJeitbjkXjYaUlWNKlOjTlPoEoFgDdulYiCdqdrfXoGoHiDmydugaiEjUmEmFmGmHkERRMdlBfcaqcs
 aUmImJkXkXjfaUmMmNkvhrmAoIlrhomRmSkbhodwhuoIoJiFmTmUmVmWngkckdkemXkWYVKKlBfcaqcs
@@ -838,7 +832,7 @@ aUlHgldXmYkGaUdsdsdsdsbdbdbdbdaJaJbdbdkIbdbdbdkgbdbdmBmjbakjkkVkKnvJYVKKlBfcaqcs
 aUaUaUaUaUaUaUnxjCnTkKNfkMkNmPkRgQkYknkqktbdkzgokAkBiMkCbakjkjGUkkufYVtzbaeZaqcs
 mkkLorkLkLbFmfmnjCkZlakLlgvRkLkLgRbhkwkynrbdkPnkkQlbiQkSbanlkjkVnbnnYVDjbaeZaqcs
 vkkLkLkLkLkLkLmnjClilakLlnltlulvlXbhlwnVmwbdaJbdmqbdnQmobakjkjleneyEYVKKlBeZaqcs
-vkkLbFkLkLbFkLmnkolzlakLlAiVlClDnaoymantnOlJlMbhlQlRninjWhlovtGUkkufYVKKlBfcaqcs
+vkkLbFkLkLbFkLmnkolzlakLlAiVlClDnaoymantnOlJlMbhlQlRninjbalovtGUkkufYVKKlBfcaqcs
 JNkLlakLkLkLkLmnjCOglalalSlTlUlVozoAlZlhoumbmgmhmrmsmOnEIXkjkjLTneLQXhKKlBeZaqcs
 vklabFkLkLbFkLnonXmQkLlalalalalagSoCovowoxnSnUmunWoaobocbanlkjnBnsnJtIHybaeZaqcs
 npnpnKkLkLkLnKndodoeoeofogohogoijbmvokbhmwbhmwbhnYmDnhnwbababalBlBbabababaotaqcs
