@@ -1,18 +1,18 @@
 /obj/item/clothing/suit/storage/terran
-	name = "master UCGNF jacket"
+	name = "master ICCGNF jacket"
 	icon = 'maps/torch/bos/icons/obj/obj_suit_terran.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_suit_terran.dmi')
 
 //Service
 
 /obj/item/clothing/suit/storage/terran/service/navy
-	name = "UCGNF coat"
-	desc = "A UCG National Fleet service coat. Black and undecorated."
+	name = "ICCGNF coat"
+	desc = "A ICCG National Fleet service coat. Black and undecorated."
 	icon_state = "terranservice"
 
 /obj/item/clothing/suit/storage/terran/service/navy/command
-	name = "UCGNF command coat"
-	desc = "An UCG National Fleet service command coat. White and undecorated."
+	name = "ICCGNF command coat"
+	desc = "An ICCG National Fleet service command coat. White and undecorated."
 	icon_state = "terranservice_comm"
 
 //dress
@@ -29,11 +29,11 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_RANK)
 
 /obj/item/clothing/suit/dress/terran/navy
-	name = "UCGNF dress cloak"
-	desc = "A black UCG National Fleet dress cloak with red detailing. So sexy it hurts."
+	name = "ICCGNF dress cloak"
+	desc = "A black ICCG National Fleet dress cloak with red detailing. So sexy it hurts."
 	icon_state = "terrandress"
 
 /obj/item/clothing/suit/dress/terran/navy/command
-	name = "UCGNF command dress cloak"
-	desc = "A black UCG National Fleet dress cloak with gold detailing. Smells like ceremony."
+	name = "ICCGNF command dress cloak"
+	desc = "A black ICCG National Fleet dress cloak with gold detailing. Smells like ceremony."
 	icon_state = "terrandress_comm"

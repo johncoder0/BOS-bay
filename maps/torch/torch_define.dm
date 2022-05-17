@@ -9,18 +9,18 @@
 	accessible_z_levels = list("1"=1,"2"=3,"3"=1,"4"=1,"5"=1,"6"=1,"9"=30)
 	overmap_size = 35
 	overmap_event_areas = 34
-	usable_email_tlds = list("dagon.nt.exp", "dagon.sec", "freemail.net", "dagon.exp")
+	usable_email_tlds = list("antar.lssf.mil", "antar.lordgov", "freemail.net", "gilgamesh.navy.mil", "antar.oorah.mil")
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
 	station_name  = "LRS Antares"
-	station_short = "Dagon"
+	station_short = "Antares"
 	dock_name     = "TBD"
 	boss_name     = "Operational Headquarters"
 	boss_short    = "OpHQ"
-	company_name  = "Lordanian Sovereign Systems Army"
-	company_short = "LSSA"
+	company_name  = "Lordanian Sovereign Systems Fleet"
+	company_short = "LSSА"
 
 	map_admin_faxes = list("Operational Headquarters")
 

@@ -68,7 +68,7 @@
 	name = "Nanotrasen EP-24"
 	desc = "An energy gun with an experimental miniaturized reactor. Worry about the cancer later!"
 	icon = 'icons/obj/guns/adv_egun.dmi'
-	icon_state = "nucgun"
+	icon_state = "nICCGun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
@@ -107,20 +107,20 @@
 /obj/item/weapon/gun/energy/gun/nuclear/proc/get_charge_overlay()
 	var/ratio = power_supply.percent()
 	ratio = round(ratio, 25)
-	return "nucgun-[ratio]"
+	return "nICCGun-[ratio]"
 
 /obj/item/weapon/gun/energy/gun/nuclear/proc/get_reactor_overlay()
 	if(fail_counter)
-		return "nucgun-medium"
+		return "nICCGun-medium"
 	if (power_supply.percent() <= 50)
-		return "nucgun-light"
-	return "nucgun-clean"
+		return "nICCGun-light"
+	return "nICCGun-clean"
 
 /obj/item/weapon/gun/energy/gun/nuclear/proc/get_mode_overlay()
 	var/datum/firemode/current_mode = firemodes[sel_mode]
 	switch(current_mode.name)
-		if("stun") return "nucgun-stun"
-		if("kill") return "nucgun-kill"
+		if("stun") return "nICCGun-stun"
+		if("kill") return "nICCGun-kill"
 
 /obj/item/weapon/gun/energy/gun/nuclear/on_update_icon()
 	var/list/new_overlays = list()

@@ -97,7 +97,7 @@
 	filled = TRUE
 
 /obj/item/weapon/storage/lunchbox/TCC
-	name = "\improper UCG lunchbox"
+	name = "\improper ICCG lunchbox"
 	icon_state = "lunchbox_tcc"
 	item_state = "toolbox_syndi"
 	desc = "A little lunchbox. This one is branded with the flag of the United Colonies of Gilgamesh"

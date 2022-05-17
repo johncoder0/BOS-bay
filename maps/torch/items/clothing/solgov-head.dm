@@ -17,7 +17,7 @@
 
 /obj/item/clothing/head/soft/solgov/veteranhat
 	name = "veteran hat"
-	desc = "It's a tacky black ballcap bearing the yellow service ribbon of the Aigaion Conflict."
+	desc = "It's a tacky black ballcap bearing the yellow service ribbon of the Gaia Conflict."
 	icon_state = "cap_veteran"
 
 /obj/item/clothing/head/soft/solgov/expedition
