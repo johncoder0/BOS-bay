@@ -7,6 +7,7 @@
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
 	whitelisted_species = list(SPECIES_SKRELL)
+	blacklisted_species = null
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_PILOT = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
@@ -28,6 +29,7 @@
 	skill_points = 30
 	is_semi_antagonist = TRUE
 	whitelisted_species = list(SPECIES_SKRELL)
+	blacklisted_species = null
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
@@ -60,3 +62,14 @@
 		var/obj/item/weapon/card/id/C = H.wear_id
 		if(istype(C))
 			C.assignment = skrellsubcaste
+
+/obj/effect/submap_landmark/joinable_submap/skrellscoutship
+	name = "Xilvuxix"
+	archetype = /decl/submap_archetype/skrellscoutship
+
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship
+	name = "Qrri-Zuumqix"
+	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
+	name = "Qrri-Vuxix"

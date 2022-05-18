@@ -1,3 +1,5 @@
+#include "armsfactory_jobs.dm"
+
 /datum/map_template/ruin/exoplanet/armsfactory
 	name = "LRA Arms Factory"
 	id = "armsfactory"

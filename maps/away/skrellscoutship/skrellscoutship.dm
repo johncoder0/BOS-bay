@@ -26,17 +26,6 @@
 		"Skrellian Scout" = list("nav_skrellscout_start")
 	)
 
-/obj/effect/submap_landmark/joinable_submap/skrellscoutship
-	name = "Xilvuxix"
-	archetype = /decl/submap_archetype/skrellscoutship
-
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship
-	name = "Qrri-Zuumqix"
-	movable_flags = MOVABLE_FLAG_EFFECTMOVE
-
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
-	name = "Qrri-Vuxix"
-
 /decl/webhook/submap_loaded/skrell
 	id = WEBHOOK_SUBMAP_LOADED_SKRELL
 
