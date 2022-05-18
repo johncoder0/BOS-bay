@@ -3,8 +3,6 @@
 	total_positions = 5
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "Quill, The Apex and the arkship"
-	info = "By the will of the dead creators, you must reclaim the lost territory of their fallen empire, and re-establish the domain of the Auralis no matter the cost. \
-	Honor their memory, obey your Quill-Captain."
 	whitelisted_species = list(SPECIES_VOX)
 	blacklisted_species = null
 	is_semi_antagonist = TRUE
@@ -31,11 +29,13 @@
 	                    SKILL_CHEMISTRY = SKILL_ADEPT)
 	skill_points = 40
 
+/datum/job/submap/voxship_vox/get_description_blurb()
+	return "По воле мертвых создателей, вы должны вернуть утраченные территории их павшей Империи и восстановить владения Ауралиса, чего бы вам это ни стоило. \
+    Почитайте их память, повинуйтесь своему куиллу."
+
 /datum/job/submap/voxship_vox/doc
 	title = "Shard Biotechnician"
 	total_positions = 2
-	info = "Your sacred duty is to preserve the lives of your ship-band; \
-	save their stacks, stabilize wounded crew, replace missing components and ensure nobody messes with your patients or your workspace."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
@@ -67,6 +67,10 @@
 	                    SKILL_ANATOMY = SKILL_MAX,
 	                    SKILL_CHEMISTRY = SKILL_MAX)
 	skill_points = 26
+
+/datum/job/submap/voxship_vox/doc/get_description_blurb()
+	return "Ваш священный долг - спасать жизни своей группы на вашем корабле, фрегате класса Шард;\
+  Сохраняйте их узлы, стабилизируйте раненых соратников, заменяйте недостающие компоненты и следите за тем, чтобы никто не навредил вашим пациентам или испоганил ваше рабочее место."
 
 /datum/job/submap/voxship_vox/engineer
 	title = "Shard Technician"
@@ -107,16 +111,15 @@
 	                    SKILL_CHEMISTRY = SKILL_ADEPT)
 	skill_points = 26
 
+/datum/job/submap/voxship_vox/engineer/get_description_blurb()
+	return "Вы один из многих миллиардов, кто поддерживал пять священных Ковчегов в рабочем состоянии на протяжении веков, так что ваш фрегат класса Шард - легкая задача по сравнению с ними. \
+    Поддерживайте работоспособность техники, устраняйте повреждения и разбирайте более сложные устройства или артефакты, с которыми сталкиваются аколиты во время своих экспедиций."
+
 /datum/job/submap/voxship_vox/quill
 	title = "Shard Quill"
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/captain
 	supervisors = "The Apex and the arkship"
-	info = "You are the Quill-Captain of a handsome shard-class frigate, a scout vessel for the Ark Fleets of the Vox. \
-	The dead empire is being reborn, new planets settled, alliances made. To one of the five ark admirals you are sworn, and they have your complete loyalty. \
-	The age of stagnancy is over, you have purpose anew, the crew must know this. \
-	Ensure they do not disgrace the memory of the Auralis, that they do not forget the faith, and that new territory is claimed and material secured for the arks. \
-	Measure your discipline lest you be challenged for being too lenient or harsh."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
@@ -148,6 +151,14 @@
 	                    SKILL_ANATOMY = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY = SKILL_EXPERT)
 	skill_points = 30
+
+/datum/job/submap/voxship_vox/quill/get_description_blurb()
+	return "Вы - куилл-капитан великолепного фрегата класса Шард, корабля-разведчика флота Ковчега воксов. \
+    Мертвая империя возрождается, заселяются новые планеты, заключаются союзы между ранее разрозненными кланами. Вы присягнули одному из пяти адмиралов Ковчега, и вы полностью им преданы. \
+    Эпоха застоя закончилась, у вас новая цель, экипаж должен это знать. \
+    Убедитесь, что они не опозорят память Ауралиса, что они не забудут веру, что будут захвачены новые территории и обеспечены материалы для Ковчегов. \
+    Поддерживайте дисциплину, чтобы вас не упрекнули в излишней мягкости или суровости."
+
 
 #define VOXSHIP_OUTFIT_JOB_NAME(job_name) ("Vox Asteroid Base - Job - " + job_name)
 /decl/hierarchy/outfit/job/voxship

@@ -138,6 +138,10 @@
 					SKILL_SCIENCE = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
 
+/datum/job/submap/ascent/get_description_blurb()
+	return "Вы - Гиина с независимого судна Восхождения. Ваша охота привела вас в этот отдаленный сектор, полный ползучих примитивов. Навяжите свою волю, найдите новое гнездо и принесите процветание своему роду. \
+    Контакт с неизвестными, даже для такого могущественной Гиины, как вы, может поставить под угрозу всю вашу родословную, поэтому осторожность не помешает."
+
 /datum/job/submap/ascent/is_position_available()
 	. = ..()
 	if(. && requires_supervisor)
@@ -197,7 +201,6 @@
 	title = "Ascent Alate"
 	total_positions = 6
 	supervisors = "the Gyne"
-	info = "You are an Alate of an independent Ascent vessel. Your Gyne has directed you to this remote sector full of crawling primitives. Follow her instructions and bring prosperity to your nest-lineage."
 	set_species_on_join = SPECIES_MANTID_ALATE
 	requires_supervisor = "Ascent Gyne"
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
@@ -206,20 +209,24 @@
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_ADEPT)
 
+/datum/job/submap/ascent/alate/get_description_blurb()
+	return "Вы - алат независимого судна Восхождения. Ваша Гиина направила вас в этот отдаленный сектор, полный ползающих примитивов. Следуйте ее инструкциям и принесите процветание вашему роду."
+
 /datum/job/submap/ascent/drone
 	title = "Ascent Drone"
 	supervisors = "the Gyne"
 	total_positions = 2
-	info = "You are a Machine Intelligence of an independent Ascent vessel. The Gyne you assist, and her children, have wandered into this sector full of primitive bioforms. Try to keep them alive, and assist where you can."
 	set_species_on_join = /mob/living/silicon/robot/flying/ascent
 	requires_supervisor = "Ascent Gyne"
+
+/datum/job/submap/ascent/drone/get_description_blurb()
+	return "Вы - машинный интеллект независимого судна Восхождения. Гиина, которой вы помогаете, и ее дети забрели в этот сектор, полный примитивных биоформ. Постарайтесь сохранить им жизнь и помогайте Гиине всеми своими силами."
 
 
 /datum/job/submap/ascent/msw
 	title = "Serpentid Adjunct"
 	supervisors = "your Queen"
 	total_positions = 2
-	info = "You are a Monarch Serpentid Worker serving as an attendant to your Queen on this vessel. Serve her however she requires."
 	set_species_on_join = SPECIES_MONARCH_WORKER
 	outfit_type = /decl/hierarchy/outfit/job/monarch
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
@@ -230,11 +237,13 @@
 					SKILL_MEDICAL = SKILL_BASIC)
 	requires_supervisor = "Serpentid Queen"
 
+/datum/job/submap/ascent/msw/get_description_blurb()
+	return "Вы - Рабочий Серпентид-Монарх, служащий прислугой своей королеве на этом судне. Служите ей, как она того потребует и защищайте её всеми силами, ваша верность непоколебима."
+
 /datum/job/submap/ascent/msq
 	title = "Serpentid Queen"
 	supervisors = "the Gyne"
 	total_positions = 1
-	info = "You are a Monarch Serpentid Queen living on an independant Ascent vessel. Assist the Gyne in her duties and tend to your Workers."
 	set_species_on_join = SPECIES_MONARCH_QUEEN
 	outfit_type = /decl/hierarchy/outfit/job/monarch
 	skill_points = 26
@@ -246,13 +255,13 @@
 					SKILL_WEAPONS = SKILL_ADEPT)
 	requires_supervisor = "Ascent Gyne"
 
+/datum/job/submap/ascent/msq/get_description_blurb()
+	return "Вы - Королева Серпентидов-Монархов, живущая на независимом корабле Восхождения. Помогайте Гиине в ее обязанностях и заботьтесь о своих Рабочих. Именно вы выступаете эдаким дипломатом при контакте с примитивными формами жизни."
+
 /datum/job/submap/ascent/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
 	title = "Ascent Tiro"
 	supervisors = "the Khaarmani."
 	total_positions = 2
-	info = "You are an Ascent Tiro, servant to the independent Ascent vessel. How you ended up in this position is known only to you and the Khaarmani. Assist the Gyne and Queen in their duties - or, find a method of escape. \
-	As this is a roleplaying role, you will be expected to uphold a certain bare-minimum standard when playing. If you have devoted yourself to the role of Tiro enough to be considered a <b>Par</b> by the Ascent (and have accepted the equipment), \
-	please note that you will <u>be held to a higher standard</u> in regards to roleplay as them!"
 	outfit_type = /decl/hierarchy/outfit/job/tiro
 	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_VOX_ARMALIS, SPECIES_ADHERENT, SPECIES_MULE)
 	whitelisted_species = null
@@ -266,6 +275,9 @@
 					SKILL_DEVICES = SKILL_BASIC)
 	requires_supervisor = "Ascent Gyne"
 	set_species_on_join = null
+
+/datum/job/submap/ascent/tiro/get_description_blurb()
+	return "Вы - Тиро Восхождения, слуга независимого корабля Восхождения. Как вы оказались в этом положении, известно только вам и Кхаармани. Помогите Гиине и Королеве в их обязанностях. Вы должны заслужить ношение обмундирования и оружия своих хозяев.\ Вы можете попытаться сбежать, но понимаете, что ваши шансы чрезвычайно малы. Возможно, вы сами прониклись идеей превосходства Кхаармани или их технологий в галактике, либо находитесь там не по своей воле, но суть вашего положения одна - служи, повинуйся или будь убит."
 
 /datum/job/submap/ascent/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
 	..()

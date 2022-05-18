@@ -68,7 +68,6 @@
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship/leader
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/vuxix)
-	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_PILOT = SKILL_ADEPT,
@@ -76,6 +75,10 @@
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_ADEPT)
+
+/datum/job/submap/skrellscoutship_crew/leader/get_description_blurb()
+	return "Вы - командир оперативников одной из самых престижных военных организаций в скрелльском пространстве - ОСС./ Вероятно, вы были выбраны как один из самых перспективных командиров для сложной, совместной миссии нескольких ОСС по разведке отдалённого космоса на границах с Восхождением - вашими древними противниками. Ваше судно проводит разведку в приграничных пространствах Лорданианских Суверенных Систем, работает над составлением карты потенциальных опасностей, а также потенциальных союзников для борьбы с ЦПСС и Восхождением./ Руководите своей командой, стройте дисциплину на корабле и убедитесь в том, что вы выполните эту чрезвычайно важную миссию успешно."
+
 
 /datum/job/submap/skrellscoutship_crew
 	title = "Qrri-Zuumqix"
@@ -87,7 +90,6 @@
 	allowed_branches = list(/datum/mil_branch/skrell_fleet)
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
-	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	skill_points = 30
 	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
@@ -95,6 +97,9 @@
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_ADEPT)
+
+/datum/job/submap/skrellscoutship_crew/get_description_blurb()
+	return "Вы - оперативник одной из самых престижных военных организаций в скрелльском пространстве - ОСС. Вероятно, вы были выбраны как один из самых перспективных оперативников для сложной, совместной миссии нескольких ОСС по разведке отдалённого космоса на границах с Восхождением - вашими древними противниками. / Ваше судно проводит разведку в приграничных пространствах Лорданианских Суверенных Систем, работает над составлением карты потенциальных опасностей, а также потенциальных союзников для борьбы с ЦПСС. / Выберите определённую касту, которая поможет вашей команде в борьбе с многочисленными опасностями космоса, и подчиняйтесь своему командиру."
 
 /datum/job/submap/skrellscoutship_crew/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
 	. = ..(H, alt_title, branch, grade)	//passing through arguments
@@ -116,9 +121,9 @@
 		)
 	)
 
-	var/skrellcaste = input(H, "What is your Skrell's Caste?", "SDTF Rank") as null|anything in skrellscoutcastes
+	var/skrellcaste = input(H, "Укажите касту вашего скрелла", "SDTF Rank") as null|anything in skrellscoutcastes
 	if(skrellcaste)
-		var/skrellsubcaste = input(H, "What is your Skrell's Subcaste?", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
+		var/skrellsubcaste = input(H, "Укажите подкасту вашего скрелла", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
 		var/obj/item/weapon/card/id/C = H.wear_id
 		if(istype(C))
 			C.assignment = skrellsubcaste
