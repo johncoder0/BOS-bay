@@ -83,8 +83,8 @@
 /datum/job/submap/skrellscoutship_crew
 	title = "Qrri-Zuumqix"
 	supervisors = "your Qrri-Vuxix"
+	whitelisted_species = list(SPECIES_SKRELL)
 	total_positions = 4
-	whitelisted_species = list("Skrell")
 	branch = /datum/mil_branch/skrell_fleet
 	rank = /datum/mil_rank/skrell_fleet
 	allowed_branches = list(/datum/mil_branch/skrell_fleet)
