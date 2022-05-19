@@ -6,8 +6,6 @@
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/vuxix)
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
-	whitelisted_species = list(SPECIES_SKRELL)
-	blacklisted_species = null
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_PILOT = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
@@ -19,7 +17,6 @@
 	title = "Qrri-Zuumqix"
 	supervisors = "your Qrri-Vuxix"
 	total_positions = 4
-	whitelisted_species = list("Skrell")
 	branch = /datum/mil_branch/skrell_fleet
 	rank = /datum/mil_rank/skrell_fleet
 	allowed_branches = list(/datum/mil_branch/skrell_fleet)
