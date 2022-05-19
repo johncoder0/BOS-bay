@@ -78,7 +78,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	required_language = LANGUAGE_HUMAN_EURO
+	required_language = LANGUAGE_HUMAN_LORD
 
 
 /datum/map/torch
