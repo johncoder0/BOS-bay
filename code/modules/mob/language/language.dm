@@ -123,13 +123,13 @@
 	return scrambled_text
 
 /datum/language/proc/format_message(message, verb)
-	return "[verb], <span class='message'><span class='[colour]'>\"[message]\"</span></span>"
+	return "[verb], <span class='message'><span class='[colour]'>\"[capitalize(message)]\"</span></span>"
 
 /datum/language/proc/format_message_plain(message, verb)
-	return "[verb], \"[message]\""
+	return "[verb], \"[capitalize(message)]\""
 
 /datum/language/proc/format_message_radio(message, verb)
-	return "[verb], <span class='[colour]'>\"[message]\"</span>"
+	return "[verb], <span class='[colour]'>\"[capitalize(message)]\"</span>"
 
 /datum/language/proc/get_talkinto_msg_range(message)
 	// if you yell, you'll be heard from two tiles over instead of one
