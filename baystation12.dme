@@ -3463,7 +3463,6 @@
 #include "maps\torch\job\outfits\sortthislater_outfits.dm"
 #include "maps\torch\job\outfits\supply_outfits.dm"
 #include "maps\torch\job\outfits\torch_outfits.dm"
-#include "maps\torch\language\human\lordanian.dm"
 #include "maps\~mapsystem\map_preferences.dm"
 #include "maps\~mapsystem\map_ranks.dm"
 #include "maps\~mapsystem\maps.dm"
