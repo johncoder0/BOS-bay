@@ -3488,7 +3488,6 @@
 #include "modular_mithra\code\modules\mob\living\carbon\human\species\trait_stuff\weaver_objects.dm"
 #include "modular_mithra\code\modules\reagents\reagent_containers\glass.dm"
 #include "modular_mithra\code\modules\research\designs.dm"
-#include "modular_mithra\code\modules\species\station\station.dm"
 #include "modular_mithra\code\modules\species\station\tajaran.dm"
 #include "modular_mithra\code\modules\sprite_accessories\_accessory_hair.dm"
 #include "modular_mithra\code\modules\sprite_accessories\accessory_tajara.dm"
