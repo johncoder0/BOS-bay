@@ -111,6 +111,7 @@
 	#include "job/outfits/marine_outfits.dm"
 
 	#include "language/human/euro.dm"
+	#include "language/human/lord.dm"
 	#include "language/human/misc/spacer.dm"
 
 	#include "machinery/apc_shuttle.dm"
