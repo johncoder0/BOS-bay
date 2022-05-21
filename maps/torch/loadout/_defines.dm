@@ -58,7 +58,7 @@
 //For members of Command, Command Support and all other officer roles. Basically COMMAND_ROLES and OFFICER_ROLES merged together as a last resort.
 #define COMMANDANDOFFICER_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/scientist, /datum/job/qm, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/doctor/virologist, /datum/job/pathfinder, /datum/job/terrep, /datum/job/terguard)
 
-#define UNIFORMED_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine)
+#define UNIFORMED_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine, /datum/mil_branch/terran)
 
 #define CASUAL_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
 
@@ -66,6 +66,6 @@
 
 #define LORDANIA_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine)
 
-#define TACTICOOL_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine)
+#define TACTICOOL_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine, /datum/mil_branch/terran)
 
-#define MILITARY_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine)
+#define MILITARY_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine, /datum/mil_branch/terran)

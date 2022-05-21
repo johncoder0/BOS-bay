@@ -47,14 +47,14 @@
 	path = /obj/item/clothing/accessory/armor/tag/civ/med
 
 /datum/gear/accessory/tags/marine
-	display_name = "dog tags, solar marine corps"
+	display_name = "dog tags, lordanian marine corps"
 	description = "Plain identification tags made from a durable metal. This one is issued to marines."
 	path = /obj/item/clothing/accessory/badge/lordan/tags/marine
 	allowed_branches = list(/datum/mil_branch/larmarine)
 	cost = 0
 
 /datum/gear/accessory/tags/fleet
-	display_name = "dog tags, expeditionary fleet"
+	display_name = "dog tags, lordanian fleet"
 	description = "Plain identification tags made from a durable metal. This one is issued to fleet."
 	path = /obj/item/clothing/accessory/badge/lordan/tags/fleet
 	allowed_branches = list(/datum/mil_branch/larfleet)

@@ -27,19 +27,19 @@
 	allowed_roles = list(/datum/job/cargo_tech, /datum/job/qm, /datum/job/mining, /datum/job/merchant)
 
 /datum/gear/suit/suit_jacket
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/custom_suit_jacket
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/hoodie
-	allowed_roles = CASUAL_ROLES
+//	allowed_roles = CASUAL_ROLES
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/hoodie_sel
-	allowed_roles = CASUAL_ROLES
+//	allowed_roles = CASUAL_ROLES
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/labcoat
@@ -60,7 +60,7 @@
 /datum/gear/suit/wintercoat
 
 /datum/gear/suit/track
-	allowed_roles = CASUAL_ROLES
+//	allowed_roles = CASUAL_ROLES
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/tactical/pcarrier
