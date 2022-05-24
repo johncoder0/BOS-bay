@@ -50,9 +50,9 @@
 		)
 	)
 
-	var/skrellcaste = input(H, "”кажите касту вашего скрелла", "SDTF Rank") as null|anything in skrellscoutcastes
+	var/skrellcaste = input(H, "What is your Skrell's Caste?", "SDTF Rank") as null|anything in skrellscoutcastes
 	if(skrellcaste)
-		var/skrellsubcaste = input(H, "”кажите подкасту вашего скрелла", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
+		var/skrellsubcaste = input(H, "What is your Skrell's Subcaste?", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
 		var/obj/item/weapon/card/id/C = H.wear_id
 		if(istype(C))
 			C.assignment = skrellsubcaste
