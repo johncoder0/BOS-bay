@@ -120,8 +120,6 @@
 	title = "Ascent Gyne"
 	total_positions = 1
 	supervisors = "nobody but yourself"
-	info = "You are the Gyne of an independent Ascent vessel. Your hunting has brought you to this remote sector full of crawling primitives. Impose your will, found a new nest, and bring prosperity to your lineage. \
-	To come into contact with the unknown, even for a mighty Gyne such as yourself, would put your nest-lineage at risk."
 	outfit_type = /decl/hierarchy/outfit/job/ascent
 	blacklisted_species = null
 	whitelisted_species = null
@@ -137,10 +135,6 @@
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_SCIENCE = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
-
-/datum/job/submap/ascent/get_description_blurb()
-	return "Вы - Гиина с независимого судна Восхождения. Ваша охота привела вас в этот отдаленный сектор, полный ползучих примитивов. Навяжите свою волю, найдите новое гнездо и принесите процветание своему роду. \
-    Контакт с неизвестными, даже для такого могущественной Гиины, как вы, может поставить под угрозу всю вашу родословную, поэтому осторожность не помешает."
 
 /datum/job/submap/ascent/is_position_available()
 	. = ..()
@@ -209,18 +203,12 @@
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_ADEPT)
 
-/datum/job/submap/ascent/alate/get_description_blurb()
-	return "Вы - алат независимого судна Восхождения. Ваша Гиина направила вас в этот отдаленный сектор, полный ползающих примитивов. Следуйте ее инструкциям и принесите процветание вашему роду."
-
 /datum/job/submap/ascent/drone
 	title = "Ascent Drone"
 	supervisors = "the Gyne"
 	total_positions = 2
 	set_species_on_join = /mob/living/silicon/robot/flying/ascent
 	requires_supervisor = "Ascent Gyne"
-
-/datum/job/submap/ascent/drone/get_description_blurb()
-	return "Вы - машинный интеллект независимого судна Восхождения. Гиина, которой вы помогаете, и ее дети забрели в этот сектор, полный примитивных биоформ. Постарайтесь сохранить им жизнь и помогайте Гиине всеми своими силами."
 
 
 /datum/job/submap/ascent/msw
@@ -237,9 +225,6 @@
 					SKILL_MEDICAL = SKILL_BASIC)
 	requires_supervisor = "Serpentid Queen"
 
-/datum/job/submap/ascent/msw/get_description_blurb()
-	return "Вы - Рабочий Серпентид-Монарх, служащий прислугой своей королеве на этом судне. Служите ей, как она того потребует и защищайте её всеми силами, ваша верность непоколебима."
-
 /datum/job/submap/ascent/msq
 	title = "Serpentid Queen"
 	supervisors = "the Gyne"
@@ -254,9 +239,6 @@
 					SKILL_CHEMISTRY = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT)
 	requires_supervisor = "Ascent Gyne"
-
-/datum/job/submap/ascent/msq/get_description_blurb()
-	return "Вы - Королева Серпентидов-Монархов, живущая на независимом корабле Восхождения. Помогайте Гиине в ее обязанностях и заботьтесь о своих Рабочих. Именно вы выступаете эдаким дипломатом при контакте с примитивными формами жизни."
 
 /datum/job/submap/ascent/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
 	title = "Ascent Tiro"
@@ -275,9 +257,6 @@
 					SKILL_DEVICES = SKILL_BASIC)
 	requires_supervisor = "Ascent Gyne"
 	set_species_on_join = null
-
-/datum/job/submap/ascent/tiro/get_description_blurb()
-	return "Вы - Тиро Восхождения, слуга независимого корабля Восхождения. Как вы оказались в этом положении, известно только вам и Кхаармани. Помогите Гиине и Королеве в их обязанностях. Вы должны заслужить ношение обмундирования и оружия своих хозяев.\ Вы можете попытаться сбежать, но понимаете, что ваши шансы чрезвычайно малы. Возможно, вы сами прониклись идеей превосходства Кхаармани или их технологий в галактике, либо находитесь там не по своей воле, но суть вашего положения одна - служи, повинуйся или будь убит."
 
 /datum/job/submap/ascent/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
 	..()
