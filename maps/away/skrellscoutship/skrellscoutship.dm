@@ -51,7 +51,6 @@
 	detail_color = "#7331c4"
 	access = list(access_skrellscoutship)
 
-
 // Skrell clothing
 
 /obj/item/clothing/gloves/thick/swat/skrell
