@@ -4,6 +4,7 @@
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship/leader
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/vuxix)
+	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_PILOT = SKILL_ADEPT,
@@ -21,6 +22,11 @@
 	allowed_branches = list(/datum/mil_branch/skrell_fleet)
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
+	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
+	skill_points = 30
+	is_semi_antagonist = TRUE
+	whitelisted_species = list(SPECIES_SKRELL)
+	blacklisted_species = null
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
@@ -63,3 +69,4 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
+	name = "Qrri-Vuxix"
