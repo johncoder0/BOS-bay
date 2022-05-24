@@ -1,6 +1,7 @@
 #define WEBHOOK_SUBMAP_LOADED_SKRELL "webhook_submap_skrell"
 
 #include "skrellscoutship_areas.dm"
+#include "skrellscoutship_jobs.dm"
 #include "skrellscoutship_shuttles.dm"
 #include "skrellscoutship_radio.dm"
 

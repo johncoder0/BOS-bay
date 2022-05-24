@@ -63,10 +63,10 @@
 /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
 	name = "fleet senior service jacket"
 	desc = "A navy blue LSS Fleet service jacket with silver cuffs."
-	icon_state = "navyservice_po"
-	item_state = "navyservice_po"
-	icon_closed = "navyservice_po"
-	icon_open = "navyservice_po_open"
+	icon_state = "navyservice_snco"
+	item_state = "navyservice_snco"
+	icon_closed = "navyservice_snco"
+	icon_open = "navyservice_snco_open"
 
 /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 	name = "fleet officer's service jacket"
@@ -128,8 +128,8 @@
 /obj/item/clothing/suit/storage/lordan/dress/fleet/po
 	name = "fleet senior dress jacket"
 	desc = "A black dress jacket belonging to the LSS Fleet. Fashionable, for the 24th century at least."
-	icon_state = "fldresspo"
-	item_state = "fldresspo"
+	icon_state = "fldress_snco"
+	item_state = "fldress_snco"
 
 /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	name = "fleet officer dress jacket"

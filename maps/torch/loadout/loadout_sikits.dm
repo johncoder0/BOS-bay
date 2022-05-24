@@ -4,7 +4,7 @@ This is for standard issue sidearms.
 /datum/gear/sikits/guns
 	display_name = "Standard Issue Sidearm"
 	description = "A sidearm for military personnel."
-	cost = 0
+	cost = 5
 	sort_category = "Standard Issue Equipment"
 	path = /obj/item/weapon/gun/projectile/
 	allowed_branches = TACTICOOL_BRANCHES
@@ -20,7 +20,7 @@ This is for standard issue sidearms.
 /datum/gear/sikits/holsters
 	display_name = "Standard Issue Holster"
 	description = "A sidearm holster for military personnel."
-	cost = 0
+	cost = 3
 	sort_category = "Standard Issue Equipment"
 	path = /obj/item/clothing/accessory/storage/holster/
 	allowed_branches = TACTICOOL_BRANCHES

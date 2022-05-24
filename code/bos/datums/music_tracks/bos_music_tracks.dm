@@ -34,3 +34,12 @@
 	url = "https://www.youtube.com/watch?v=8OyBtMPqpNY"
 	volume = 15
 
+/music_track/omnissiah
+	title = "Children of the Omnissiah"
+	album = "Warhammer 40,000: Mechanicus OST"
+	artist = "Guillaume David"
+	song = 'sound/music/bos/omnissiah.ogg'
+	license = /decl/license/grandfathered //fake and gay
+	url = "https://www.youtube.com/watch?v=H-dwMGd7dJQ"
+	volume = 15
+

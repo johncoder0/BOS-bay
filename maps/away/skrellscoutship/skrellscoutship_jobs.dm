@@ -15,15 +15,12 @@
 /datum/job/submap/skrellscoutship_crew
 	title = "Qrri-Zuumqix"
 	supervisors = "your Qrri-Vuxix"
-	whitelisted_species = list(SPECIES_SKRELL)
 	total_positions = 4
 	branch = /datum/mil_branch/skrell_fleet
 	rank = /datum/mil_rank/skrell_fleet
 	allowed_branches = list(/datum/mil_branch/skrell_fleet)
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
-	skill_points = 30
-	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
@@ -66,4 +63,3 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
-	name = "Qrri-Vuxix"

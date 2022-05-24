@@ -5,5 +5,6 @@
 		/music_track/solandterra,
 		/music_track/comeyouknights,
 		/music_track/startthefire,
-		/music_track/endoftheworld
+		/music_track/endoftheworld,
+		/music_track/omnissiah
 	)
