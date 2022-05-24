@@ -1222,7 +1222,6 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellskoutship/observatory)
 "mu" = (
-/obj/effect/submap_landmark/joinable_submap/skrellscoutship,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -1892,7 +1891,6 @@
 "tS" = (
 /obj/structure/bed/padded,
 /obj/structure/curtain/open/bed,
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "uc" = (
@@ -4325,7 +4323,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader,
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/bridge)
 "Qw" = (
@@ -5156,7 +5153,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/structure/bed/roller,
 /turf/simulated/floor/carpet/purple,
 /area/ship/skrellscoutship/crew/rec)
 "Wg" = (
