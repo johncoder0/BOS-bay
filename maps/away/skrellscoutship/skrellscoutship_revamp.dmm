@@ -1036,14 +1036,22 @@
 /turf/simulated/wall/r_titanium,
 /area/ship/skrellscoutship/dock/alt)
 "kT" = (
-/obj/item/clothing/head/helmet/skrell,
-/obj/item/clothing/head/helmet/skrell,
-/obj/item/clothing/accessory/storage/black_vest,
-/obj/item/clothing/accessory/storage/black_vest,
-/obj/item/clothing/accessory/storage/black_vest,
-/obj/item/clothing/accessory/storage/black_vest,
-/obj/item/clothing/head/helmet/skrell,
-/obj/item/clothing/head/helmet/skrell,
+/obj/item/clothing/head/helmet/skrell{
+	pixel_x = -10;
+	pixel_y = 8
+	},
+/obj/item/clothing/head/helmet/skrell{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/obj/item/clothing/head/helmet/skrell{
+	pixel_y = 8;
+	pixel_x = 1
+	},
+/obj/item/clothing/head/helmet/skrell{
+	pixel_x = 7;
+	pixel_y = 8
+	},
 /obj/structure/table/woodentable/ebony,
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/alarm/skrell{
@@ -1052,16 +1060,24 @@
 	pixel_y = 32
 	},
 /obj/item/clothing/suit/armor/pcarrier/tactical{
-	name = "skrellian plate carrier"
+	name = "skrellian plate carrier";
+	pixel_x = 8;
+	pixel_y = -1
 	},
 /obj/item/clothing/suit/armor/pcarrier/tactical{
-	name = "skrellian plate carrier"
+	name = "skrellian plate carrier";
+	pixel_y = -1;
+	pixel_x = 4
 	},
 /obj/item/clothing/suit/armor/pcarrier/tactical{
-	name = "skrellian plate carrier"
+	name = "skrellian plate carrier";
+	pixel_y = -1;
+	pixel_x = -1
 	},
 /obj/item/clothing/suit/armor/pcarrier/tactical{
-	name = "skrellian plate carrier"
+	name = "skrellian plate carrier";
+	pixel_x = -7;
+	pixel_y = -1
 	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
@@ -1082,6 +1098,22 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/item/device/radio/intercom{
 	pixel_y = 23
+	},
+/obj/item/clothing/accessory/storage/black_vest{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/clothing/accessory/storage/black_vest{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/obj/item/clothing/accessory/storage/black_vest{
+	pixel_y = -3;
+	pixel_x = 6
+	},
+/obj/item/clothing/accessory/storage/black_vest{
+	pixel_y = -3;
+	pixel_x = -3
 	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
@@ -1386,6 +1418,9 @@
 	dir = 1;
 	pixel_x = 5;
 	pixel_y = 5
+	},
+/obj/machinery/door/window/brigdoor{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
@@ -1902,6 +1937,12 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/machinery/door/window/brigdoor{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
 "us" = (
@@ -1932,10 +1973,9 @@
 /turf/simulated/wall/r_titanium,
 /area/ship/skrellscoutship/maintenance/atmos)
 "uL" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/canister/air/airlock,
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellscoutship/command/brig)
+/obj/structure/bed/roller,
+/turf/simulated/floor/tiled/skrell/white,
+/area/ship/skrellscoutship/crew/fit)
 "uW" = (
 /obj/machinery/light/skrell{
 	dir = 4
@@ -1965,6 +2005,7 @@
 	pixel_x = -5;
 	pixel_y = -5
 	},
+/obj/machinery/door/window/brigdoor,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
 "vk" = (
@@ -2409,27 +2450,31 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/missile{
-	dir = 1;
-	pixel_x = -5;
-	pixel_y = 10
-	},
-/obj/structure/missile{
-	dir = 1;
-	pixel_x = 5;
-	pixel_y = 10
-	},
-/obj/structure/missile{
-	dir = 1;
-	pixel_x = -5;
-	pixel_y = -5
-	},
-/obj/structure/missile{
-	dir = 1;
-	pixel_x = 5;
-	pixel_y = -5
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/structure/missile{
+	dir = 1;
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/obj/structure/missile{
+	dir = 1;
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/obj/structure/missile{
+	dir = 1;
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/structure/missile{
+	dir = 1;
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/obj/structure/window/phoronreinforced,
+/obj/machinery/door/window/brigdoor{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/red,
@@ -2634,6 +2679,10 @@
 	dir = 1;
 	pixel_x = 5;
 	pixel_y = -5
+	},
+/obj/structure/window/phoronreinforced,
+/obj/machinery/door/window/brigdoor{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
@@ -5023,15 +5072,11 @@
 	dir = 4;
 	id = "skrammo"
 	},
-/obj/machinery/door/blast/regular/open{
-	dir = 4;
-	id_tag = "ssv_ofd";
-	name = "Artillery Blast Door"
-	},
 /obj/machinery/door/firedoor{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/plasticflaps/airtight,
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/brig)
 "VT" = (
@@ -5111,6 +5156,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
+/obj/structure/bed/roller,
 /turf/simulated/floor/carpet/purple,
 /area/ship/skrellscoutship/crew/rec)
 "Wg" = (
@@ -5313,6 +5359,8 @@
 /obj/structure/closet/crate,
 /obj/item/stack/material/phoron/ten,
 /obj/item/stack/material/phoron/ten,
+/obj/item/weapon/storage/firstaid/surgery,
+/obj/item/weapon/storage/firstaid/combat,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/fit)
 "Yc" = (
@@ -9485,7 +9533,7 @@ Ln
 QL
 tt
 VT
-XO
+uL
 YN
 tt
 tt
@@ -11426,7 +11474,7 @@ Lk
 Tj
 pQ
 AR
-uL
+Bi
 Bi
 Pg
 Xj
