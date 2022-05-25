@@ -9,7 +9,7 @@
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 
-	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
@@ -61,7 +61,7 @@
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 
-	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
@@ -117,7 +117,7 @@
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 
-	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
@@ -173,7 +173,7 @@
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 
-	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
@@ -228,7 +228,7 @@
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 
-	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
@@ -278,7 +278,7 @@
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 
-	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
@@ -320,7 +320,7 @@
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 
-	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
