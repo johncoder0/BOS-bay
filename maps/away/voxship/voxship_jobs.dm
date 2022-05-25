@@ -68,8 +68,6 @@
 /datum/job/submap/voxship_vox/engineer
 	title = "Shard Technician"
 	total_positions = 2
-	info = "You are one among many billions who has kept the five sacred Arks operational over eons, such a small shard vessel is an easy task in comparison. \
-	Keep the tech operational, fix damage, and disassemble more complex devices or artefacts the acolytes come across on their expeditions."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING      = SKILL_BASIC,
 						SKILL_COMPUTER     = SKILL_ADEPT,
