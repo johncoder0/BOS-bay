@@ -16,10 +16,21 @@
 	icon = 'maps/torch/bos/icons/obj/obj_head_lordania.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/bos/icons/mob/onmob_head_lordania.dmi')
 
+/obj/item/clothing/head/soft/lordan/grey
+	name = "urban marine cap"
+	desc = "It's a ballcap in LSS Marine Corps colors."
+	icon_state = "greymarcap"
+
+/obj/item/clothing/head/soft/lordan/tan
+	name = "tan marine cap"
+	desc = "It's a ballcap in LSS Marine Corps colors."
+	icon_state = "tanmarcap"
+
 /obj/item/clothing/head/lordan/utility
 	name = "marine utility cap"
 	desc = "A green utility uniform cap. The classic marine's choice."
 	icon_state = "marcap_utility"
+
 
 //Dress
 

@@ -9,6 +9,8 @@
 	..()
 	var/cover = list()
 	cover += /obj/item/clothing/head/soft/lordan
+	cover += /obj/item/clothing/head/soft/lordan/grey
+	cover += /obj/item/clothing/head/soft/lordan/tan
 	cover += /obj/item/clothing/head/lordan/utility
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(cover)
 
