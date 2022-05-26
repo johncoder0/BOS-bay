@@ -20,7 +20,7 @@
 	boss_name     = "Operational Headquarters"
 	boss_short    = "OpHQ"
 	company_name  = "Lordanian Sovereign Systems Fleet"
-	company_short = "LSSА"
+	company_short = "LSSF"
 
 	map_admin_faxes = list("Operational Headquarters")
 
@@ -32,7 +32,7 @@
 
 	evac_controller_type = /datum/evacuation_controller/starship
 
-	default_law_type = /datum/ai_laws/solgov
+	default_law_type = /datum/ai_laws/lordania
 	use_overmap = 1
 	num_exoplanets = 1
 
