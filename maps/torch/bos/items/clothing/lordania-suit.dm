@@ -122,8 +122,14 @@
 	name = "fleet dress jacket"
 	desc = "A black dress jacket belonging to the LSS Fleet. Fashionable, for the 24th century at least."
 	icon = 'maps/torch/bos/icons/obj/obj_suit_lordania.dmi'
+	item_icons = list(slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_suit_lordania.dmi')
 	icon_state = "fldress"
 	item_state = "fldress"
+	body_parts_covered = UPPER_TORSO|ARMS
+	siemens_coefficient = 0.9
+	allowed = list(/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll, /obj/item/weapon/gun)
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_RANK, ACCESSORY_SLOT_INSIGNIA)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 /obj/item/clothing/suit/storage/lordan/dress/fleet/po
 	name = "fleet senior dress jacket"
@@ -134,5 +140,5 @@
 /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	name = "fleet officer dress jacket"
 	desc = "A black dress coat belonging to the LSS Fleet. Fashionable, for the 24th century at least."
-	icon_state = "fldress_comm"
-	item_state = "fldress_comm"
+	icon_state = "fldress_com"
+	item_state = "fldress_com"
