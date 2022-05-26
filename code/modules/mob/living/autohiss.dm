@@ -74,6 +74,9 @@
 					. += capitalize(pick(map[min_char]))
 		else
 			. += pick(map[min_char])
-		message = copytext(message, min_index + 1)
+		if(lowertext(copytext(message, min_index, min_index+1)) == lowertext(copytext(message, min_index+1, min_index+2)))
+			message = copytext(message, min_index + 2) // If the current letter and the subsequent letter are the same, skip the subsequent letter
+		else
+			message = copytext(message, min_index + 1)
 
 	return jointext(., null)
