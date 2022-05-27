@@ -5,7 +5,7 @@
 	item_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_under_lordania.dmi')
 	siemens_coefficient = 0.8
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'maps/torch/bos/icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 
