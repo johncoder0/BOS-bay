@@ -5,3 +5,9 @@
 	icon = 'maps/torch/bos/icons/obj/obj_feet_lordania.dmi'
 	icon_state = "marcombat"
 	item_state = "marcombat"
+
+/obj/item/clothing/shoes/lordan/service
+	name = "service boots"
+	desc = "The shine is spectacular."
+	icon_state = "marcombat"
+	item_state = "service"
