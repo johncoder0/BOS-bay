@@ -3417,6 +3417,7 @@
 #include "maps\torch\torch.dm"
 #include "maps\torch\torch_define.dm"
 #include "maps\torch\torch_ranks.dm"
+#include "maps\torch\torch_ranks_scg.dm"
 #include "maps\torch\bos\effects\decal.dm"
 #include "maps\torch\bos\items\choco.dm"
 #include "maps\torch\bos\items\tableflags.dm"
