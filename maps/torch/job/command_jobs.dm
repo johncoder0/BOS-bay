@@ -320,7 +320,7 @@
 	return "-"
 
 /datum/job/bridgeofficer
-	title = "Bridge Officer"
+	title = "Navigator"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 3
