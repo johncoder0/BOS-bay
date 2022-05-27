@@ -1321,7 +1321,8 @@
 "tn" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
-	color = "#6CDA1B"
+	color = "#6CDA1B";
+	name = "Cateen"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1947,7 +1948,8 @@
 	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
+	req_access = list("ACCESS_VOXSHIP");
+	name = "Bridge"
 	},
 /obj/machinery/door/firedoor{
 	dir = 4;
@@ -2378,7 +2380,9 @@
 	},
 /area/voxship/dorms)
 "GW" = (
-/obj/machinery/door/airlock/multi_tile/glass/medical,
+/obj/machinery/door/airlock/multi_tile/glass/medical{
+	name = "Vox Infirmary"
+	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,

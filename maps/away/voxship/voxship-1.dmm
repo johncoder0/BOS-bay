@@ -3977,9 +3977,6 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "EB" = (
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
 /obj/structure/plasticflaps/airtight,
 /obj/machinery/conveyor/ammobelt{
 	id = "voxmiss"
