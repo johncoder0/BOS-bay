@@ -6,36 +6,36 @@
 /area/ship/merc/crew
 	name = "\improper Cryogenics"
 	icon_state = "crew_quarters"
-	req_access = list(access_away_mercship_main)
+	req_access = list(access_away_solship_main)
 
 /area/ship/merc/equiproom
 	name = "\improper Equipment Room"
-	req_access = list(access_away_mercship_main)
+	req_access = list(access_away_solship_main)
 
 /area/ship/merc/bridge
 	name = "\improper Bridge"
-	req_access = list(access_away_mercship_main)
+	req_access = list(access_away_solship_main)
 
 /area/ship/merc/fronthall
 	name = "\improper Fore Hallway"
-	req_access = list(access_away_mercship_main)
+	req_access = list(access_away_solship_main)
 
 /area/ship/merc/armory
 	name = "\improper Armory"
-	req_access = list(access_away_mercship_main)
+	req_access = list(access_away_solship_main)
 
 	/area/ship/merc/securearmory
 	name = "\improper Secure Armory"
-	req_access = list(access_away_mercship_specialist)
+	req_access = list(access_away_solship_specialist)
 
 /area/ship/merc/capquarters
 	name = "\improper Mercenary Captain"
-	req_access = list(access_away_mercship_captain)
+	req_access = list(access_away_solship_captain)
 
 /area/ship/merc/reactorroom
 	name = "\improper Reactor Room"
-	req_access = list(access_away_mercship_eng)
+	req_access = list(access_away_solship_eng)
 
 /area/ship/merc/reactorroom
 	name = "\improper Engineering"
-	req_access = list(access_away_mercship_eng)
+	req_access = list(access_away_solship_eng)
