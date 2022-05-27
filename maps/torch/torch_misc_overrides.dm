@@ -17,3 +17,16 @@
 	)
 /turf/simulated/wall/r_wall/hull
 	color = COLOR_DARK_GUNMETAL
+
+/obj/machinery/sleeper
+	icon = 'modular_mithra/icons/obj/Cryogenic2_1.dmi'
+
+/obj/machinery/bodyscanner
+	icon = 'modular_mithra/icons/obj/Cryogenic2_1.dmi'
+	icon_state = "scanner_open"
+
+/obj/machinery/bodyscanner/on_update_icon()
+	if(!occupant)
+		src.icon_state = "scanner_open"
+	else
+		src.icon_state = "scanner_green"
