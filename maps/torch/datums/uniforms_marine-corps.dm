@@ -14,25 +14,25 @@
 	utility_under_tan = /obj/item/clothing/under/lordan/utility/tan
 	utility_shoes = /obj/item/clothing/shoes/lordan
 	utility_hat = /obj/item/clothing/head/soft/lordan
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
+	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/head/soft/lordan/grey,/obj/item/clothing/head/soft/lordan/tan, /obj/item/clothing/gloves/thick/duty/lordan, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 
 	service_under = /obj/item/clothing/under/lordan/service/green
 	service_skirt = /obj/item/clothing/under/lordan/service/skirt
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/marine
 	service_hat = /obj/item/clothing/head/beret/lordan/green
+	service_gloves = /obj/item/clothing/gloves/marinewhite
+	service_shoes = /obj/item/clothing/shoes/lordan/service
 
 	dress_under = /obj/item/clothing/under/lordan/mildress
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-	dress_gloves = /obj/item/clothing/gloves/marinewhite
 
 /decl/hierarchy/mil_uniform/marine_corps/com
 	name = "Marine Corps command"
 	min_rank = 6
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/command
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 	service_hat = /obj/item/clothing/head/beret/lordan/green
 	service_under = /obj/item/clothing/under/lordan/service/green/officer
@@ -43,7 +43,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/com/seniorofficer
 	name = "Marine Corps senior command"
@@ -73,7 +73,6 @@
 	min_rank = 11
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/command
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 	service_hat = /obj/item/clothing/head/beret/lordan/green
 	service_under = /obj/item/clothing/under/lordan/service/green/officer
@@ -117,7 +116,6 @@
 	min_rank = 11
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/command
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 	service_hat = /obj/item/clothing/head/beret/lordan/green
 	service_under = /obj/item/clothing/under/lordan/service/green/officer
@@ -128,7 +126,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/sec/officer/com //Can only be officers
 	name = "Marine Corps security command"
@@ -148,7 +146,6 @@
 	departments = MED
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/medical
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 /decl/hierarchy/mil_uniform/marine_corps/med/noncom
 	name = "Marine Corps medical NCO"
@@ -158,14 +155,13 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/medical
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/med/officer
 	name = "Marine Corps medical CO"
 	min_rank = 16
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/command
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 	service_hat = /obj/item/clothing/head/beret/lordan/green
 	service_under = /obj/item/clothing/under/lordan/service/green/officer
@@ -176,7 +172,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/med/officer/com //Can only be officers
 	name = "Marine Corps medical command"
@@ -201,14 +197,13 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/marine
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/sup/officer
 	name = "Marine Corps supply CO"
 	min_rank = 16
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/command
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 	service_hat = /obj/item/clothing/head/beret/lordan/green
 	service_under = /obj/item/clothing/under/lordan/service/green/officer
@@ -219,7 +214,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/sup/seniorofficer
 	name = "Marine Corps supply senior command"
@@ -240,14 +235,13 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/marine
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/srv/officer
 	name = "Marine Corps service CO"
 	min_rank = 11
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/command
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 	service_hat = /obj/item/clothing/head/beret/lordan/green
 	service_under = /obj/item/clothing/under/lordan/service/green/officer
@@ -258,14 +252,13 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/spt
 	name = "Marine Corps command support"
 	departments = SPT
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/command
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 	service_hat = /obj/item/clothing/head/beret/lordan/green
 	service_under = /obj/item/clothing/under/lordan/service/green/officer
@@ -276,7 +269,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
+	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/marine
 
 /decl/hierarchy/mil_uniform/marine_corps/spt/noncom
 	name = "Marine Corps support NCO"
@@ -293,7 +286,6 @@
 	min_rank = 16
 
 	utility_under = /obj/item/clothing/under/lordan/utility/green/command
-	utility_extra = list(/obj/item/clothing/head/lordan/utility, /obj/item/clothing/gloves/thick/duty/lordan)
 
 	service_hat = /obj/item/clothing/head/beret/lordan/green
 	service_under = /obj/item/clothing/under/lordan/service/green/officer

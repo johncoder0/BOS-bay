@@ -3,7 +3,7 @@
 	departments = COM
 
 	utility_under = /obj/item/clothing/under/lordan/utility/fleet/command
-	utility_extra = /obj/item/clothing/under/lordan/utility/fleet/combat/command
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat/command, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 
 	service_under = /obj/item/clothing/under/lordan/service/fleet/officer
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
@@ -55,7 +55,7 @@
 	name = "Fleet engineering CO"
 	min_rank = 11
 
-	utility_extra = /obj/item/clothing/under/lordan/utility/fleet/combat/command
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat/command, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 
 	service_under = /obj/item/clothing/under/lordan/service/fleet/officer
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
@@ -112,7 +112,7 @@
 	name = "Fleet security CO"
 	min_rank = 11
 
-	utility_extra = /obj/item/clothing/under/lordan/utility/fleet/combat/command
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat/command, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 	service_under = /obj/item/clothing/under/lordan/service/fleet/officer
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
@@ -168,7 +168,7 @@
 	name = "Fleet medical CO"
 	min_rank = 11
 
-	utility_extra = /obj/item/clothing/under/lordan/utility/fleet/combat/command
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat/command, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 	service_under = /obj/item/clothing/under/lordan/service/fleet/officer
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
@@ -223,7 +223,7 @@
 	name = "Fleet supply CO"
 	min_rank = 11
 
-	utility_extra = /obj/item/clothing/under/lordan/utility/fleet/combat/command
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat/command, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 	service_under = /obj/item/clothing/under/lordan/service/fleet/officer
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
@@ -274,7 +274,7 @@
 	name = "Fleet service CO"
 	min_rank = 11
 
-	utility_extra = /obj/item/clothing/under/lordan/utility/fleet/combat/command
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat/command, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt/officer
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 
@@ -313,7 +313,7 @@
 	name = "Fleet command support CO"
 	min_rank = 11
 
-	utility_extra = /obj/item/clothing/under/lordan/utility/fleet/combat/command
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat/command, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 	utility_under = /obj/item/clothing/under/lordan/utility/fleet/command
 
 	service_under = /obj/item/clothing/under/lordan/service/fleet/officer

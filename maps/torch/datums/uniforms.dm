@@ -34,15 +34,17 @@
 	hierarchy_type = /decl/hierarchy/mil_uniform/fleet
 	branches = list(/datum/mil_branch/larfleet)
 
-	utility_under = list(/obj/item/clothing/under/lordan/utility/fleet, /obj/item/clothing/under/lordan/utility/fleet/combat)
+	utility_under = /obj/item/clothing/under/lordan/utility/fleet
 	utility_shoes = /obj/item/clothing/shoes/lordan
 	utility_hat = /obj/item/clothing/head/beret/lordan/fleet
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat,/obj/item/clothing/gloves/thick/duty/lordan/utility)
 
 	service_under = /obj/item/clothing/under/lordan/service/fleet
 	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet
 	service_hat = /obj/item/clothing/head/lordan/fleet
 	service_gloves = /obj/item/clothing/gloves/marinewhite
+	service_shoes = /obj/item/clothing/shoes/lordan/service
 
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt
