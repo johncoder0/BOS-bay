@@ -1,53 +1,53 @@
-/datum/shuttle/autodock/overmap/reaper
-	name = "Reaper Gunboat"
+/datum/shuttle/autodock/overmap/texas
+	name = "Texas Red"
 	warmup_time = 15
-	current_location = "nav_hangar_reaper"
+	current_location = "nav_hangar_texas"
 	range = 2
 	shuttle_area = /area/ship/reaper
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
 	skill_needed = SKILL_NONE
-	ceiling_type = /turf/simulated/floor/shuttle_ceiling/merc
+	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 
-/obj/machinery/computer/shuttle_control/explore/away_scg_patrol/reaper
-	name = "Reaper Shuttle control console"
+/obj/machinery/computer/shuttle_control/explore/away_gunship/texas
+	name = "Texas Red Shuttle control console"
 	req_access = list(access_away_cavalry)
-	shuttle_tag = "Reaper Gunboat"
+	shuttle_tag = "Texas Red"
 
-/obj/effect/overmap/visitable/ship/landable/reaper
-	name = "Reaper-G"
-	desc = "A heavily modified military gunboat of particular design. More of the dropship now, scanner detects heavy alteration to the hull of the vessel and no designation."
-	shuttle = "Reaper Gunboat"
+/obj/effect/overmap/visitable/ship/landable/texas
+	name = "Texas Red"
+	desc = "A military dropship of particular design."
+	shuttle = "Texas Red"
 	fore_dir = WEST
 	color = "#000000"
 	vessel_mass = 250
 	vessel_size = SHIP_SIZE_TINY
 
 /area/ship/reaper
-	name = "\improper Reaper"
+	name = "\improper Texas Red"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
-/obj/effect/shuttle_landmark/reaper/start
+/obj/effect/shuttle_landmark/texas/start
 	name = "Dock"
-	landmark_tag = "nav_hangar_reaper"
+	landmark_tag = "nav_hangar_texas"
 	base_area = /area/ship/patrol/command/hangar
 	base_turf = /turf/simulated/floor/plating
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
-/obj/effect/shuttle_landmark/reaper/altdock
+/obj/effect/shuttle_landmark/texas/altdock
 	name = "Docking Port"
-	landmark_tag = "nav_hangar_reaperalt"
+	landmark_tag = "nav_hangar_texasalt"
 
 
 	////////
 	//TAGS//
 	////////
 
-/*/obj/effect/shuttle_landmark/reaper/hangar
+/*obj/effect/shuttle_landmark/reaper/hangar
 	name = "Reaper Hangar"
 	landmark_tag = "nav_hangar_reaper"
 	base_area = /area/ship/patrol/command/hangar

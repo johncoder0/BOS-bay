@@ -1,3 +1,7 @@
+///WORK IN PROGRESS///
+//////////////////////
+
+
 #include "solship_areas.dm"
 //#include "solship_crew.dm"
 //#include "solship_items.dm"
@@ -10,13 +14,12 @@
 	///////////
 
 /datum/map_template/ruin/away_site/solship
-	name = "SCCG vessel"
+	name = "SCGG Big Iron"
 	id = "awaysite_solship"
 	description = "---."
 	suffixes = list("solship/solship.dmm")
 	spawn_cost = 0.5
-	player_cost = 6
-	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/solship, /datum/shuttle/autodock/overmap/mercshuttle)
+	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/solship, /datum/shuttle/autodock/overmap/solshuttle)
 	spawn_weight = 0.67
 
 /obj/effect/overmap/visitable/sector/solship_arrival
@@ -27,19 +30,11 @@
 	hide_from_reports = TRUE
 
 /obj/effect/overmap/visitable/ship/patrol
-	name = "Independent Vessel"
-	desc = "That ship translating some message: http://peal.io/download/rz8n8"
+	name = "SCGG Big Iron"
+	desc = "Medium gunship with SCG markings."
 	color = "#990000"
 	fore_dir = WEST
 	vessel_mass = 350
-	vessel_size = SHIP_SIZE_SMALL
-
-/obj/effect/overmap/visitable/ship/patrol/New()
-	name = "ICV [pick("Northstar", "Scimitar", "Warlord", "Evergarden", "Treacherous", "Gothic", "Oberon", "Starhawk", "Confessor", "Vulture", "Calixis")], \a [name]"
-	for(var/area/ship/patrol/A)
-		A.name = "\improper [name] - [A.name]"
-		GLOB.using_map.area_purity_test_exempt_areas += A.type
-	..()
 
 /decl/webhook/submap_loaded/solship
 	id = WEBHOOK_SUBMAP_LOADED_solship
