@@ -170,7 +170,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 21)
 	economic_power = 5
 	minimal_player_age = 0
-	supervisors = "the Executive Officer"
+	supervisors = "the First Officer"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
@@ -189,7 +189,7 @@
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Executive Officer"
+	supervisors = "the Firs Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/janitor
 	allowed_branches = list(
@@ -215,7 +215,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	supervisors = "the Executive Officer"
+	supervisors = "the First Officer"
 	alt_titles = list(
 		"Chef" = /decl/hierarchy/outfit/job/torch/crew/service/cook,
 		"Bartender" = /decl/hierarchy/outfit/job/torch/crew/service/bartender
@@ -242,7 +242,7 @@
 	department_flag = SRV
 	total_positions = 10
 	spawn_positions = 10
-	supervisors = "the Executive Officer"
+	supervisors = "the First Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(
