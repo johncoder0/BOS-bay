@@ -1,7 +1,7 @@
 /obj/item/device/encryptionkey/heads/torchexec
 	name = "executive encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Auxiliary" = 1, "Service" = 1, "Exploration" = 1)
+	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
 
 /obj/item/device/encryptionkey/headset_torchnt
 	name = "science radio encryption key"
@@ -16,7 +16,7 @@
 /obj/item/device/encryptionkey/headset_deckofficer
 	name = "deck chief's encryption key"
 	icon_state = "qm_cypherkey"
-	channels = list("Auxiliary" = 1, "Command" = 1, "Exploration" = 1, "Infantry" = 1)
+	channels = list("Supply" = 1, "Command" = 1, "Exploration" = 1, "Infantry" = 1)
 
 /obj/item/device/encryptionkey/bridgeofficer
 	name = "second officer's encryption key"
@@ -27,7 +27,7 @@
 	name = "ai integrated encryption key"
 	desc = "Integrated encryption key."
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Security" = 1, "Infantry" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Auxiliary" = 1, "Service" = 1, "Exploration" = 1, "AI Private" = 1)
+	channels = list("Command" = 1, "Security" = 1, "Infantry" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1, "AI Private" = 1)
 
 /obj/item/device/encryptionkey/exploration
 	name = "exploration radio encryption key"
@@ -37,12 +37,12 @@
 /obj/item/device/encryptionkey/headset_pilot
 	name = "pilot radio encryption key"
 	icon_state = "srv_cypherkey"
-	channels = list("Exploration" = 1, "Auxiliary" = 1, "Science" = 1)
+	channels = list("Exploration" = 1, "Supply" = 1, "Science" = 1)
 
 /obj/item/device/encryptionkey/headset_mining
 	name = "field support radio encryption key"
 	icon_state = "srv_cypherkey"
-	channels = list("Exploration" = 1, "Auxiliary" = 1)
+	channels = list("Exploration" = 1, "Supply" = 1)
 
 /obj/item/weapon/storage/box/encryptionkey/exploration
 	name = "box of spare exploration radio keys"
@@ -69,14 +69,9 @@
 /obj/item/device/encryptionkey/heads/sea
 	name = "political officer's encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Auxiliary" = 1, "Service" = 1, "Exploration" = 1)
+	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
 
 /obj/item/device/encryptionkey/terran
 	name = "terran encryption key"
 	icon_state = "com_cypherkey"
 	channels = list("Command" = 1)
-
-/obj/item/device/encryptionkey/aux
-	name = "auxiliary radio encryption key"
-	icon_state = "srv_cypherkey"
-	channels = list("Auxiliary" = 1)

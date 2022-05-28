@@ -185,7 +185,7 @@
 /obj/machinery/telecomms/server/presets/supply
 	id = "Supply Server"
 	freq_listening = list(SUP_FREQ)
-	channel_tags = list(list(SUP_FREQ, "Auxiliary", COMMS_COLOR_SUPPLY))
+	channel_tags = list(list(SUP_FREQ, "Supply", COMMS_COLOR_SUPPLY))
 	autolinkers = list("supply")
 
 /obj/machinery/telecomms/server/presets/service

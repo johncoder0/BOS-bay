@@ -149,10 +149,3 @@
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/terran
-
-/obj/item/device/radio/headset/aux
-	name = "auxiliary radio headset"
-	desc = "A headset with access to the auxiliary channel."
-	icon_state = "cargo_headset"
-	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/aux

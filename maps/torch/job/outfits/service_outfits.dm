@@ -1,5 +1,5 @@
 /decl/hierarchy/outfit/job/torch/crew/service
-	l_ear = /obj/item/device/radio/headset/aux
+	l_ear = /obj/item/device/radio/headset/headset_service
 	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/service
 
 /decl/hierarchy/outfit/job/torch/crew/service/janitor
