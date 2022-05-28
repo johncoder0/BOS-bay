@@ -23,6 +23,7 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
+			CULTURE_HUMAN_LORDANIAN_WEST, //bos
 			CULTURE_HUMAN_LORDANIAN_EAST, //bos
 			CULTURE_HUMAN_TERSTEN_UP, //bos
 			CULTURE_HUMAN_TERSTEN_DW, //bos
