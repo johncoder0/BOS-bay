@@ -23,7 +23,7 @@
 
 /obj/structure/closet/secure_closet/RD_torch/WillContain()
 	return list(
-		/obj/item/clothing/suit/storage/toggle/labcoat,,
+		/obj/item/clothing/suit/storage/toggle/labcoat,
 		/obj/item/clothing/suit/storage/toggle/labcoat/rd/ec/lordan,
 		/obj/item/clothing/gloves/latex,
 		/obj/item/clothing/glasses/science,

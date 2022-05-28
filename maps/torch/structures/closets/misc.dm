@@ -225,5 +225,5 @@ obj/structure/closet/secure_closet/solguard
 /obj/structure/closet/secure_closet/guncabinet/PPE/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/pcarrier/medium/command = 4,
-		/obj/item/clothing/head/helmet/solgov/command = 4
+		/obj/item/clothing/head/helmet = 4
 	)

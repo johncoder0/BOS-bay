@@ -30,8 +30,8 @@
 
 /obj/structure/closet/secure_closet/pathfinder/WillContain()
 	return list(
-		/obj/item/solbanner,
-		/obj/item/solbanner,
+		/obj/item/lordbanner,
+		/obj/item/lordbanner,
 		/obj/item/device/radio,
 		/obj/item/device/tape/random,
 		/obj/item/device/gps,
@@ -98,8 +98,6 @@
 		/obj/item/device/binoculars,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/suit/storage/hazardvest/blue,
-		/obj/item/clothing/head/helmet/solgov/pilot,
-		/obj/item/clothing/head/helmet/solgov/pilot/fleet,
 		/obj/item/clothing/head/helmet/nt/pilot,
 		/obj/item/weapon/material/knife/folding/swiss,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),

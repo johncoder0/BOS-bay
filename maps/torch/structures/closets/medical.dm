@@ -49,7 +49,7 @@
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/clothing/suit/armor/pcarrier/medium/command,
-		/obj/item/clothing/head/helmet/solgov/command,
+		/obj/item/clothing/head/helmet,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/storage/firstaid/adv,
 		/obj/item/weapon/storage/box/armband/med,
