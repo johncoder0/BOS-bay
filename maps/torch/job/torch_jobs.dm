@@ -6,7 +6,7 @@
 	)
 
 	species_to_job_blacklist = list(
-		/datum/species/adherent = list(/datum/job/detective),
+		/datum/species/adherent = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/terrep, /datum/job/terguard, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic, /datum/job/warden, /datum/job/officer, /datum/job/senior_doctor),
 		/datum/species/diona   = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/rd, /datum/job/officer, /datum/job/warden, /datum/job/sea, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic),
 		/datum/species/tajaran = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/terrep, /datum/job/terguard, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic, /datum/job/warden, /datum/job/officer, /datum/job/senior_doctor),
 		/datum/species/skrell = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/terrep, /datum/job/terguard, /datum/job/warden, /datum/job/senior_doctor),
@@ -17,7 +17,7 @@
 
 
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
-						/datum/job/terrep, /datum/job/terguard, /datum/job/sea,
+						/datum/job/terrep, /datum/job/terguard, /datum/job/sea, /datum/job/sea/marine,
 						/datum/job/bridgeofficer,
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_trainee,
 						/datum/job/warden, /datum/job/officer, /datum/job/detective,

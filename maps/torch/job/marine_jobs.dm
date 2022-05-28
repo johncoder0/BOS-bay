@@ -1,3 +1,15 @@
+/datum/job/sea/marine
+	title = "Marine Senior Enlisted Advisor"
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
+	allowed_branches = list(
+		/datum/mil_branch/larmarine
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/larmarine/e8_alt,
+		/datum/mil_rank/larmarine/e9,
+		/datum/mil_rank/larmarine/e9_alt
+	)
+
 /datum/job/squad_lead
 	title = "Marine Leader"
 	department = "Marines"

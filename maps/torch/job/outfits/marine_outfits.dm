@@ -1,7 +1,16 @@
+/decl/hierarchy/outfit/job/torch/crew/command/sea/marine
+	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Marine Corps")
+	uniform = /obj/item/clothing/under/solgov/utility/army/command
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/command
+	shoes = /obj/item/clothing/shoes/lordan
+	l_ear = /obj/item/device/radio/headset/sea
+	id_type = /obj/item/weapon/card/id/torch/crew/sea
+	pda_type = /obj/item/modular_computer/pda/heads
+
 /decl/hierarchy/outfit/job/torch/crew/infantry
 	name = OUTFIT_JOB_NAME("Infantry Marine")
-	uniform = /obj/item/clothing/under/lordan/utility/green
-	shoes = /obj/item/clothing/shoes/lordan
+	uniform = /obj/item/clothing/under/lordan/service/green
+	shoes = /obj/item/clothing/shoes/lordan/service
 	l_ear = /obj/item/device/radio/headset/infantry
 	id_type = /obj/item/weapon/card/id/torch/crew/infantry
 
