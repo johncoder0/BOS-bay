@@ -7,9 +7,9 @@
 	icon_living = "floppa"
 	icon_dead = "floppa_dead"
 	speak = list("Meow!","Esp!","Purr!","HSSSSS")
-	speak_emote = list("chirps", "mews", "quacks")
+	speak_emote = list("chirps", "mews"")
 	emote_hear = list("chirps", "mews", "quacks")
-	emote_see = list("chirps", "mews", "quacks") //menya voobshe ne ebyot
+	emote_see = list("шлёпает ушами")
 
 /mob/living/simple_animal/cat/caracal/grisha
 	name = "Bolshoy Grigoriy"
