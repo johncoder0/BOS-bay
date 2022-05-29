@@ -1,7 +1,7 @@
 /obj/machinery/uniform_vendor
 	name = "uniform vendor"
 	desc= "A uniform vendor for utility, service, and dress uniforms."
-	icon = 'icons/obj/vending.dmi'
+	icon = 'icons/bos/obj/vending.dmi'
 	icon_state = "uniform"
 	layer = BELOW_OBJ_LAYER
 	anchored = 1
