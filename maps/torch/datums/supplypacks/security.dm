@@ -2,9 +2,9 @@
 	name = "Security"
 
 /decl/hierarchy/supply_pack/security/lightarmorsol
-	name = "Armor - SCG light"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/blue/sol/light = 4,
-					/obj/item/clothing/head/helmet/solgov =4)
+	name = "Armor - light"
+	contains = list(/obj/item/clothing/suit/armor/pcarrier/light = 4,
+					/obj/item/clothing/head/helmet =4)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper SolGov light armor crate"
@@ -210,7 +210,7 @@
 	access = access_solgov_crew
 
 /decl/hierarchy/supply_pack/security/securityextragear
-	name = "Gear - Master at Arms equipment"
+	name = "Gear - Security Officer equipment"
 	contains = list(/obj/item/device/radio/headset/headset_sec,
 					/obj/item/device/radio/headset/headset_sec/alt,
 					/obj/item/weapon/storage/belt/holster/security,

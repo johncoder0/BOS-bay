@@ -1,8 +1,8 @@
 /datum/computer_file/report/recipient/exp
-	logo = "\[eclogo\]"
+	logo = "\[sovlogo\]"
 
 /datum/computer_file/report/recipient/exp/fauna
-	form_name = "SCG-EXP-19f"
+	form_name = "LSS-EXP-19f"
 	title = "Alien Fauna Report"
 	available_on_ntnet = 1
 
@@ -26,7 +26,7 @@
 	add_field(/datum/report_field/text_label/instruction, "On completion of this form and form approval, the Chief Science Officer should fax the form to both the Corporate Liaison and the Commanding Officer, as well as keep a copy on file in their Office alongside other mission reports.")
 
 /datum/computer_file/report/recipient/exp/planet
-	form_name = "SCG-EXP-17"
+	form_name = "LSS-EXP-17"
 	title = "Exoplanet Report"
 	available_on_ntnet = 1
 
