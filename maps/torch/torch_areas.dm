@@ -410,7 +410,7 @@
 
 /area/aquila/airlock
 	name = "\improper LAS Aquila - Airlock Compartment"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_marines)
 
 //Guppy
 
@@ -1777,7 +1777,7 @@
 	name = "\improper Technician Prep"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
-//	req_access = list(access_inftech, access_infmed)
+	req_access = list(access_martech, access_marmed)
 
 /area/security/marines/com
 	name = "\improper Squad Leader Prep"
