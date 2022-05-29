@@ -3439,6 +3439,7 @@
 #include "maps\torch\bos\structures\memorial.dm"
 #include "maps\torch\bos\structures\signs.dm"
 #include "maps\torch\bos\structures\statue.dm"
+#include "maps\torch\datums\supplypacks\livecargo.dm"
 #include "maps\torch\items\clothing\solgov-accessory.dm"
 #include "maps\torch\items\clothing\solgov-armor.dm"
 #include "maps\torch\items\clothing\solgov-feet.dm"
