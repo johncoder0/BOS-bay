@@ -7,7 +7,7 @@
 	icon_living = "floppa"
 	icon_dead = "floppa_dead"
 	speak = list("Meow!","Esp!","Purr!","HSSSSS")
-	speak_emote = list("chirps", "mews"")
+	speak_emote = list("chirps", "mews", "quacks")
 	emote_hear = list("chirps", "mews", "quacks")
 	emote_see = list("шлёпает ушами")
 
