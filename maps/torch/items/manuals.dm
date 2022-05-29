@@ -1,3 +1,26 @@
+/obj/item/weapon/book/manual/lordania_law
+	name = "Lordanian Sovereign Systems Law"
+	desc = "A brief overview of Sov Lordania Law."
+	icon = 'icons/bos/obj/books.dmi'
+	icon_state = "lordlaw"
+	author = "Th"
+	title = "Lordanian Sovereign Systems Law"
+
+/obj/item/weapon/book/manual/lordania_law/Initialize()
+	. = ..()
+	dat = {"
+
+		<html><head>
+		</head>
+
+		<body>
+		<iframe width='100%' height='97%' src="wiki.bastionofslavs.space/index.php/Lordanian_Sovereign_Systems_Law" frameborder="0" id="main_frame"></iframe>
+		</body>
+
+		</html>
+
+		"}
+
 /obj/item/weapon/book/manual/solgov_law
 	name = "Sol Central Government Law"
 	desc = "A brief overview of SolGov Law."
