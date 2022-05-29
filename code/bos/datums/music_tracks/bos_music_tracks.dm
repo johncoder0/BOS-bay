@@ -36,10 +36,27 @@
 
 /music_track/omnissiah
 	title = "Children of the Omnissiah"
-	album = "Warhammer 40,000: Mechanicus OST"
+	album = "Warhammer 40,000: Mechanicus (OST)"
 	artist = "Guillaume David"
 	song = 'sound/music/bos/omnissiah.ogg'
 	license = /decl/license/grandfathered //fake and gay
 	url = "https://www.youtube.com/watch?v=H-dwMGd7dJQ"
 	volume = 15
 
+/music_track/doomsday
+	title = "Doomsday"
+	album = "Doctor Who (Original Television Soundtrack)"
+	artist = "Murray Gold"
+	song = 'sound/music/bos/doomsday.ogg'
+	license = /decl/license/grandfathered //not true
+	url = "https://www.youtube.com/watch?v=ZAi77XhoYck"
+	volume = 15
+
+/music_track/metheme
+	title = "Mass Effect Main Theme"
+	album = "Mass Effect (OST)"
+	artist = "Sam Hulick and Jack Wall"
+	song = 'sound/music/bos/metheme.ogg'
+	license = /decl/license/grandfathered //LIAR
+	url = "https://www.youtube.com/watch?v=yVm_ljDSdwA"
+	volume = 15
