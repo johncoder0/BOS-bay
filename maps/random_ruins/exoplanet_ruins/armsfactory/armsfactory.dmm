@@ -177,7 +177,7 @@
 "du" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory)
 "dv" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall,/area/map_template/armsfactory/jail)
 "dw" = (/obj/effect/floor_decal/techfloor,/obj/effect/floor_decal/techfloor/hole/right,/obj/machinery/atmospherics/pipe/simple/hidden/universal,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory)
-"dx" = (/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/door/airlock/multi_tile/mining,/obj/effect/floor_decal/corner/brown,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory)
+"dx" = (/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/floor_decal/corner/brown,/obj/machinery/door/airlock/multi_tile/command{name = "Commanding Operations"},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory)
 "dy" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/reagent_dispensers/fueltank,/obj/machinery/light{dir = 8},/obj/effect/floor_decal/corner/orange/border{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/engineering)
 "dz" = (/obj/effect/paint/black,/turf/simulated/wall,/area/map_template/armsfactory/bathroom)
 "dA" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/brown,/obj/effect/floor_decal/techfloor{dir = 10},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/dorms)
@@ -776,6 +776,7 @@
 "Hy" = (/obj/machinery/portable_atmospherics/hydroponics,/obj/machinery/power/apc{dir = 2; locked = 0; name = "south bump"; operating = 1; pixel_y = -28},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/machinery/light{dir = 4},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 4},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/hydroponics)
 "IA" = (/obj/structure/cable{icon_state = "0-4"; d2 = 4},/obj/machinery/power/solar,/turf/simulated/floor/tiled/techfloor/grid,/area/template_noop)
 "Je" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable,/obj/structure/table/rack/shelf,/obj/item/weapon/gun/projectile/automatic/assault_rifle,/obj/item/weapon/gun/projectile/automatic/assault_rifle,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor/tiled/steel_grid,/area/map_template/armsfactory/armory)
+"Jm" = (/obj/effect/floor_decal/corner/research{dir = 9},/obj/effect/floor_decal/techfloor{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/engineering)
 "JN" = (/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"; tag = "icon-railing0 (EAST)"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/exoplanet/concrete,/area/template_noop)
 "Kc" = (/obj/effect/floor_decal/techfloor{dir = 4},/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/engineering)
 "Kn" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 4},/obj/effect/floor_decal/corner/lime{dir = 9},/obj/structure/window/reinforced,/obj/machinery/smartfridge/drying_rack,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/hydroponics)
@@ -809,7 +810,7 @@ aqafIAbealaZalaZalaZalaZalaZalaZalaZalaZbimiaCbxmlVQdadcaceGaccfdndndndnehehehcs
 aqafIAbealaZalaZalaZalaZbBbIbMbIbRbTbMcibicnaTcxcCcFbKbVaeeDmCeZeZfcfceZeZfcfccs
 aqafajcKcPdldmelbMdlcPeociararauawauarararararararardxdEaBaBaFaFaBaBaGaIaGaGfccs
 aqaJaJaJaJaJaJaJaJaJaLaJewarbAbtdGcbcamLtetedDfdGtaNdIgtaPdRdUdVdWaQebdKdLaGdFcs
-aqaSbHbSbHaUbWbLaUbYbNaSeLarcgbObPbQheazPDnLEknCnMaNeketeceeefegezexeFdCdNaGfccs
+aqaSbHbSbHaUbWbLaUbYbNaSeLarcgbObPbQheazPDnLEkJmnMaNeketeceeefegezexeFdCdNaGfccs
 aqaScelcchaScAcHaScJdbaSfiardydZdZdZeMazdjdYnunCKcaNdHdOaPeSeOeYeaaQejdQaGaGfccs
 aqaSbabdbhaSbhbmaSbmbhaSbzaSeHcwcDcTeMazatnLeqnClNaNfvfxaQaQaQaQaQaQbJbJaGfcfccs
 aqaSeIdTfDeAfEfmeBftfFcRdSaSiadZeidZeMxceXeXedeQeTeWfRNrbZfkfnfefufofIfKcceZaqcs
