@@ -30,3 +30,7 @@
 		src.icon_state = "scanner_open"
 	else
 		src.icon_state = "scanner_green"
+
+/obj/machinery/uniform_vendor
+	name = "uniform vendor"
+	icon = 'icons/bos/obj/vending.dmi'
