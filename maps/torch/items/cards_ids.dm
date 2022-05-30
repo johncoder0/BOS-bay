@@ -226,7 +226,7 @@
 
 //Stowaway
 /obj/item/weapon/card/id/torch/stowaway
-	desc = "A card issued to passengers aboard the SGV Dagon. Looks like the photo fell off this one."
+	desc = "A card issued to passengers aboard the LRS Antares. Looks like the photo fell off this one."
 	job_access_type = /datum/job/stowaway
 	detail_color = COLOR_PAKISTAN_GREEN
 
