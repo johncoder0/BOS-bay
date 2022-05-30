@@ -9,6 +9,10 @@
 		/datum/mil_rank/larmarine/e9,
 		/datum/mil_rank/larmarine/e9_alt
 	)
+	access = list(access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+			            access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
+			            access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_guppy_helm,
+			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery, access_marines, access_marspec)
 
 /datum/job/squad_lead
 	title = "Marine Leader"
@@ -39,7 +43,7 @@
 	)
 
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_marines,
-			            access_marcom, access_martech, access_marmed, access_aquila, access_eva, access_bridge)
+			            access_marcom, access_martech, access_marmed, access_marspec, access_aquila, access_eva, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -82,7 +86,7 @@
 		/datum/mil_rank/larmarine/e5
 		)
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_marines,
-			            access_aquila, access_eva, access_martech)
+			            access_aquila, access_eva, access_martech, access_marspec)
 
 /datum/job/combat_tech/is_position_available()
 	if(..())
@@ -111,10 +115,10 @@
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_medic
 	min_skill = list(SKILL_EVA    = SKILL_BASIC,
-					SKILL_MEDICAL = SKILL_BASIC,
+					SKILL_MEDICAL = SKILL_ADEPT,
 					SKILL_COMBAT  = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_ANATOMY = SKILL_BASIC)
+					SKILL_ANATOMY = SKILL_ADEPT)
 
 	max_skill = list(SKILL_MEDICAL     = SKILL_MAX,
 					SKILL_COMBAT       = SKILL_MAX,
@@ -130,7 +134,7 @@
 		/datum/mil_rank/larmarine/e5
 		)
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_marines,
-			            access_aquila, access_eva, access_marmed)
+			            access_aquila, access_eva, access_marmed, access_medical, access_marspec)
 
 /datum/job/combat_medic/is_position_available()
 	if(..())
