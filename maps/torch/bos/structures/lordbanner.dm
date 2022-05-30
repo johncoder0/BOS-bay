@@ -7,7 +7,7 @@
 /obj/structure/lordbanner/ec
 	name = "exoplanet LSS banner"
 	desc = "A rugged metal frame with a banner of Sovereign Lordania on it. Resistant to radiation bleaching."
-	icon_state = "steel"
+	icon_state = "lordbanner"
 	obj_flags = 0
 	var/plantedby
 
