@@ -1,6 +1,6 @@
 /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
 	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Marine Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/army/command
+	uniform = /obj/item/clothing/under/lordan/service/green
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/command
 	shoes = /obj/item/clothing/shoes/lordan
 	l_ear = /obj/item/device/radio/headset/sea
