@@ -88,8 +88,8 @@
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/gunbox/infantry,
-		/obj/item/gunbox/sidearm/infantry
+//		/obj/item/gunbox/infantry,
+//		/obj/item/gunbox/sidearm/infantry
 		)
 
 /obj/structure/closet/secure_closet/martech
@@ -108,8 +108,8 @@
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/device/gps,
 		/obj/item/clothing/suit/armor/pcarrier/light,
-		/obj/item/gunbox/inftech,
-		/obj/item/gunbox/sidearm/infantry
+//		/obj/item/gunbox/inftech,
+//		/obj/item/gunbox/sidearm/infantry
 		)
 
 //demolocker
@@ -145,8 +145,8 @@
 		/obj/item/device/megaphone,
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/gunbox/infcom,
-		/obj/item/gunbox/sidearm/infantry
+//		/obj/item/gunbox/infcom,
+//		/obj/item/gunbox/sidearm/infantry
 		)
 
 /obj/structure/closet/secure_closet/marmed
@@ -170,12 +170,12 @@
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/suit/armor/pcarrier/light,
-		/obj/item/gunbox/infmed,
+//		/obj/item/gunbox/infmed,
 		/obj/item/device/gps,
 		/obj/item/weapon/defibrillator/compact,
 		/obj/item/weapon/reagent_containers/glass/bottle/antitoxin,
 		/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline,
-		/obj/item/gunbox/sidearm/infantry
+//		/obj/item/gunbox/sidearm/infantry
 		)
 
 /////////
