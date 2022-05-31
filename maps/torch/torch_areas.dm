@@ -572,13 +572,13 @@
 	name = "lift (bridge)"
 	lift_floor_label = "Bridge"
 	lift_floor_name = "Bridge"
-	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. AI Core. Landing Area. Auxiliary EVA."
+	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. AI Core. Auxiliary EVA."
 
 /area/turbolift/torch_fourth
 	name = "lift (first deck)"
 	lift_floor_label = "Deck 1"
 	lift_floor_name = "Operations Deck"
-	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Armory."
+	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Auxiliary Cryogenic Storage. Emergency Armory."
 
 /area/turbolift/torch_third
 	name = "lift (second deck)"
@@ -596,7 +596,7 @@
 	name = "lift (fourth deck)"
 	lift_floor_label = "Deck 4"
 	lift_floor_name = "Supply Deck"
-	lift_announce_str = "Arriving at Supply Deck: Shuttle Docks. Pathfinder's Office. Cargo Storage. Supply Office. Laundry."
+	lift_announce_str = "Arriving at Supply Deck: Shuttle Docks. Pathfinder's Office. Cargo Storage. Supply Office. Laundry. Infantry."
 
 /area/turbolift/torch_ground
 	name = "lift (fifth deck)"
