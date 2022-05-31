@@ -78,7 +78,7 @@ Unique items
 ***********/
 
 /obj/item/weapon/pen/multi/cmd/xo
-	name = "executive officer's pen"
+	name = "first officer's pen"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "pen_xo"
 	desc = "A slightly bulky pen with a silvery case. Twisting the top allows you to switch the nib for different colors."
@@ -124,7 +124,7 @@ Weapons
 	name = "\improper Final Argument"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "mosley"
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Captain of the SGV Dagon' engraved."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Captain of the LRS Antares' engraved."
 	fire_delay = 5.7 //Autorevolver. Also synced with the animation
 	fire_anim = "mosley_fire"
 	fire_sound = 'sound/weapons/gunshot/revolver_strong.ogg'
