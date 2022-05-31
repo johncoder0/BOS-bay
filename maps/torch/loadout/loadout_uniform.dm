@@ -3,7 +3,7 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/uniform/utility
-	display_name = "Contractor Utility Uniform"
+	display_name = "Utility Uniform"
 	path = /obj/item/clothing/under/solgov/utility
 
 /datum/gear/uniform/shortjumpskirt

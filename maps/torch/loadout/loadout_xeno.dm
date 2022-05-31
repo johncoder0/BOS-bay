@@ -17,7 +17,7 @@
 
 /datum/gear/head/skrell_helmet
 	allowed_roles = ARMORED_ROLES
-	allowed_branches = TACTICOOL_BRANCHES
+//	allowed_branches = TACTICOOL_BRANCHES
 	whitelisted = list(SPECIES_SKRELL)
 
 /datum/gear/uniform/harness

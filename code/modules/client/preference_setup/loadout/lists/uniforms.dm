@@ -165,7 +165,7 @@
 	corps += /obj/item/clothing/under/skinner
 	corps += /obj/item/clothing/under/dais
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(corps)
-
+/*
 /datum/gear/uniform/corp_exec
 	display_name = "corporate colours, senior researcher"
 	path = /obj/item/clothing/under/rank/scientist/executive
@@ -185,7 +185,7 @@
 	display_name = "corporate colours, liason suit"
 	path = /obj/item/clothing/under/suit_jacket/corp
 	flags = GEAR_HAS_TYPE_SELECTION
-
+*/
 /datum/gear/uniform/sterile
 	display_name = "sterile jumpsuit"
 	path = /obj/item/clothing/under/sterile
