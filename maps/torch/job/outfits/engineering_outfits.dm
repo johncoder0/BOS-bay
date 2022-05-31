@@ -12,7 +12,6 @@
 	name = OUTFIT_JOB_NAME("Senior Engineer")
 	uniform = /obj/item/clothing/under/hazard
 	shoes = /obj/item/clothing/shoes/workboots
-	suit = /obj/item/clothing/suit/storage/hazardvest/blue
 	id_type = /obj/item/weapon/card/id/torch/crew/engineering/senior
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 
@@ -24,7 +23,6 @@
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	name = OUTFIT_JOB_NAME("Engineer - Torch")
 	uniform = /obj/item/clothing/under/hazard
-	head = /obj/item/clothing/head/hardhat
 	shoes = /obj/item/clothing/shoes/workboots
 	id_type = /obj/item/weapon/card/id/torch/crew/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering

@@ -49,7 +49,6 @@
 	name = OUTFIT_JOB_NAME("Chief Engineer - Antares")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/lordan
-	suit = /obj/item/clothing/suit/storage/hazardvest/white
 	head = /obj/item/clothing/head/beret/lordan/fleet
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	id_type = /obj/item/weapon/card/id/torch/silver/engineering
