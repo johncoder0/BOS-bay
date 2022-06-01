@@ -11,7 +11,7 @@
 	var/max_fuel = 100
 	var/speed = 0
 //	var/min_speed = 25 // slightly misleading. this is the amount of ticks between each step, so higher min speed => slower initial speed
-	var/min_speed = 45 //bos
+	var/min_speed = 75 //bos
 
 /obj/item/missile_equipment/thruster/do_overmap_work(var/obj/effect/overmap/projectile/P)
 	if(!..() || isnull(target) || !fuel)
@@ -49,7 +49,7 @@
 	name = "HUNTER warp booster"
 	desc = "An advanced booster specifically designed to plot courses towards and catch up to rapidly moving objects such as other missiles."
 	icon_state = "seeker"
-	min_speed = 20 //bos
+	min_speed = 40 //bos
 
 	fuel = 40
 
