@@ -51,3 +51,31 @@
 	cover += /obj/item/clothing/head/beret/lordan/fleet
 	cover += /obj/item/clothing/head/lordan/fleet
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(cover)
+
+/datum/gear/military/gloves
+	display_name = "gloves selection"
+	path = /obj/item/clothing/gloves
+	slot = slot_gloves
+	cost = 2
+	allowed_branches = list(/datum/mil_branch/larmarine, /datum/mil_branch/larfleet)
+
+/datum/gear/military/gloves/New()
+	..()
+	var/milgloves = list()
+	milgloves["Combat gloves"] = /obj/item/clothing/gloves/thick/duty/lordan
+	milgloves["Duty gloves"] = /obj/item/clothing/gloves/thick/duty/lordan/utility
+	milgloves["White gloves"] = /obj/item/clothing/gloves/marinewhite
+	gear_tweaks += new/datum/gear_tweak/path(milgloves)
+
+/datum/gear/military/shoes
+	display_name = "shoes selection"
+	path = /obj/item/clothing/shoes
+	cost = 0
+	allowed_branches = list(/datum/mil_branch/larmarine, /datum/mil_branch/larfleet)
+
+/datum/gear/military/shoes/New()
+	..()
+	var/milshoes = list()
+	milshoes += /obj/item/clothing/shoes/lordan
+	milshoes += /obj/item/clothing/shoes/lordan/service
+	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(milshoes)
