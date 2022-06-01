@@ -9,7 +9,7 @@
 	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/captain
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
-	shoes = /obj/item/clothing/shoes/lordan
+	shoes = /obj/item/clothing/shoes/lordan/service
 	head = /obj/item/clothing/head/lordan/fleet
 	id_type = /obj/item/weapon/card/id/torch/gold
 	pda_type = /obj/item/modular_computer/pda/captain
@@ -26,7 +26,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 	head = /obj/item/clothing/head/lordan/fleet
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
-	shoes = /obj/item/clothing/shoes/lordan
+	shoes = /obj/item/clothing/shoes/lordan/service
 	id_type = /obj/item/weapon/card/id/torch/silver
 	pda_type = /obj/item/modular_computer/pda/heads/hop
 
@@ -85,9 +85,9 @@
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	name = OUTFIT_JOB_NAME("Political Officer")
 	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
-	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
-	head = /obj/item/clothing/head/lordan/fleet
-	shoes = /obj/item/clothing/shoes/lordan
+	suit = /obj/item/clothing/suit/storage/lordan/service/po
+	head = /obj/item/clothing/head/lordan/fleet/po
+	shoes = /obj/item/clothing/shoes/lordan/service
 	l_ear = /obj/item/device/radio/headset/sea
 	id_type = /obj/item/weapon/card/id/torch/crew/sea
 	pda_type = /obj/item/modular_computer/pda/heads
@@ -97,7 +97,7 @@
 	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 	head = /obj/item/clothing/head/beret/lordan/fleet
-	shoes = /obj/item/clothing/shoes/lordan
+	shoes = /obj/item/clothing/shoes/lordan/service
 	id_type = /obj/item/weapon/card/id/torch/crew/bridgeofficer
 	pda_type = /obj/item/modular_computer/pda/heads
 	l_ear = /obj/item/device/radio/headset/bridgeofficer

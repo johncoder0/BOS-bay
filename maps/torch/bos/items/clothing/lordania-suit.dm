@@ -60,7 +60,7 @@
 	icon_closed = "navyservice"
 	icon_open = "navyservice_open"
 
-/obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+/obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 	name = "fleet senior service jacket"
 	desc = "A navy blue LSS Fleet service jacket with silver cuffs."
 	icon_state = "navyservice_snco"
@@ -83,6 +83,14 @@
 	item_state = "navyservice_cap"
 	icon_closed = "navyservice_cap"
 	icon_open = "navyservice_cap_open"
+
+/obj/item/clothing/suit/storage/lordan/service/po
+	name = "fleet political officer service jacket"
+	desc = "A navy LSS Fleet service jacket with red accents."
+	icon = 'maps/torch/bos/icons/obj/obj_suit_lordania.dmi'
+	item_icons = list(slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_suit_lordania.dmi')
+	icon_state = "navyservice_po"
+	item_state = "navyservice_po"
 
 //Dress - don't murder me with a gun
 
@@ -131,7 +139,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_RANK, ACCESSORY_SLOT_INSIGNIA)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
-/obj/item/clothing/suit/storage/lordan/dress/fleet/po
+/obj/item/clothing/suit/storage/lordan/dress/fleet/snco
 	name = "fleet senior dress jacket"
 	desc = "A black dress jacket belonging to the LSS Fleet. Fashionable, for the 24th century at least."
 	icon_state = "fldress_snco"
