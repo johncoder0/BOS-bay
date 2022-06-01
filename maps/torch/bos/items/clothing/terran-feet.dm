@@ -9,5 +9,5 @@
 /obj/item/clothing/shoes/terran/long
 	name = "ICCGNF long boots"
 	desc = "Glorious Independent duty boots. Extra tall."
-	icon_state = "longterran"
-	item_state = "dutyterran"
+	icon_state = "dutyterran"
+	item_state = "longterran"

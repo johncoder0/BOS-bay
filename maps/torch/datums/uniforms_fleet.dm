@@ -46,9 +46,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/lordan/fleet
-	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/po
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
 
 /decl/hierarchy/mil_uniform/fleet/eng/officer
@@ -103,9 +103,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/lordan/fleet
-	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/po
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
 
 /decl/hierarchy/mil_uniform/fleet/sec/officer
@@ -159,9 +159,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/lordan/fleet
-	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/po
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
 
 /decl/hierarchy/mil_uniform/fleet/med/officer
@@ -214,9 +214,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/lordan/fleet
-	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/po
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
 
 /decl/hierarchy/mil_uniform/fleet/sup/officer
@@ -265,9 +265,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/lordan/fleet
-	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/po
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
 
 /decl/hierarchy/mil_uniform/fleet/srv/officer
@@ -304,9 +304,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/lordan/fleet
-	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/po
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
 	dress_extra = /obj/item/weapon/storage/belt/holster/sheath/fleet
 
 /decl/hierarchy/mil_uniform/fleet/spt/officer
