@@ -21,7 +21,7 @@ proc/Intoxicated(var/t as text)
 				if(2,4,6,15) newletter="[uppertext(newletter)]"
 				if(7) newletter+="'"
 		newphrase+="[newletter]";counter-=1
-*/	return newphrase
+	return newphrase */
 proc/NewStutter(var/t as text)
 	return uppertext(t[1]) + copytext(t, 1 + length(t[1]))
 /*proc/NewStutter(phrase,stunned,var/strength=50)
@@ -58,7 +58,7 @@ proc/NewStutter(var/t as text)
 
 		split_phrase[index] = word
 
-*/	return sanitize(jointext(split_phrase," "))
+	return sanitize(jointext(split_phrase," ")) */
 
 proc/Stagger(mob/M,d) //Technically not a filter, but it relates to drunkenness.
 	step(M, pick(d,turn(d,90),turn(d,-90)))
