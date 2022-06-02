@@ -109,6 +109,7 @@
 	spark_system.attach(src)
 
 	add_language(LANGUAGE_ROBOT_GLOBAL, 1)
+	add_language(LANGUAGE_HUMAN_LORD, 1)
 	add_language(LANGUAGE_EAL, 1)
 
 	wires = new(src)
@@ -424,7 +425,7 @@
 	var/datum/robot_component/toggle = show_radial_menu(usr, src, installed_components)
 	if(!istype(toggle))
 		return
-	
+
 	to_chat(src, SPAN_WARNING("You [toggle.toggled ? "dis" : "en"]able [toggle]."))
 	toggle.toggled = !toggle.toggled
 
