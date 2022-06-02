@@ -10,7 +10,7 @@
 	id = "awaysite_ascent_seedship"
 	description = "A small Ascent colony ship."
 	suffixes = list("ascent/ascent-1.dmm", "ascent/ascent-2.dmm")
-	cost = 0.5
+	cost = 1.5 //was 0.5
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/ascent,
 		/datum/shuttle/autodock/overmap/ascent/two
