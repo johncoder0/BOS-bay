@@ -4,7 +4,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/command
 	shoes = /obj/item/clothing/shoes/lordan
 	l_ear = /obj/item/device/radio/headset/sea
-	id_type = /obj/item/weapon/card/id/torch/crew/sea
+	id_type = /obj/item/weapon/card/id/torch/crew/sea/marine
 	pda_type = /obj/item/modular_computer/pda/heads
 
 /decl/hierarchy/outfit/job/torch/crew/infantry
