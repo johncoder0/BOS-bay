@@ -271,10 +271,10 @@ var/list/global/organ_rel_size = list(
 	var/rawchar
 	for(var/i = 1, i <= leng, i += length(rawchar))
 		rawchar = newletter = phrase[i]
-		if(prob(80) && !(lowertext(newletter) in list("a", "e", "i", "o", "u", " ")))
-			if(prob())
+		if(prob(50) && !(lowertext(newletter) in list("a", "e", "i", "o", "u", " ")))
+			if(prob(70))
 				newletter = "[newletter]-[newletter]-[newletter]-[newletter]"
-			else if(prob(70))
+			else if(prob(80))
 				newletter = "[newletter]-[newletter]-[newletter]"
 			else if (prob(50))
 				newletter = ""
