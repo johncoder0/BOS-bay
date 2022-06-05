@@ -164,6 +164,7 @@
 #include "code\bos\game\objects\effects\decals\contraband.dm"
 #include "code\bos\game\objects\effects\decals\posters\posters.dm"
 #include "code\bos\game\objects\structures\barrier.dm"
+#include "code\bos\game\verbs\emote.dm"
 #include "code\bos\modules\clothing\suit.dm"
 #include "code\bos\modules\culture_descriptor\culture\cultures_human.dm"
 #include "code\bos\modules\culture_descriptor\faction\factions_human.dm"

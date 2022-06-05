@@ -83,12 +83,12 @@
 	key = "bow"
 	emote_message_3p_target = "USER bows to TARGET."
 	emote_message_3p = "USER bows."
-
+/*
 /decl/emote/visible/salute
 	key = "salute"
 	emote_message_3p_target = "USER salutes TARGET."
 	emote_message_3p = "USER salutes."
-
+*/
 /decl/emote/visible/flap
 	key = "flap"
 	check_restraints = TRUE
@@ -105,7 +105,7 @@
 
 /decl/emote/visible/twitch
 	key = "twitch"
-	emote_message_3p = "USER twitches."
+	emote_message_3p = "USER дрожит."
 	conscious = 0
 
 /decl/emote/visible/twitch_v
@@ -171,8 +171,8 @@
 
 /decl/emote/visible/smile
 	key = "smile"
-	emote_message_3p_target = "USER smiles at TARGET."
-	emote_message_3p = "USER smiles."
+	emote_message_3p_target = "USER улыбается TARGET."
+	emote_message_3p = "USER улыбается."
 
 /decl/emote/visible/pale
 	key = "pale"
@@ -317,12 +317,12 @@
 	key = "pocket"
 	check_restraints = TRUE
 	emote_message_3p = "USER shoves USER_THEIR hands in USER_THEIR pockets."
-
+/*
 /decl/emote/visible/rsalute
 	key = "rsalute"
 	check_restraints = TRUE
 	emote_message_3p = "USER returns the salute."
-
+*/
 /decl/emote/visible/rshoulder
 	key = "rshoulder"
 	emote_message_3p = "USER rolls USER_THEIR shoulders."
