@@ -4,7 +4,7 @@
 
 /obj/structure/sign/antarplaque/Initialize()
 	. = ..()
-	desc = "LRS Antares - Mako Class Scout - LSSF Registry 95631 - Port-Vengeance, Nouveaulyon - First Vessel To Bear The Name - Launched [game_year-5] - Lordanian Sovereign Systems - 'On the front lines of new achievements for Sovereign Lordania, thanks to each and every one of us.'"
+	desc = "LRS Antares - Epsilon Class Frigate - LSSF Registry 95631 - Port-Vengeance, Nouveaulyon - Launched [game_year-2] - Lordanian Sovereign Systems - 'On the front lines of new achievements for Sovereign Lordania, thanks to each and every one of us.'"
 
 /obj/structure/sign/lord
 	name = "\improper Sovereign Lordania Seal"
