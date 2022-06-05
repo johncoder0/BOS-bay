@@ -18,7 +18,7 @@
 	siemens_coefficient = 0.7
 
 	species_flags = SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_HUNGER | SPECIES_FLAG_NO_THIRST //They're sorta made out of poison
-	spawn_flags = SPECIES_CAN_JOIN
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_RESTRICTED
 	appearance_flags = HAS_EYE_COLOR
 
 	death_message = "seizes up and falls limp, their eyes going dim..."
