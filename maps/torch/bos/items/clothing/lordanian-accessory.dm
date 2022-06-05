@@ -292,12 +292,12 @@ armbands
 armour attachments
 *****************/
 /obj/item/clothing/accessory/armor/tag/lordan
-	name = "\improper SCG Flag"
+	name = "\improper LSS flag"
 	desc = "An emblem depicting the LSS flag."
 	icon_override = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
 	icon = 'maps/torch/bos/icons/obj/obj_accessories_lordania.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi', slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_accessories_lordania.dmi')
-	icon_state = "solflag"
+	icon_state = "lordlag"
 	slot = ACCESSORY_SLOT_ARMOR_M
 
 /**************
