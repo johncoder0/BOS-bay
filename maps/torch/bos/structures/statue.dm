@@ -3,6 +3,7 @@
 	desc = "You will get here one day. Or it's just a statue honouring some piece of tile."
 	icon = 'maps/torch/bos/icons/obj/structures/statue.dmi'
 	icon_state = "placeholder"
+	anchored = TRUE
 
 /obj/structure/memstatue/roger
 	name = "Roger Blackmore statue"

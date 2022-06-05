@@ -3,6 +3,7 @@
 	icon = 'maps/torch/bos/icons/obj/structures/lordbanner.dmi'
 	icon_state = "lordbanner"
 	desc = "A steel pole bearing a banner of Lordanian Sovereign Systems. Ave."
+	anchored = TRUE
 
 /obj/structure/lordbanner/ec
 	name = "exoplanet LSS banner"
