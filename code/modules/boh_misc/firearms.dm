@@ -4,7 +4,7 @@
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar
 	name = "Mk59"
-	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters."
+	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Lordanian Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
 	fire_sound = 'sound/weapons/gunshot/pistol_mk59.ogg'
 	jam_chance = 5 //Cheap firearm. Chance of jamming
@@ -24,7 +24,7 @@
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar/loaded
 	name = "high-powered handgun"
-	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo. This one has 'To the Chief of Security Aboard the SGV Dagon' engraved"
+	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo. This one has 'To the Chief of Security Aboard the LRS Antares' engraved"
 	magazine_type = /obj/item/ammo_magazine/magnum/rubber
 	starts_loaded = 1
 
@@ -217,7 +217,7 @@
 /////////
 /obj/item/weapon/gun/projectile/revolver/medium/captain/large
 	name = "Ultimate Argument"
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the SGV Dagon' engraved on the grip."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the LRS Antares' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
 	has_firing_pin = TRUE
@@ -228,7 +228,7 @@
 /////////
 /obj/item/weapon/gun/projectile/revolver/medium/captain/xo
 	name = "Final Argument"
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the SGV Dagon' engraved on the grip."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the LRS Antares' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
 	caliber = CALIBER_PISTOL_MAGNUM
 
