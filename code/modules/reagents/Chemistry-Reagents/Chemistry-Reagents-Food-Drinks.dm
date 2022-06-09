@@ -42,8 +42,6 @@
 	affect_ingest(M, alien, removed)
 
 /datum/reagent/nutriment/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien == SPECIES_OLDUNATHI)
-		return
 	M.heal_organ_damage(0.5 * removed, 0) //what
 	adjust_nutrition(M, alien, removed)
 	M.add_chemical_effect(CE_BLOODRESTORE, 4 * removed)

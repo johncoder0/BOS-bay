@@ -112,12 +112,12 @@ proc/get_radio_key_from_channel(var/channel)
 			message_data[3] = 0
 			. = TRUE
 		if(stuttering)
-			message = NewStutter(message, FALSE, 10 + stuttering)
+			message = stutter(message, FALSE, 10 + stuttering) // was NewStutter
 			final_verbs += pick("stammers","stutters")
 			. = TRUE
 		if(slurring)
 			if(confused) //Slurring + Confused might as well be drunk af
-				message = Intoxicated(message,10 + slurring)
+				message = Gibberish(message,10 + slurring) //was Intoxicated
 				final_verbs += pick("garbles","jumbles","fumbles")
 				. = TRUE
 			else

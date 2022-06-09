@@ -1,16 +1,16 @@
 /datum/game_mode/revolution
-	round_description = "Subversive elements are onboard trying to convert and coerce crewmembers into their cause."
-	extended_round_description = "There may be potentially subversive elements with convincing causes onboard the ship trying to cause a revolt for variosu causes."
+	round_description = "На борту находятся подрывные элементы, пытаясь обратить и принудить членов экипажа к мятежу."
+	extended_round_description = "На борту корабля потенциально могут быть подрывные элементы, пытающиеся призвать экипаж к мятежу по разным причинам."
 
 /datum/antagonist/revolutionary
 	role_text = "Head Mutineer"
 	role_text_plural = "Mutineers"
 
-	faction_welcome = "You are a revolutionary. Find a potential cause to gain allies and fullfill your goal."
-	welcome_text = "You are a revolutionary. Convince others of your cause and take action."
+	faction_welcome = "Вы стали членом мятежа. Убедите остальных членов экипажа принять Вашу сторону в конфликте."
+	welcome_text = "Вы - мятежник. Попытайтесь сделать все, чтобы привести свою фракцию к победе за влияние над судном."
 
-	victory_text = "The crew did not manage to stop the revolutionaries."
-	loss_text = "The crew managed to stop the revolution."
+	victory_text = "Экипаж смог остановить мятеж."
+	loss_text = "Экипаж не смог остановить мятеж."
 
 	//Inround revs.
 	faction_role_text = "Mutineer"
@@ -25,11 +25,11 @@
 /datum/antagonist/loyalists
 
 
-	victory_text = "The uprising was stopped."
-	loss_text = "The uprising succeeded."
+	victory_text = "Мятеж остановлен."
+	loss_text = "Мятеж удался."
 
 /datum/antagonist/loyalists/Initialize()
 	..()
-	welcome_text = "You are a hardliner of Nanotrasen. Convince people to support your employers cause."
-	faction_welcome = "Obey all instructions, follow the chain of command, and ensure no uprisers endanger the Dagon."
+	welcome_text = "Вы - ключевой сторонник ЛСС на борту. Убедите других членов экипажа поддержать Вас в борьбе с мятежом."
+	faction_welcome = "Следуйте регуляциям, повинуйтесь цепи командования, сделайте все возможное, чтобы не допустить мятеж на ЛРС Антарес."
 	faction_descriptor = "[GLOB.using_map.company_name]"

@@ -1,10 +1,10 @@
 
 /datum/computer_file/report/recipient/medical
-	logo = "\[solcrest\]"
-	form_name = "SCG-MED-00"
+	logo = "\[sovlogo\]"
+	form_name = "LSS-MED-00"
 
 /datum/computer_file/report/recipient/medical/checkup
-	form_name = "SCG-MED-013b"
+	form_name = "LSS-MED-013b"
 	title = "Regular Health Checkup Checklist"
 	available_on_ntnet = 1
 

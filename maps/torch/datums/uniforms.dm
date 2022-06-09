@@ -29,69 +29,32 @@
 	var/dress_gloves = null
 	var/dress_extra = null
 
-/decl/hierarchy/mil_uniform/ec
-	name = "Master EC outfit"
-	hierarchy_type = /decl/hierarchy/mil_uniform/ec
-//	branches = list(/datum/mil_branch/expeditionary_corps)
-
-	pt_under = /obj/item/clothing/under/solgov/pt/expeditionary
-	pt_shoes = /obj/item/clothing/shoes/black
-
-	utility_under = /obj/item/clothing/under/solgov/utility/expeditionary
-	utility_shoes = /obj/item/clothing/shoes/dutyboots
-	utility_hat = /obj/item/clothing/head/soft/solgov/expedition
-	utility_extra = list(/obj/item/clothing/head/beret/solgov/expedition, /obj/item/clothing/head/ushanka/solgov, /obj/item/clothing/suit/storage/hooded/wintercoat/solgov, /obj/item/clothing/shoes/jackboots/unathi)
-
-	service_under = /obj/item/clothing/under/solgov/service/expeditionary
-	service_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt
-	service_over = /obj/item/clothing/suit/storage/solgov/service/expeditionary
-	service_shoes = /obj/item/clothing/shoes/dress
-	service_hat = /obj/item/clothing/head/solgov/service/expedition
-
-	dress_under = /obj/item/clothing/under/solgov/service/expeditionary
-	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition
-	dress_shoes = /obj/item/clothing/shoes/dress
-	dress_hat = /obj/item/clothing/head/solgov/service/expedition
-	dress_gloves = /obj/item/clothing/gloves/white
-
-	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf)
-
-// Commented out because it overrides modular's uniform system in some places.
-/*
 /decl/hierarchy/mil_uniform/fleet
 	name = "Master fleet outfit"
 	hierarchy_type = /decl/hierarchy/mil_uniform/fleet
-	branches = list(/datum/mil_branch/fleet)
+	branches = list(/datum/mil_branch/larfleet)
 
-	pt_under = /obj/item/clothing/under/solgov/pt/fleet
-	pt_shoes = /obj/item/clothing/shoes/black
+	utility_under = /obj/item/clothing/under/lordan/utility/fleet
+	utility_shoes = /obj/item/clothing/shoes/lordan
+	utility_hat = /obj/item/clothing/head/beret/lordan/fleet
+	utility_extra = list(/obj/item/clothing/under/lordan/utility/fleet/combat, /obj/item/clothing/gloves/thick/duty/lordan/utility)
 
-	utility_under = /obj/item/clothing/under/solgov/utility/fleet
-	utility_shoes = /obj/item/clothing/shoes/dutyboots
-	utility_hat = /obj/item/clothing/head/solgov/utility/fleet
-	utility_extra = list(/obj/item/clothing/head/beret/solgov/fleet, /obj/item/clothing/head/ushanka/solgov/fleet, /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,/obj/item/clothing/head/soft/solgov/fleet)
+	service_under = /obj/item/clothing/under/lordan/service/fleet
+	service_skirt = /obj/item/clothing/under/lordan/service/fleet/skirt
+	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet
+	service_hat = /obj/item/clothing/head/lordan/fleet
+	service_gloves = /obj/item/clothing/gloves/marinewhite
+	service_shoes = /obj/item/clothing/shoes/lordan/service
 
-	service_under = /obj/item/clothing/under/solgov/service/fleet
-	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt
-	service_over = null
-	service_shoes = /obj/item/clothing/shoes/dress
-	service_hat = /obj/item/clothing/head/solgov/dress/fleet/garrison
-
-	dress_under = /obj/item/clothing/under/solgov/service/fleet
-	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt
-	dress_over = /obj/item/clothing/suit/dress/solgov/fleet/sailor
-	dress_shoes = /obj/item/clothing/shoes/dress
-	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
-	dress_gloves = /obj/item/clothing/gloves/white
-
-	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
-*/
+	dress_under = /obj/item/clothing/under/lordan/dress/fleet
+	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt
+	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet
+	dress_hat = /obj/item/clothing/head/lordan/fleet/dress
 
 /decl/hierarchy/mil_uniform/civilian
 	name = "Master civilian outfit"		//Basically just here for the rent-a-tux, ahem, I mean... dress uniform.
 	hierarchy_type = /decl/hierarchy/mil_uniform/civilian
-	branches = list(/datum/mil_branch/civilian,/datum/mil_branch/solgov)
+	branches = list(/datum/mil_branch/civilian,/datum/mil_branch/lord)
 
 	service_under = /obj/item/clothing/under/suit_jacket/really_black
 	service_skirt = /obj/item/clothing/under/skirt_c/dress/black

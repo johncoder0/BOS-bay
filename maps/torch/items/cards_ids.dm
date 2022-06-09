@@ -2,7 +2,7 @@
 
 /obj/item/weapon/card/id/torch
 	name = "identification card"
-	desc = "An identification card issued to personnel aboard the SGV Dagon."
+	desc = "An identification card issued to personnel aboard the LRS Antares."
 	job_access_type = /datum/job/assistant
 
 /obj/item/weapon/card/id/torch/silver
@@ -21,14 +21,14 @@
 
 // SolGov Crew and Contractors
 /obj/item/weapon/card/id/torch/crew
-	desc = "An identification card issued to crewmembers aboard the SGV Dagon."
+	desc = "An identification card issued to crewmembers aboard the LRS Antares."
 	color = "#d3e3e1"
 	job_access_type = /datum/job/crew
 	color = "#ccecff"
 
 
 /obj/item/weapon/card/id/torch/contractor
-	desc = "An identification card issued to private contractors aboard the SGV Dagon."
+	desc = "An identification card issued to private contractors aboard the LRS Antares."
 	job_access_type = /datum/job/assistant
 	color = COLOR_GRAY80
 
@@ -130,18 +130,26 @@
 /obj/item/weapon/card/id/torch/contractor/service/bartender
 	job_access_type = /datum/job/bartender
 
+/obj/item/weapon/card/id/torch/crew/service/canworker
+	job_access_type = /datum/job/canworker
+
 
 /obj/item/weapon/card/id/torch/crew/representative
 	job_access_type = /datum/job/terrep
 	detail_color = COLOR_COMMAND_BLUE
 	extra_details = list("goldstripe")
 
-/obj/item/weapon/card/id/torch/crew/solguard
-	job_access_type = /datum/job/solguard
+/obj/item/weapon/card/id/torch/crew/terguard
+	job_access_type = /datum/job/terguard
 	detail_color = COLOR_COMMAND_BLUE
 
 /obj/item/weapon/card/id/torch/crew/sea
 	job_access_type = /datum/job/sea
+	detail_color = COLOR_COMMAND_BLUE
+	extra_details = list("onegoldstripe")
+
+/obj/item/weapon/card/id/torch/crew/sea/marine
+	job_access_type = /datum/job/sea/marine
 	detail_color = COLOR_COMMAND_BLUE
 	extra_details = list("onegoldstripe")
 
@@ -169,7 +177,7 @@
 	color = COLOR_WHITE
 
 /obj/item/weapon/card/id/torch/crew/research
-	desc = "A card issued to science personnel aboard the SGV Dagon."
+	desc = "A card issued to science personnel aboard the LRS Antares."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_RESEARCH
 
@@ -179,12 +187,12 @@
 //NanoTrasen and Passengers
 
 /obj/item/weapon/card/id/torch/passenger
-	desc = "A card issued to passengers aboard the SGV Dagon."
+	desc = "A card issued to passengers aboard the LRS Antares."
 	job_access_type = /datum/job/assistant
 	detail_color = COLOR_PAKISTAN_GREEN
 
 /obj/item/weapon/card/id/torch/passenger/research
-	desc = "A card issued to corporate personnel aboard the SGV Dagon."
+	desc = "A card issued to corporate personnel aboard the LRS Antares."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_BOTTLE_GREEN
 
@@ -220,3 +228,29 @@
 /obj/item/weapon/card/id/torch/crew/infantry/infmed
 	job_access_type = /datum/job/combat_medic
 	detail_color = COLOR_NAVY_BLUE
+
+//Stowaway
+/obj/item/weapon/card/id/torch/stowaway
+	desc = "A card issued to passengers aboard the LRS Antares. Looks like the photo fell off this one."
+	job_access_type = /datum/job/stowaway
+	detail_color = COLOR_PAKISTAN_GREEN
+
+/obj/item/weapon/card/id/torch/stowaway/New()
+	..()
+	var/species = SPECIES_HUMAN
+	if(prob(25))
+		species = pick(SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_IPC)
+	var/datum/species/S = all_species[species]
+	var/decl/cultural_info/culture/C = SSculture.get_culture(S.default_cultural_info[TAG_CULTURE])
+	var/gender = pick(MALE,FEMALE)
+	assignment = "Passenger"
+	registered_name = C.get_random_name(gender)
+	sex = capitalize(gender)
+	age = rand(7,77)
+	fingerprint_hash = md5(registered_name)
+	dna_hash = md5(fingerprint_hash)
+	blood_type = RANDOM_BLOOD_TYPE
+	military_branch = pick(global.mil_branches.spawn_branches_)
+	military_branch = global.mil_branches.get_branch(military_branch)
+	military_rank = pick(military_branch.spawn_ranks_)
+	military_rank = global.mil_branches.get_rank(military_branch.name, military_rank)

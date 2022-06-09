@@ -253,7 +253,7 @@
 
 //Returns a string with the first element of the string capitalized.
 /proc/capitalize(var/t as text)
-	return uppertext(copytext(t, 1, 2)) + copytext(t, 2)
+	return uppertext(t[1]) + copytext(t, 1 + length(t[1]))
 
 //This proc strips html properly, remove < > and all text between
 //for complete text sanitizing should be used sanitize()
@@ -408,6 +408,7 @@ proc/TextPreview(var/string,var/len=40)
 	t = replacetext(t, "\[row\]", "</td><tr>")
 	t = replacetext(t, "\[cell\]", "<td>")
 	t = replacetext(t, "\[logo\]", "<img src = exologo.png>")
+	t = replacetext(t, "\[sovlogo\]", "<img src = sovlogo.png>")
 	t = replacetext(t, "\[bluelogo\]", "<img src = bluentlogo.png>")
 	t = replacetext(t, "\[solcrest\]", "<img src = sollogo.png>")
 	t = replacetext(t, "\[torchltd\]", "<img src = exologo.png>")
@@ -465,6 +466,7 @@ proc/TextPreview(var/string,var/len=40)
 	t = replacetext(t, "</table>", "\[/grid\]")
 	t = replacetext(t, "<tr>", "\[row\]")
 	t = replacetext(t, "<td>", "\[cell\]")
+	t = replacetext(t, "<img src = sovlogo.png>", "\[sovlogo\]")
 	t = replacetext(t, "<img src = ntlogo.png>", "\[ntlogo\]")
 	t = replacetext(t, "<img src = bluentlogo.png>", "\[bluelogo\]")
 	t = replacetext(t, "<img src = sollogo.png>", "\[solcrest\]")

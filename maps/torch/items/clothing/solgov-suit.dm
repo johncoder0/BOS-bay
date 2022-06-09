@@ -19,9 +19,6 @@
 	name = "exploration jacket"
 	desc = "A uniform service jacket belonging to SolGov Fleet exploration personnel."
 	icon_state = "ecservice_crew"
-	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
-		)
 
 /obj/item/clothing/suit/storage/solgov/service/expeditionary/medical
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/medical/service)

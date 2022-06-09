@@ -11,8 +11,11 @@
 	)
 
 // Cultural IDs.
+#define FACTION_SOVLORDANIA    "Lordanian Sovereign Systems" //Bos
+#define FACTION_LARFLEET       "Lordanian Sovereign Systems Fleet" //Bos
+#define FACTION_LARMARINES     "Lordanian Marine Corps" //Bos
 #define FACTION_SOL_CENTRAL    "Sol Central Government"
-#define FACTION_INDIE_CONFED  "United Colonies of Gilgamesh"
+#define FACTION_INDIE_CONFED   "Independent Colonial Confederation of Gilgamesh" //Bos edit
 #define FACTION_NANOTRASEN     "NanoTrasen"
 #define FACTION_FREETRADE      "Free Trade Union"
 #define FACTION_HEPHAESTUS     "Hephaestus Industries"
@@ -21,7 +24,7 @@
 #define FACTION_MARINES        "Solar Marine Corps" // BoH Addon
 #define FACTION_EXPEDITIONARY  "Expeditionary Corps"
 #define FACTION_PCRC           "Proxima Centauri Risk Control"
-#define FACTION_CORPORATE       "Expeditionary Corps Organisation"
+#define FACTION_CORPORATE      "Expeditionary Corps Organisation"
 #define FACTION_DAIS           "Deimos Advanced Information Systems"
 #define FACTION_FOUNDATION     "Cuchulain Foundation"
 #define FACTION_OTHER          "Other Faction"
@@ -36,14 +39,14 @@
 #define HOME_SYSTEM_PLUTO      "Pluto"
 #define HOME_SYSTEM_TAU_CETI   "Ceti Epsilon"
 #define HOME_SYSTEM_HELIOS	   "Eos"
-#define HOME_SYSTEM_TERRA 	   "Komirov"
+#define HOME_SYSTEM_TERRA 	   "Terra"
 #define HOME_SYSTEM_TERSTEN    "Tersten"
 #define HOME_SYSTEM_LORRIMAN   "Lorriman"
 #define HOME_SYSTEM_CINU       "Cinu"
 #define HOME_SYSTEM_YUKLID     "Yuklid V"
 #define HOME_SYSTEM_LORDANIA   "Lordania"
 #define HOME_SYSTEM_KINGSTON   "Kingston"
-#define HOME_SYSTEM_GAIA       "Aigaion"
+#define HOME_SYSTEM_GAIA       "Gaia"
 #define HOME_SYSTEM_MAGNITKA   "Magnitka"
 #define HOME_SYSTEM_STATELESS  "Stateless"
 #define HOME_SYSTEM_OTHER      "Other System"
@@ -52,6 +55,12 @@
 #define CULTURE_OTHER          "Other Culture"
 #define CULTURE_HUMAN          "Humankind"
 #define CULTURE_HUMAN_VATGROWN "Nonborn"
+#define CULTURE_HUMAN_LORDANIAN_WEST "West Lordanian" //Bos
+#define CULTURE_HUMAN_LORDANIAN_EAST "East Lordanian" //Bos
+#define CULTURE_HUMAN_TERSTEN_UP "Urban Terstenian" //Bos
+#define CULTURE_HUMAN_TERSTEN_DW "Wild Terstenian" //Bos
+#define CULTURE_HUMAN_YUKLID   "Yuklidian" //Bos
+#define CULTURE_HUMAN_LORRIMAN   "Lorrimanian" //Bos
 #define CULTURE_HUMAN_MARTIAN  "Martian, Surfacer"
 #define CULTURE_HUMAN_MARSTUN  "Martian, Tunneller"
 #define CULTURE_HUMAN_LUNAPOOR "Luna, Lower Class"

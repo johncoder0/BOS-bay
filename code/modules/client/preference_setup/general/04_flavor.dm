@@ -16,7 +16,7 @@
 	S["flavor_texts_hands"]		>> pref.flavor_texts["hands"]
 	S["flavor_texts_legs"]		>> pref.flavor_texts["legs"]
 	S["flavor_texts_feet"]		>> pref.flavor_texts["feet"]
-	S["flavor_texts_naked"]		>> pref.flavor_texts["naked"]
+//	S["flavor_texts_naked"]		>> pref.flavor_texts["naked"]
 	S["flavor_texts_NSFW/OOC"]	>> pref.flavor_texts["NSFW/OOC"]
 
 	//Flavour text for robots.
@@ -34,7 +34,7 @@
 	S["flavor_texts_hands"]		<< pref.flavor_texts["hands"]
 	S["flavor_texts_legs"]		<< pref.flavor_texts["legs"]
 	S["flavor_texts_feet"]		<< pref.flavor_texts["feet"]
-	S["flavor_texts_naked"]		<< pref.flavor_texts["naked"]
+//	S["flavor_texts_naked"]		<< pref.flavor_texts["naked"]
 	S["flavor_texts_NSFW/OOC"]	<< pref.flavor_texts["NSFW/OOC"]
 
 	S["flavour_texts_robot_Default"] << pref.flavour_texts_robot["Default"]
@@ -59,11 +59,11 @@
 				if(CanUseTopic(user))
 					pref.flavor_texts[href_list["flavor_text"]] = msg
 			if("NSFW/OOC")
-				var/msg = sanitize(input(usr,"Update your OOC description. Please don't put NSFW information here.", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Update your OOC description.", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
 				if(CanUseTopic(user))
 					pref.flavor_texts[href_list["flavor_text"]] = msg
 			if("naked")
-				var/msg = sanitize(input(usr,"Update your naked description. Feel free to put OOC and NSFW information here.", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Мне было слишком лень удалять это", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
 				pref.flavor_texts[href_list["flavor_text"]] = msg
 			else
 				var/msg = sanitize(input(usr,"Set the flavor text for your [href_list["flavor_text"]].","Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
@@ -89,7 +89,7 @@
 	return ..()
 
 /datum/category_item/player_setup_item/physical/flavor/proc/SetFlavorText(mob/user)
-	var/HTML = "<body>"
+	var/HTML = "<meta charset=\"UTF-8\"><body>"
 	HTML += "<tt><center>"
 	HTML += "<b>Set Flavour Text</b> <hr />"
 	HTML += "<br></center>"
@@ -120,11 +120,11 @@
 	HTML += "<a href='?src=\ref[src];flavor_text=feet'>Feet:</a> "
 	HTML += TextPreview(pref.flavor_texts["feet"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=naked'>Naked (NSFW):</a> "
-	HTML += TextPreview(pref.flavor_texts["naked"])
-	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=NSFW/OOC'>OOC:</a> "
-	HTML += TextPreview(pref.flavor_texts["NSFW/OOC"])
+//	HTML += "<a href='?src=\ref[src];flavor_text=naked'>Naked (NSFW):</a> "
+//	HTML += TextPreview(pref.flavor_texts["naked"])
+//	HTML += "<br>"
+	HTML += "<a href='?src=\ref[src];flavor_text=OOC'>OOC:</a> "
+	HTML += TextPreview(pref.flavor_texts["OOC"])
 	HTML += "<br>"
 	HTML += "<hr />"
 	HTML += "<tt>"
@@ -132,7 +132,7 @@
 	return
 
 /datum/category_item/player_setup_item/physical/flavor/proc/SetFlavourTextRobot(mob/user)
-	var/HTML = "<body>"
+	var/HTML = "<meta charset=\"UTF-8\"><body>"
 	HTML += "<tt><center>"
 	HTML += "<b>Set Robot Flavour Text</b> <hr />"
 	HTML += "<br></center>"

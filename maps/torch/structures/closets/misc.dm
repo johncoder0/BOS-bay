@@ -85,9 +85,9 @@
 		)
 
 /obj/structure/closet/secure_closet/representative
-	name = "\improper representative's locker"
+	name = "\improper ICCG representative's locker"
 	req_access = list(access_representative)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/hos
 
 /obj/structure/closet/secure_closet/representative/WillContain()
 	return list(
@@ -98,23 +98,21 @@
 		/obj/item/device/tape/random = 3,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/weapon/rig/light/internalaffairs,
-		/obj/item/device/radio/headset/federal,
-		/obj/item/clothing/shoes/laceup,
-		/obj/item/clothing/under/rank/internalaffairs/plain/solgov,
-		/obj/item/clothing/suit/storage/toggle/suit/black,
-		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/clothing/glasses/sunglasses/big,
-		/obj/item/clothing/under/solgov/pol,
-		/obj/item/clothing/head/soft/solgov/pol,
+		/obj/item/device/radio/headset/terran,
+		/obj/item/clothing/shoes/terran,
+		/obj/item/clothing/under/terran/navy/service/command,
+		/obj/item/clothing/suit/dress/terran/navy/command,
+		/obj/item/clothing/head/terran/navy/service/command,
 		/obj/item/gunbox/pol,
+		/obj/item/weapon/reagent_containers/pill/cyanide,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
 	)
 
 obj/structure/closet/secure_closet/solguard
-	name = "\improper sol agent locker"
+	name = "\improper ICCG guard's locker"
 	req_access = list(access_sec_guard)
-	closet_appearance = /decl/closet_appearance/secure_closet/sol/two
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/solguard/WillContain()
 	return list(
@@ -125,14 +123,12 @@ obj/structure/closet/secure_closet/solguard
 		/obj/item/ammo_magazine/pistol/double/rubber = 2,
 		/obj/item/weapon/gun/energy/laser/secure/ceremonial,
 		/obj/item/weapon/storage/secure/briefcase,
-		/obj/item/clothing/shoes/laceup,
-		/obj/item/clothing/under/rank/internalaffairs/plain,
-		/obj/item/clothing/suit/storage/toggle/suit/black/sfp,
-		/obj/item/clothing/gloves/color/black,
-		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/clothing/under/terran/navy/service,
+		/obj/item/clothing/suit/dress/terran/navy,
+		/obj/item/clothing/head/terran/navy/service,
+		/obj/item/clothing/shoes/terran,
 		/obj/item/device/flashlight/maglight,
-		/obj/item/device/radio/headset/federal
+		/obj/item/device/radio/headset/terran
 		)
 
 
@@ -229,5 +225,5 @@ obj/structure/closet/secure_closet/solguard
 /obj/structure/closet/secure_closet/guncabinet/PPE/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/pcarrier/medium/command = 4,
-		/obj/item/clothing/head/helmet/solgov/command = 4
+		/obj/item/clothing/head/helmet = 4
 	)

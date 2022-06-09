@@ -124,7 +124,7 @@
 	//Set species_restricted list
 	switch(target_species)
 		if(SPECIES_HUMAN,SPECIES_SKRELL)	//humanoid bodytypes
-			species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_SKRELL,SPECIES_IPC,SPECIES_OLDUNATHI) //skrell/humans/machines can wear each other's suits
+			species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_SKRELL,SPECIES_IPC) //skrell/humans/machines can wear each other's suits
 		else
 			species_restricted = list(target_species)
 
@@ -144,7 +144,7 @@
 		if(SPECIES_HUMAN)
 			species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC) //human helmets fit IPCs too
 		if(SPECIES_UNATHI)
-			species_restricted = list(SPECIES_UNATHI,SPECIES_OLDUNATHI)
+			species_restricted = list(SPECIES_UNATHI)
 		else
 			species_restricted = list(target_species)
 
@@ -266,7 +266,7 @@ BLIND     // can't see anything
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_UNATHI,SPECIES_VOX,SPECIES_VOX_ARMALIS,SPECIES_OLDUNATHI)
+	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_UNATHI,SPECIES_VOX,SPECIES_VOX_ARMALIS)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_hands_vox_armalis.dmi',
@@ -325,7 +325,6 @@ BLIND     // can't see anything
 	desc = "[desc]<br>They have been modified to accommodate a different shape."
 	if("exclude" in species_restricted)
 		species_restricted -= SPECIES_UNATHI
-		species_restricted -= SPECIES_OLDUNATHI
 	return
 
 /obj/item/clothing/gloves/mob_can_equip(mob/user)

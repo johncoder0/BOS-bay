@@ -49,7 +49,7 @@
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/clothing/suit/armor/pcarrier/medium/command,
-		/obj/item/clothing/head/helmet/solgov/command,
+		/obj/item/clothing/head/helmet,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/storage/firstaid/adv,
 		/obj/item/weapon/storage/box/armband/med,
@@ -89,7 +89,7 @@
 	)
 
 /obj/structure/closet/secure_closet/medical_torchsenior
-	name = "physician's locker"
+	name = "surgeon's locker"
 	req_access = list(access_senmed)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical/physician
 
@@ -118,7 +118,7 @@
 	)
 
 /obj/structure/closet/secure_closet/medical_torch
-	name = "medical technician's locker"
+	name = "doctor's locker"
 	req_access = list(access_medical_equip)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 

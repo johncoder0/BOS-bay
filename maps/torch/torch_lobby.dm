@@ -2,5 +2,11 @@
 /datum/map/torch
 	lobby_screens = list('maps/torch/lobby/SlavsLobby.png')
 	lobby_tracks = list(
-		/music_track/chanson_dautomne
+		/music_track/solandterra,
+//		/music_track/comeyouknights,
+//		/music_track/startthefire,
+//		/music_track/endoftheworld,
+		/music_track/omnissiah,
+		/music_track/doomsday,
+		/music_track/metheme
 	)

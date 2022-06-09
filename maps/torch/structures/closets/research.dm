@@ -17,15 +17,14 @@
 	)
 
 /obj/structure/closet/secure_closet/RD_torch
-	name = "chief science officer's locker"
+	name = "research director's locker"
 	req_access = list(access_rd)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/science/cso
 
 /obj/structure/closet/secure_closet/RD_torch/WillContain()
 	return list(
 		/obj/item/clothing/suit/storage/toggle/labcoat,
-		/obj/item/clothing/suit/storage/toggle/labcoat/science/ec,
-		/obj/item/clothing/suit/storage/toggle/labcoat/rd/ec,
+		/obj/item/clothing/suit/storage/toggle/labcoat/rd/ec/lordan,
 		/obj/item/clothing/gloves/latex,
 		/obj/item/clothing/glasses/science,
 		/obj/item/device/radio/headset/heads/torchntdirector,
@@ -51,13 +50,11 @@
 /obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_torch
 	name = "xenoarchaeologist's locker"
 	req_access = list(access_xenoarch)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/science
+	closet_appearance = /decl/closet_appearance/secure_closet/expedition/science
 
 /obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_torch/WillContain()
 	return list(
-		/obj/item/clothing/under/rank/scientist,
-		/obj/item/clothing/suit/storage/toggle/labcoat/science/ec,
-		/obj/item/clothing/suit/storage/toggle/labcoat/science,
+		/obj/item/clothing/under/rank/medical/scrubs,
 		/obj/item/clothing/suit/storage/toggle/labcoat,
 		/obj/item/clothing/shoes/white,
 		/obj/item/device/radio/headset/torchnanotrasen,
@@ -81,12 +78,11 @@
 /obj/structure/closet/secure_closet/scientist_torch
 	name = "researcher's locker"
 	req_access = list(access_research)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/science
+	closet_appearance = /decl/closet_appearance/secure_closet/expedition/science
 
 /obj/structure/closet/secure_closet/scientist_torch/WillContain()
 	return list(
-		/obj/item/clothing/under/rank/scientist,
-		/obj/item/clothing/suit/storage/toggle/labcoat/science,
+		/obj/item/clothing/under/rank/medical/scrubs,
 		/obj/item/clothing/suit/storage/toggle/labcoat,
 		/obj/item/clothing/shoes/white,
 		/obj/item/device/radio/headset/torchnanotrasen,
@@ -114,9 +110,8 @@
 /obj/structure/closet/secure_closet/guard/WillContain()
 	return list(
 		/obj/item/clothing/under/rank/guard,
-		/obj/item/clothing/suit/armor/pcarrier/medium/nt,
-		/obj/item/clothing/head/helmet/nt/guard,
-		/obj/item/clothing/head/soft/sec/corp/guard,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
+		/obj/item/clothing/head/helmet,
 		/obj/item/clothing/head/beret/guard,
 		/obj/item/clothing/accessory/armband/whitered,
 		/obj/item/device/radio/headset/torchnanotrasen,
@@ -137,9 +132,8 @@
 		/obj/item/taperoll/research,
 		/obj/item/device/hailer,
 		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/clothing/accessory/badge/holo/NT,
 		/obj/item/device/megaphone,
-		/obj/item/weapon/gun/energy/stunrevolver/secure/nanotrasen,
+		/obj/item/weapon/gun/energy/stunrevolver/secure,
 		/obj/item/clothing/shoes/jackboots,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security/exo, /obj/item/weapon/storage/backpack/satchel/sec/exo)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/sec, /obj/item/weapon/storage/backpack/messenger/sec/exo))
@@ -148,7 +142,7 @@
 /obj/structure/closet/secure_closet/ec_scientist
 	name = "scientist locker"
 	req_access = list(access_research)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/science
+	closet_appearance = /decl/closet_appearance/secure_closet/expedition/science
 
 /obj/structure/closet/secure_closet/ec_scientist/WillContain()
 	return list(

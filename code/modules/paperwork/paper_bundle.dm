@@ -65,7 +65,7 @@
 	var/sheet_name = istype(sheet, /obj/item/weapon/photo) ? "photo" : "sheet of paper"
 	bundle_name = (bundle_name == name) ? "the [bundle_name]" : name
 	sheet_name = (sheet_name == sheet.name) ? "the [sheet_name]" : sheet.name
-	
+
 	to_chat(user, "<span class='notice'>You add [sheet_name] to [bundle_name].</span>")
 	pages.Insert(index, sheet)
 	if(index <= page)
@@ -124,7 +124,7 @@
 
 	if(istype(pages[page], /obj/item/weapon/paper))
 		var/obj/item/weapon/paper/P = W
-		dat+= "<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[P.show_info(user)][P.stamps]</BODY></HTML>"
+		dat+= "<HTML><meta charset='UTF-8'><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[P.show_info(user)][P.stamps]</BODY></HTML>"
 		show_browser(user, dat, "window=[name]")
 	else if(istype(pages[page], /obj/item/weapon/photo))
 		var/obj/item/weapon/photo/P = W

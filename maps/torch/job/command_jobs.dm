@@ -1,16 +1,15 @@
 /datum/job/captain
 	title = "Commanding Officer"
-	supervisors = "Central Command and the Sol Code of Military Justice"
+	supervisors = "Operational Headquarters and your conscience"
 	minimal_player_age = 14
 	economic_power = 15
-	minimum_character_age = list(SPECIES_HUMAN = 40,SPECIES_UNATHI = 40,SPECIES_SERGAL = 40, SPECIES_SKRELL = 40, SPECIES_PROMETHEAN = 40, SPECIES_YEOSA = 40, SPECIES_VULP = 40, SPECIES_VASS = 40, SPECIES_TAJ = 40, SPECIES_CUSTOM = 40, SPECIES_AKULA = 40)
+	minimum_character_age = list(SPECIES_HUMAN = 40)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o6,
-		/datum/mil_rank/fleet/o6
+		/datum/mil_rank/larfleet/o6
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
@@ -26,30 +25,29 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/captain/get_description_blurb()
-	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Executive Officer, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
-
+	return "Ты - Командующий Офицер. Выше тебя только Оперативный Штаб, военно-полевой суд, ну и морально-этические нормы, с чем ты можешь спорить.\
+	Ты опытный и эффективный руководитель и менеджер прекрасного корабля Лордании, и именно с тебя будет спрос за всё, что происходит с ним, либо на нём.\
+	Твоя задача состоит в том, чтобы [GLOB.using_map.full_name] в полной мере выполнял свою боевую задачу - разведку территорий.\
+	 Пользуйтесь помощью Первого Офицера, глав отделов , (и вашего политрука) для эффективного управления кораблём, но не пренебрегайте собственным опытом."
 /datum/job/captain/post_equip_rank(var/mob/person, var/alt_title)
 	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
 	captain_announcement.Announce("All hands, [alt_title || title] [person.real_name] on deck!", new_sound = announce_sound)
 	..()
 
 /datum/job/hop
-	title = "Executive Officer"
+	title = "First Officer"
 	supervisors = "the Commanding Officer"
 	department = "Command"
 	department_flag = COM
 	minimal_player_age = 8
 	economic_power = 12
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/XO/fleet
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o5,
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/fleet/o5
+		/datum/mil_rank/larfleet/o5
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -90,20 +88,24 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hop/get_description_blurb()
-	return "You are the Executive Officer. You are an experienced senior officer, second in command of the ship, and are responsible for the smooth operation of the ship under your Commanding Officer. In his absence, you are expected to take his place. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship. Consider the Senior Enlisted Advisor and Bridge Officers tools at your disposal."
+	return "Ты - Первый ОФицер.\
+	Будучи опытным старшим офицером, ты являешься буквально вторым по значимости на всём корабле, с вытекающей ответственностью за бесперебойную работу на корабле, \
+	под взором командующего офицера, которого ты заменяешь в его отсутствии.\
+	Твоей основной обязанностью является (!)непосредственное управление руководителями отделов и всеми теми, кто не перебывает в каком-либо отделе.\
+	Вы также несете ответственность за подрядчиков и пассажиров на борту корабля. Не пренебрегайте помощью Мостовых Офицеров и политрука!"
 
 /datum/job/rd
-	title = "Chief Science Officer"
+	title = "Research Director"
 	supervisors = "the Commanding Officer"
 	economic_power = 20
 	minimal_player_age = 6
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35, SPECIES_SKRELL = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/lord
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o3
+		/datum/mil_rank/lord/scientist
 	)
 
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -136,23 +138,21 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/rd/get_description_blurb()
-	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with corporate interests. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
+	return "-"
 
 /datum/job/cmo
 	title = "Chief Medical Officer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "the Commanding Officer and the First Officer"
 	economic_power = 10
 	minimal_player_age = 6
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cmo/fleet
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/ec/o3
+		/datum/mil_rank/larfleet/o3,
+		/datum/mil_rank/larfleet/o4,
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
@@ -179,23 +179,21 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/cmo/get_description_blurb()
-	return "You are the Chief Medical Officer. You manage the medical department. You ensure all members of medical are skilled, tasked and handling their duties. Ensure your doctors are staffing your infirmary and your corpsman/paramedics are ready for response. Act as a second surgeon or backup pharmacist in the absence of either. You are expected to know medical very well, along with general regulations."
+	return "-"
 
 /datum/job/chief_engineer
 	title = "Chief Engineer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "the Commanding Officer and the First Officer"
 	economic_power = 9
-	minimum_character_age = list(SPECIES_HUMAN = 27,SPECIES_UNATHI = 27,SPECIES_SERGAL = 27, SPECIES_SKRELL = 27, SPECIES_PROMETHEAN = 27, SPECIES_YEOSA = 27, SPECIES_VASS = 27, SPECIES_TAJ = 27, SPECIES_CUSTOM = 27, SPECIES_AKULA = 27)
-	minimal_player_age = 6
+	minimum_character_age = list(SPECIES_HUMAN = 27)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
+	selection_color = "#B8733D"
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o3,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3
+		/datum/mil_rank/larfleet/o3,
+		/datum/mil_rank/larfleet/o4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY  = SKILL_BASIC,
 	                    SKILL_COMPUTER     = SKILL_ADEPT,
@@ -234,23 +232,21 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/chief_engineer/get_description_blurb()
-	return "You are the Chief Engineer. You manage the Engineering Department. You are responsible for the Senior engineer, who is your right hand and (should be) an experienced, skilled engineer. Delegate to and listen to them. Manage your engineers, ensure vessel power stays on, breaches are patched and problems are fixed. Advise the CO on engineering matters. You are also responsible for the maintenance and control of any vessel synthetics. You are an experienced engineer with a wealth of theoretical knowledge. You should also know vessel regulations to a reasonable degree."
+	return "-"
 
 /datum/job/hos
 	title = "Chief of Security"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "the Commanding Officer and the First Officer"
 	economic_power = 8
 	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_VASS = 25, SPECIES_TAJ = 25, SPECIES_CUSTOM = 25, SPECIES_AKULA = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cos/fleet
+		/datum/mil_branch/larfleet,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o3,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3
+		/datum/mil_rank/larfleet/o3,
+		/datum/mil_rank/larfleet/o4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
@@ -276,27 +272,26 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hos/get_description_blurb()
-	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Military Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
-
+	return "-"
 /datum/job/sea
-	title = "Senior Enlisted Advisor"
+	title = "Political Officer"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "the Commanding Officer and the First Officer"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 6
 	economic_power = 8
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
-		/datum/mil_branch/fleet
+		/datum/mil_branch/larfleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e8,
-		/datum/mil_rank/fleet/e9_alt1,
-		/datum/mil_rank/fleet/e9
+		/datum/mil_rank/larfleet/e8,
+		/datum/mil_rank/larfleet/e9_alt2,
+		/datum/mil_rank/larfleet/e9
 	)
 	min_skill = list(   SKILL_EVA        = SKILL_BASIC,
 	                    SKILL_COMBAT     = SKILL_BASIC,
@@ -315,16 +310,16 @@
 	access = list(access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
 			            access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_guppy_helm,
-			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery)
+			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery, access_security)
 
 	software_on_spawn = list(/datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
 /datum/job/sea/get_description_blurb()
-	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
+	return "-"
 
 /datum/job/bridgeofficer
-	title = "Bridge Officer"
+	title = "Navigator"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 3
@@ -333,15 +328,13 @@
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
 	economic_power = 7
-	minimum_character_age = list(SPECIES_HUMAN = 21,SPECIES_UNATHI = 21,SPECIES_SERGAL = 21, SPECIES_SKRELL = 21, SPECIES_PROMETHEAN = 21, SPECIES_YEOSA = 21, SPECIES_VASS = 21, SPECIES_TAJ = 21, SPECIES_CUSTOM = 21, SPECIES_AKULA = 21)
+	minimum_character_age = list(SPECIES_HUMAN = 21,SPECIES_UNATHI = 21, SPECIES_SKRELL = 21, SPECIES_PROMETHEAN = 21, SPECIES_YEOSA = 21, SPECIES_TAJ = 21)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
+		/datum/mil_branch/larfleet,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1
+		/datum/mil_rank/larfleet/o1,
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_PILOT       = SKILL_ADEPT,
@@ -368,29 +361,28 @@
 							 /datum/computer_file/program/deck_management)
 
 /datum/job/bridgeofficer/get_description_blurb()
-	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Dagon's helm and pilot the Byakhee if needed. You monitor bridge computer programs and communications and report relevant information to command."
+	return "-"
 
-/datum/job/solrep
-	title = "Sol Gov Representative"
+/datum/job/terrep
+	title = "ICCG Representative"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Central Command and Sol Law"
-	selection_color = "#2f2f7f"
+	supervisors = "Operational Headquarters and Terran Embassy Command"
+	selection_color = "#B00000"
 	minimal_player_age = 14
 	economic_power = 16
-	minimum_character_age = list(SPECIES_HUMAN = 23, SPECIES_CUSTOM = 23)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/terrep
 	alt_titles = list(
-		"Sol Gov Diplomat",
-		"Sol Gov Negotiator",
-		"Sol Gov Political Officer")
+		"ICCG Diplomat",
+		"ICCG Negotiator")
 	allowed_branches = list(
-		/datum/mil_branch/solgov
+		/datum/mil_branch/terran
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sol/gov
+		/datum/mil_rank/terran/o3
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_SCIENCE     = SKILL_BASIC,
@@ -408,35 +400,33 @@
 	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew)
 
 
-/datum/job/solrep/get_description_blurb()
-	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and governmental interests on board. Send faxes back to Sol on mission progress and important events."
+/datum/job/terrep/get_description_blurb()
+	return "-"
 
-/datum/job/solrep/post_equip_rank(var/mob/person, var/alt_title)
-	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Sol Federal Agent")]"]"
+/datum/job/terrep/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Representative's Guard")]"]"
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
-			if(M.mind.assigned_role == "Sol Federal Agent")
+			if(M.mind.assigned_role == "ICCG Guard")
 				to_chat(M, SPAN_NOTICE("<b>Your supervisor, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()
 
-/datum/job/solguard
-	title = "Sol Federal Agent"
+/datum/job/terguard
+	title = "ICCG Guard"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Sol Gov Representative"
-	selection_color = "#3d3d7f"
+	supervisors = "the ICCG Representative"
+	selection_color = "#B00000"
 	economic_power = 12
 	minimal_player_age = 2
-	minimum_character_age = list(SPECIES_HUMAN = 21, SPECIES_CUSTOM = 23)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
-	allowed_branches = list(/datum/mil_branch/spacefbi, /datum/mil_branch/marine_corps)
-	allowed_ranks = list(/datum/mil_rank/sol/agent, /datum/mil_rank/marine_corps/e6,
-		/datum/mil_rank/marine_corps/e7,
-		/datum/mil_rank/marine_corps/w1,
-		/datum/mil_rank/marine_corps/w2,
-		/datum/mil_rank/marine_corps/w3)
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/ter_bodyguard
+	allowed_branches = list(/datum/mil_branch/terran)
+	allowed_ranks = list(
+		/datum/mil_rank/terran/e4,
+		/datum/mil_rank/terran/e6)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -446,28 +436,24 @@
 	                    SKILL_WEAPONS     = SKILL_MAX,
 	                    SKILL_FORENSICS   = SKILL_MAX,
 	                    SKILL_BUREAUCRACY = SKILL_MAX)
-	alt_titles = list(
-		"Sol Federal Assistant",
-		"Sol Federal Chaperone",
-		"Marine Embassy Guard")
 	skill_points = 24
 	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew, access_sec_guard)
 	defer_roundstart_spawn = TRUE
 
-/datum/job/solguard/is_position_available()
+/datum/job/terguard/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Sol Gov Representative")
+			if(M.client && M.mind && M.mind.assigned_role == "ICCG Representative")
 				return TRUE
 	return FALSE
 
-/datum/job/solguard/get_description_blurb()
-	return "You are the Sol Federal Agent. You are an employee of the Sol Federal Police, with your primary objective of keeping the Sol Gov Representative alive and operating efficiently. You also make sure the Representative, and by extension, the Solarian Central Government's will is complete. Good luck, Agent. NOTE: YOU ARE NOT A SECURITY OFFICER."
+/datum/job/terguard/get_description_blurb()
+	return "-"
 
-/datum/job/solguard/post_equip_rank(var/mob/person, var/alt_title)
-	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Sol Federal Agent")]"]"
+/datum/job/terguard/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Representative's Guard")]"]"
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
-			if(M.mind.assigned_role == "Sol Gov Representative")
-				to_chat(M, SPAN_NOTICE("<b>Your Agent, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+			if(M.mind.assigned_role == "ICCG Representative")
+				to_chat(M, SPAN_NOTICE("<b>Your Guard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()

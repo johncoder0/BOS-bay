@@ -255,6 +255,7 @@ SUBSYSTEM_DEF(zcopy)
 		return
 
 	var/list/out = list(
+		"<head><meta charset='utf-8'/></head><body>",
 		"<h1>Analysis of [T] at [T.x],[T.y],[T.z]</h1>",
 		"<b>Queue occurrences:</b> [T.z_queued]",
 		"<b>Above space:</b> [T.is_above_space() ? "Yes" : "No"]",

@@ -1,5 +1,5 @@
 /datum/job/senior_doctor
-	title = "Physician"
+	title = "Surgeon"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 0
@@ -9,21 +9,14 @@
 	supervisors = "the Chief Medical Officer"
 	selection_color = "#013d3b"
 	economic_power = 8
-	alt_titles = list(
-		"Surgeon",
-		"Resident",
-		"Coroner"
-		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/senior/fleet,
+		/datum/mil_branch/larfleet,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/senior
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/larfleet/o1,
+		/datum/mil_rank/larfleet/o2,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -45,30 +38,26 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/doctor
-	title = "Medical Technician"
+	title = "Doctor"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "Physicians and the Chief Medical Officer"
+	supervisors = "Surgeons and the Chief Medical Officer"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	minimal_player_age = 0
+	selection_color = "#013d3b"
 	alt_titles = list(
 		"Paramedic",
-		"Corpsman",
 		"Nurse")
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor
+		/datum/mil_branch/larfleet,
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/larfleet/e3,
+		/datum/mil_rank/larfleet/e4,
+		/datum/mil_rank/larfleet/e5,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
@@ -94,17 +83,16 @@
 	economic_power = 8
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	minimal_player_age = 0
+	selection_color = "#013d3b"
 	alt_titles = list()
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/virologist
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/virologist/fleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/virologist
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/medical/virologist/fleet,
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/larfleet/o1,
+		/datum/mil_rank/larfleet/o2,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_EVA      = SKILL_BASIC,
@@ -134,19 +122,18 @@
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
-		"Trainee Medical Technician",
-		"Corpsman Trainee",
+		"Trainee Paramedic",
 		"Trainee Nurse")
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet,
+		/datum/mil_branch/civilian
 	)
 
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e2
+		/datum/mil_rank/larfleet/e2,
+		/datum/mil_rank/civ/contractor
 	)
 
 	skill_points = 4
@@ -168,8 +155,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/medical_trainee/get_description_blurb()
-	return "You are a Trainee Medical Technician. You are learning how to treat and recover wounded crew from the more experienced medical personnel aboard. You are subordinate to the rest of the medical team."
-
+	return "-"
 /datum/job/chemist
 	title = "Laboratory Technician"
 	department = "Medical"
@@ -197,10 +183,9 @@
 	minimal_access = list()
 
 /datum/job/chemist/get_description_blurb()
-	return "You are a Laboratory Technician. You make medicine, and work in the virology lab. You are not a doctor or medic, but have surface level knowledge in those fields. You should not be treating patients, but rather providing the the medicine to do so. You are subordinate to Physicians and Medical Techncians."
-
+	return "-"
 /datum/job/psychiatrist
-	title = "Counselor"
+	title = "Psionic Psychiatrist"
 	total_positions = 1
 	spawn_positions = 1
 	economic_power = 5
@@ -210,13 +195,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/counselor
 
 	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/ec,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/fleet)
+		/datum/mil_branch/civilian)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/ec/o1)
+		/datum/mil_rank/civ/contractor)
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_BASIC,
 		SKILL_MEDICAL     = SKILL_BASIC
@@ -232,24 +213,25 @@
 	)
 
 	alt_titles = list(
-		"Psychiatrist",
-		"Psionic Psychiatrist" = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/mentalist,
-		"Mentalist" = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/mentalist
-
+		"Redactor" = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/redactor
 	)
 
 /datum/job/psychiatrist/get_description_blurb()
-	return "You are the Psychiatrist. Your main responsibility is the mental health and wellbeing of the crew. You are subordinate to the Chief Medical Officer. Additionally, alongside the Psionic Advisor, you're the only member aboard with known Psionic abilities."
+	return "Псионический Психиатр: Вашим прямым начальством является Главврач.\
+	В Ваши обязанности входит оказание психологической помощи персоналу корабля, используя как стандартные методы психологии, так и свои псионические навыки.\
+	Вам был присужден ранг Способного псионика в школе Принуждения, что означает Вашу способность поверхносно читать мысли,\
+	излечивать ментальные проблемы (такие как Галлюцинации) и чувствовать психический потенциал других людей.\
+	Редактор: В Ваши обязанности входит оказание первой медицинской помощи с помощью Ваших псионических навыков,\
+	содействие остальным медицинским работникам и обучение интернов базовым вещам.\
+	Несмотря на почти полное отсутствие практического медицинского опыта, Вы имеете ранг Способного псионика в школе Восстановления,\
+	также называемой Редакции. Это означает, что Вы можете видеть все повреждения человека при прикосновении,\
+	а также останавливать кровотечения и заживлять сломанные кости."
 
 /datum/job/psychiatrist/equip(var/mob/living/carbon/human/H)
 	psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 	return ..()
 
 /datum/job/psychiatrist/equip(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title == "Psychiatrist")
+	if(H.mind.role_alt_title == "Redactor")
 		psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT)
-	if(H.mind.role_alt_title == "Psionic Psychiatrist")
-		psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT)
-	if(H.mind.role_alt_title == "Mentalist")
-		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 	return ..()

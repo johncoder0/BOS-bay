@@ -410,7 +410,7 @@
 
 /area/aquila/airlock
 	name = "\improper LAS Aquila - Airlock Compartment"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_marines)
 
 //Guppy
 
@@ -572,13 +572,13 @@
 	name = "lift (bridge)"
 	lift_floor_label = "Bridge"
 	lift_floor_name = "Bridge"
-	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. AI Core. Landing Area. Auxiliary EVA."
+	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. AI Core. Auxiliary EVA."
 
 /area/turbolift/torch_fourth
 	name = "lift (first deck)"
 	lift_floor_label = "Deck 1"
 	lift_floor_name = "Operations Deck"
-	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Armory."
+	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Auxiliary Cryogenic Storage. Emergency Armory."
 
 /area/turbolift/torch_third
 	name = "lift (second deck)"
@@ -596,7 +596,7 @@
 	name = "lift (fourth deck)"
 	lift_floor_label = "Deck 4"
 	lift_floor_name = "Supply Deck"
-	lift_announce_str = "Arriving at Supply Deck: Shuttle Docks. Pathfinder's Office. Cargo Storage. Supply Office. Laundry."
+	lift_announce_str = "Arriving at Supply Deck: Shuttle Docks. Pathfinder's Office. Cargo Storage. Supply Office. Laundry. Infantry."
 
 /area/turbolift/torch_ground
 	name = "lift (fifth deck)"
@@ -1200,7 +1200,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SGV Dagon Bridge"
+	name = "\improper LRS Antares Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 
@@ -1777,7 +1777,7 @@
 	name = "\improper Technician Prep"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
-//	req_access = list(access_inftech, access_infmed)
+	req_access = list(access_marspec)
 
 /area/security/marines/com
 	name = "\improper Squad Leader Prep"
@@ -1817,3 +1817,25 @@
 	name = "\improper Biological storage"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
+
+/////////
+// Memorial
+/////////
+/area/mempark
+	name = "\improper Memorial Park"
+	icon = 'icons/bos/area.dmi'
+	icon_state = "mempark"
+
+/area/mempark/gift
+	name = "\improper Memorial Gift Shop"
+	icon = 'icons/bos/area.dmi'
+	icon_state = "giftshop"
+	req_access = list(access_cargo)
+
+/////////
+// New Secpoint
+/////////
+/area/security/secpointhal
+	name = "\improper Security Checkpoint - Hallway"
+	icon_state = "security"
+	req_access = list(access_brig)

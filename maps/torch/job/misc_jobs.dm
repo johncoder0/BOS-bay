@@ -77,3 +77,27 @@ Civilian
 	skill_points = 24
 	required_language = null
 	give_psionic_implant_on_join = FALSE
+
+/datum/job/stowaway
+	title = "Stowaway"
+	department = "Civilian"
+	department_flag = CIV
+	total_positions = 2
+	spawn_positions = 2
+	ideal_character_age = 30
+	supervisors = "nobody"
+	minimal_player_age = 0
+	create_record = 0
+	account_allowed = 0
+	economic_power = 0
+	outfit_type = /decl/hierarchy/outfit/job/torch/stowaway
+	allowed_branches = list(
+		/datum/mil_branch/civilian
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/civ
+	)
+	latejoin_at_spawnpoints = 1
+	announced = FALSE
+	access = list(access_maint_tunnels, access_emergency_storage)
+	minimal_access = list()

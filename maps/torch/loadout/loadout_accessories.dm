@@ -7,14 +7,14 @@
 /datum/gear/accessory/solawardmajor/New()
 	..()
 	var/solmajors = list()
-	solmajors["iron star"] = /obj/item/clothing/accessory/medal/solgov/iron/star
-	solmajors["bronze heart"] = /obj/item/clothing/accessory/medal/solgov/bronze/heart
-	solmajors["silver sword"] = /obj/item/clothing/accessory/medal/solgov/silver/sword
-	solmajors["medical heart"] = /obj/item/clothing/accessory/medal/solgov/heart
-	solmajors["valor medal"] = /obj/item/clothing/accessory/medal/solgov/silver/sol
-	solmajors["sapienterian medal"] = /obj/item/clothing/accessory/medal/solgov/gold/sol
-	solmajors["peacekeeper ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/peace
-	solmajors["marksman ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/marksman
+	solmajors["iron star"] = /obj/item/clothing/accessory/medal/lordan/iron/star
+	solmajors["bronze heart"] = /obj/item/clothing/accessory/medal/lordan/bronze/heart
+	solmajors["silver sword"] = /obj/item/clothing/accessory/medal/lordan/silver/sword
+	solmajors["medical heart"] = /obj/item/clothing/accessory/medal/lordan/heart
+	solmajors["valor medal"] = /obj/item/clothing/accessory/medal/lordan/silver/sol
+	solmajors["sapienterian medal"] = /obj/item/clothing/accessory/medal/lordan/gold/sol
+	solmajors["peacekeeper ribbon"] = /obj/item/clothing/accessory/ribbon/lordan/peace
+	solmajors["marksman ribbon"] = /obj/item/clothing/accessory/ribbon/lordan/marksman
 	gear_tweaks += new/datum/gear_tweak/path(solmajors)
 
 /datum/gear/accessory/solawardminor
@@ -26,65 +26,34 @@
 /datum/gear/accessory/solawardminor/New()
 	..()
 	var/solminors = list()
-	solminors["expeditionary medal"] = /obj/item/clothing/accessory/medal/solgov/iron/sol
-	solminors["operations medal"] = /obj/item/clothing/accessory/medal/solgov/bronze/sol
-	solminors["frontier ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/frontier
-	solminors["instructor ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/instructor
+	solminors["expeditionary medal"] = /obj/item/clothing/accessory/medal/lordan/iron/sol
+	solminors["operations medal"] = /obj/item/clothing/accessory/medal/lordan/bronze/sol
+	solminors["frontier ribbon"] = /obj/item/clothing/accessory/ribbon/lordan/frontier
+	solminors["instructor ribbon"] = /obj/item/clothing/accessory/ribbon/lordan/instructor
 	gear_tweaks += new/datum/gear_tweak/path(solminors)
 
 /datum/gear/accessory/tags
 	display_name = "dog tags"
-	path = /obj/item/clothing/accessory/badge/solgov/tags
-
-/datum/gear/accessory/ec_scarf
-	display_name = "Surveyor Corps scarf"
-	path = /obj/item/clothing/accessory/solgov/ec_scarf
-	description = "A section-specific scarf for Survey Corps uniforms."
-	cost = 0
-	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/accessory/ec_patch
-	display_name = "Surveyor Corps patch"
-	path = /obj/item/clothing/accessory/solgov/ec_patch
-	description = "A shoulder patch representing the Survey Corps."
-	cost = 0
-	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = NT_BRANCHES
+	path = /obj/item/clothing/accessory/badge/lordan/tags
 
 /datum/gear/accessory/torch_patch
-	display_name = "SGV Dagon mission patch"
-	path = /obj/item/clothing/accessory/solgov/torch_patch
-	description = "A shoulder patch representing the SGV Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
+	display_name = "LRS Antares mission patch"
+	path = /obj/item/clothing/accessory/lordan/torch_patch
+	description = "A shoulder patch representing the LRS Antares and its mission. Given to all the oddjobs pulled from various branches to work on the Antares."
 
 /datum/gear/accessory/pilot_pin
 	display_name = "pilot's qualification pin"
-	path = /obj/item/clothing/accessory/solgov/specialty/pilot
+	path = /obj/item/clothing/accessory/lordan/specialty/pilot
 	allowed_skills = list(SKILL_PILOT = SKILL_ADEPT)
-
-/datum/gear/accessory/fleetpatch
-	display_name = "fleet patch"
-	path = /obj/item/clothing/accessory/solgov/fleet_patch
-	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 0
-	allowed_branches = list(/datum/mil_branch/fleet)
-
-/datum/gear/accessory/fleetpatch/New()
-	..()
-	var/fleetpatch = list()
-	fleetpatch["Group 40 patch"] = /obj/item/clothing/accessory/solgov/fleet_patch
-	fleetpatch["Border Patrol patch"] = /obj/item/clothing/accessory/solgov/fleet_patch/second
-	fleetpatch["Sol Defense Group patch"] = /obj/item/clothing/accessory/solgov/fleet_patch/fourth
-	gear_tweaks += new/datum/gear_tweak/path(fleetpatch)
 
 /datum/gear/accessory/armband_ma
 	display_name = "master-at-arms brassard"
-	path = /obj/item/clothing/accessory/armband/solgov/ma
+	path = /obj/item/clothing/accessory/armband/lordan/ma
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/accessory/armband_mp
 	display_name = "military police brassard"
-	path = /obj/item/clothing/accessory/armband/solgov/mp
+	path = /obj/item/clothing/accessory/armband/lordan/mp
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/accessory/armband_security
@@ -109,12 +78,6 @@
 
 /datum/gear/accessory/armband_hydro
 	allowed_roles = list(/datum/job/rd, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/assistant)
-
-/datum/gear/accessory/armband_nt
-	allowed_branches = CASUAL_BRANCHES
-
-/datum/gear/accessory/ntaward
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/accessory/tie
 	allowed_branches = CASUAL_BRANCHES

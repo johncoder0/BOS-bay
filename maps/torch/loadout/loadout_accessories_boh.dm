@@ -1,36 +1,36 @@
 /datum/gear/accessory/custom_ribbon
 	display_name = "custom ribbon"
 	description = "A military decoration awarded to personnel for significant (or not) accomplishments."
-	path = /obj/item/clothing/accessory/ribbon/solgov/custom
+	path = /obj/item/clothing/accessory/ribbon/lordan/custom
 	cost = 2
 
 /datum/gear/accessory/custom_ribbon/color
 	display_name = "custom ribbon, colorable"
-	path = /obj/item/clothing/accessory/ribbon/solgov/custom/color
+	path = /obj/item/clothing/accessory/ribbon/lordan/custom/color
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/accessory/armband_ma
 	display_name = "master-at-arms brassard"
-	path = /obj/item/clothing/accessory/armband/solgov/ma
+	path = /obj/item/clothing/accessory/armband/lordan/ma
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/accessory/armband_mp
 	display_name = "military police brassard"
-	path = /obj/item/clothing/accessory/armband/solgov/mp
+	path = /obj/item/clothing/accessory/armband/lordan/mp
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/accessory/smc_patch
 	display_name = "Marine Corps patch"
-	path = /obj/item/clothing/accessory/solgov/smc_patch
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	path = /obj/item/clothing/accessory/lordan/smc_patch
+	allowed_branches = list(/datum/mil_branch/larmarine)
 	cost = 0
 	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
 
 /datum/gear/accessory/smc_patch_xenos
 	display_name = "Marine Corps patch (xenoic division)"
-	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
+	path = /obj/item/clothing/accessory/lordan/smc_patch/xeno
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/larmarine)
 
 /datum/gear/tactical/civ_tag
 	display_name = "Civilian tag"
@@ -47,17 +47,17 @@
 	path = /obj/item/clothing/accessory/armor/tag/civ/med
 
 /datum/gear/accessory/tags/marine
-	display_name = "dog tags, solar marine corps"
+	display_name = "dog tags, lordanian marine corps"
 	description = "Plain identification tags made from a durable metal. This one is issued to marines."
-	path = /obj/item/clothing/accessory/badge/solgov/tags/marine
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	path = /obj/item/clothing/accessory/badge/lordan/tags/marine
+	allowed_branches = list(/datum/mil_branch/larmarine)
 	cost = 0
 
 /datum/gear/accessory/tags/fleet
-	display_name = "dog tags, expeditionary fleet"
+	display_name = "dog tags, lordanian fleet"
 	description = "Plain identification tags made from a durable metal. This one is issued to fleet."
-	path = /obj/item/clothing/accessory/badge/solgov/tags/fleet
-	allowed_branches = list(/datum/mil_branch/fleet)
+	path = /obj/item/clothing/accessory/badge/lordan/tags/fleet
+	allowed_branches = list(/datum/mil_branch/larfleet)
 	cost = 0
 
 // Separating main's certain armor customization items.
@@ -79,18 +79,6 @@
 	blood_type["O+"] = /obj/item/clothing/accessory/armor/tag/opos
 	blood_type["O-"] = /obj/item/clothing/accessory/armor/tag/oneg
 	gear_tweaks += new/datum/gear_tweak/path(blood_type)
-
-/datum/gear/tactical/solgov
-	display_name = "SCG Flag tag"
-	path = /obj/item/clothing/accessory/armor/tag/solgov
-	allowed_branches = SOLGOV_BRANCHES
-	cost = 0 // Uniformed branches would require one.
-
-/datum/gear/tactical/nt
-	display_name = "NanoTrasen tag"
-	path = /obj/item/clothing/accessory/armor/tag/nt/dagon
-	allowed_branches = NT_BRANCHES
-	cost = 0 // Ditto.
 
 // Armor plates
 /datum/gear/tactical/armor_plate_light
@@ -195,34 +183,33 @@
 // Too lazy to adjust outfit
 /datum/gear/accessory/nt_blaze
 	display_name = "blaze, janitor"
-	path = /obj/item/clothing/accessory/solgov/specialty/janitor
-	allowed_branches = NT_BRANCHES
+	path = /obj/item/clothing/accessory/lordan/specialty/janitor
 	allowed_roles = list(/datum/job/janitor)
 	cost = 0
 
 /datum/gear/accessory/nt_blaze/brig
 	display_name = "blaze, brig chief"
-	path = /obj/item/clothing/accessory/solgov/specialty/brig
+	path = /obj/item/clothing/accessory/lordan/specialty/brig
 	allowed_roles = list(/datum/job/warden)
 
 /datum/gear/accessory/nt_blaze/detective
 	display_name = "blaze, forenscics"
-	path = /obj/item/clothing/accessory/solgov/specialty/forensic
+	path = /obj/item/clothing/accessory/lordan/specialty/forensic
 	allowed_roles = list(/datum/job/detective)
 
 /datum/gear/accessory/nt_blaze/atmos
 	display_name = "blaze, atmospherics"
-	path = /obj/item/clothing/accessory/solgov/specialty/atmos
+	path = /obj/item/clothing/accessory/lordan/specialty/atmos
 	allowed_roles = ENGINEERING_ROLES
 
 /datum/gear/accessory/nt_blaze/chemist
 	display_name = "blaze, chemist"
-	path = /obj/item/clothing/accessory/solgov/specialty/chemist
+	path = /obj/item/clothing/accessory/lordan/specialty/chemist
 	allowed_roles = list(/datum/job/chemist)
 
 /datum/gear/accessory/nt_blaze/counselor
 	display_name = "blaze, counselor"
-	path = /obj/item/clothing/accessory/solgov/specialty/counselor
+	path = /obj/item/clothing/accessory/lordan/specialty/counselor
 	allowed_roles = list(/datum/job/psychiatrist)
 
 // Alternative cloak

@@ -22,14 +22,14 @@
 
 /obj/item/documents/scg/verified
 	name = "secret government documents"
-	desc = "\"Top Secret\" documents detailing SCG IFF codes, granting the Dagon access into restricted sectors. The majority of them are coordinates, codes for fellow ships, and clearance lists."
-	description_antag = "These codes seem very odd for an exploration vessel: a lot of them are SCG blacksites, covered up. You've never even heard of most of these."
+	desc = "\"Top Secret\" documents detailing LSS IFF codes, granting the Antares access into restricted sectors. The majority of them are coordinates, codes for fellow ships, and clearance lists."
+	description_antag = "These codes seem very odd for an exploration vessel: a lot of them are LSS blacksites, covered up. You've never even heard of most of these."
 	icon_state = "docs_verified"
 
 /obj/item/documents/scg/brains
 	name = "secret medical documents"
-	desc = "Heavily classified medical documentation of brain scans and exploratory surgery conducted across the entire length of the Dagon project. It seems like they have been documenting how deep-space living has altered the structure of the brain."
-	description_antag = "These studies were conducted, without consent, while the patients were under anaesthesia for some other routine medical concern. They detail some very unusual deformities within the deepest parts of the brain, correlating them with the people and places visited by the Dagon 'for later assessment'. The findings, and any 'viable specimens', are to be delivered to a black site on S/2004 N 1."
+	desc = "Heavily classified medical documentation of brain scans and exploratory surgery conducted across the entire length of the Antares project. It seems like they have been documenting how deep-space living has altered the structure of the brain."
+	description_antag = "These studies were conducted, without consent, while the patients were under anaesthesia for some other routine medical concern. They detail some very unusual deformities within the deepest parts of the brain, correlating them with the people and places visited by the Antares 'for later assessment'. The findings, and any 'viable specimens', are to be delivered to a black site on S/2004 N 1."
 	icon_state = "docs_verified"
 
 /obj/item/documents/scg/red
@@ -40,14 +40,14 @@
 
 /obj/item/documents/scg/blue
 	name = "blue secret documents"
-	desc = "\"Top Secret\" documents detailing the Skrellian company Krri'gli, and their insistent requests upon specific priority sectors for the Dagon to investigate."
-	description_antag = "Krri'gli seem to be guiding the Dagon, subtly, to a specific unmapped sector of the galaxy. It's almost like they're too afraid to investigate it personally."
+	desc = "\"Top Secret\" documents detailing the Skrellian company Krri'gli, and their insistent requests upon specific priority sectors for the Antares to investigate."
+	description_antag = "Krri'gli seem to be guiding the Antares, subtly, to a specific unmapped sector of the galaxy. It's almost like they're too afraid to investigate it personally."
 	icon_state = "docs_blue"
 
 /obj/item/documents/scgr
 	name = "private memos and faxes"
-	desc = "\"Top Secret\" memos and faxes between the SCGR and other officials of the SCG. It's like a chat client ran on pure paperwork."
-	description_antag = "The SCGR's conversations contain a massive amount of dirt on politicians: drugs, sex, money..."
+	desc = "\"Top Secret\" memos and faxes between the LSSR and other officials of the LSS. It's like a chat client ran on pure paperwork."
+	description_antag = "The LSSR's conversations contain a massive amount of dirt on politicians: drugs, sex, money..."
 
 /obj/item/documents/adjudicator
 	name = "secret legal documents"

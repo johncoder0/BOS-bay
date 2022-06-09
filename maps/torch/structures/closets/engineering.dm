@@ -59,7 +59,7 @@
 		/obj/item/clothing/glasses/meson,
 		/obj/item/clothing/glasses/welding/superior,
 		/obj/item/clothing/suit/armor/pcarrier/medium/command,
-		/obj/item/clothing/head/helmet/solgov/command,
+		/obj/item/clothing/head/helmet,
 		/obj/item/weapon/material/clipboard,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/storage/box/armband/engine,

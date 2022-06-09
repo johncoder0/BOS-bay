@@ -170,7 +170,7 @@
 		to_chat(user, "You lower the ear flaps on the ushanka.")
 
 /obj/item/clothing/head/ushanka/gcc
-	name = "UCG ushanka"
+	name = "ICCG ushanka"
 	desc = "Perfect for keeping ears warm during your court-martial."
 	icon_state = "tccushankadown"
 	icon_state_up = "tccushankaup"

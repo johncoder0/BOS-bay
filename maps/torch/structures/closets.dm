@@ -84,12 +84,12 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol,
+		/obj/item/clothing/suit/armor/pcarrier/light,
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/gunbox/infantry,
-		/obj/item/gunbox/sidearm/infantry
+//		/obj/item/gunbox/infantry,
+//		/obj/item/gunbox/sidearm/infantry
 		)
 
 /obj/structure/closet/secure_closet/martech
@@ -107,9 +107,9 @@
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/device/gps,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol,
-		/obj/item/gunbox/inftech,
-		/obj/item/gunbox/sidearm/infantry
+		/obj/item/clothing/suit/armor/pcarrier/light,
+//		/obj/item/gunbox/inftech,
+//		/obj/item/gunbox/sidearm/infantry
 		)
 
 //demolocker
@@ -140,13 +140,13 @@
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
 		/obj/item/weapon/storage/firstaid/combat,
-		/obj/item/solbanner,
-		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
+		/obj/item/lordbanner,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/device/megaphone,
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/gunbox/infcom,
-		/obj/item/gunbox/sidearm/infantry
+//		/obj/item/gunbox/infcom,
+//		/obj/item/gunbox/sidearm/infantry
 		)
 
 /obj/structure/closet/secure_closet/marmed
@@ -169,13 +169,13 @@
 		/obj/item/weapon/storage/belt/utility,
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol,
-		/obj/item/gunbox/infmed,
+		/obj/item/clothing/suit/armor/pcarrier/light,
+//		/obj/item/gunbox/infmed,
 		/obj/item/device/gps,
 		/obj/item/weapon/defibrillator/compact,
 		/obj/item/weapon/reagent_containers/glass/bottle/antitoxin,
 		/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline,
-		/obj/item/gunbox/sidearm/infantry
+//		/obj/item/gunbox/sidearm/infantry
 		)
 
 /////////
@@ -187,7 +187,7 @@
 /obj/structure/closet/secure_closet/security_torch/cadet/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/pcarrier/light/security,
-		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/head/helmet,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/device/flash,
@@ -212,7 +212,7 @@
 /obj/structure/closet/secure_closet/triagesec/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
-		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/head/helmet,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/weapon/storage/belt/holster/security,

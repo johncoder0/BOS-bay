@@ -44,6 +44,7 @@ var/list/gamemode_cache = list()
 	var/continous_rounds = 0			// Gamemodes which end instantly will instead keep on going until the round ends by escape shuttle or nuke.
 	var/allow_Metadata = 0				// Metadata is supported.
 	var/popup_admin_pm = 0				//adminPMs to non-admins show in a pop-up 'reply' window when set to 1.
+	var/clientfps = 65
 	var/fps = 20
 	var/tick_limit_mc_init = TICK_LIMIT_MC_INIT_DEFAULT	//SSinitialization throttling
 	var/list/resource_urls = null
@@ -596,6 +597,9 @@ var/list/gamemode_cache = list()
 				if("fps")
 					fps = text2num(value)
 
+				if("clientfps")
+					clientfps = text2num(value)
+
 				if("tick_limit_mc_init")
 					tick_limit_mc_init = text2num(value)
 
@@ -817,7 +821,7 @@ var/list/gamemode_cache = list()
 					fail2topic_rule_name = value
 				if ("fail2topic_enabled")
 					fail2topic_enabled = text2num(value)
-				
+
 				if ("show_gamemode_vote")
 					show_gamemode_vote = text2num(value)
 

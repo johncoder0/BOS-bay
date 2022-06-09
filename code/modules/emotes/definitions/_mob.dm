@@ -128,7 +128,7 @@
 		/decl/emote/visible/dance_f,
 		/decl/emote/visible/blink_r,
 		/decl/emote/visible/bow,
-		/decl/emote/visible/salute,
+		/decl/emote/audible/salute, //was visible
 		/decl/emote/visible/flap,
 		/decl/emote/visible/aflap,
 		/decl/emote/visible/drool,
@@ -168,7 +168,7 @@
 		/decl/emote/visible/hrub,
 		/decl/emote/visible/hspread,
 		/decl/emote/visible/pocket,
-		/decl/emote/visible/rsalute,
+		/decl/emote/audible/rsalute, //was visible
 		/decl/emote/visible/rshoulder,
 		/decl/emote/visible/squint,
 		/decl/emote/visible/tfist,
@@ -180,7 +180,7 @@
 	default_emotes = list(
 		/decl/emote/audible/clap,
 		/decl/emote/visible/bow,
-		/decl/emote/visible/salute,
+		/decl/emote/audible/salute, // was visible
 		/decl/emote/visible/flap,
 		/decl/emote/visible/aflap,
 		/decl/emote/visible/twitch,

@@ -23,11 +23,12 @@
 \[list\] - \[/list\] : A list. (Does not work with crayons)<br>
 \[*\] : A dot used for lists. (Does not work with crayons)<br>
 \[logo\] - Inserts EXO logo image.<br>
+\[sovlogo\] - Inserts the Sovereign Lordania logo image.<br>
 \[ntlogo\] - Inserts the NT logo image.<br>
 \[bluelogo\] - Inserts blue NT logo image.<br>
 \[solcrest\] - Inserts SCG crest image.<br>
 \[daislogo\] - Inserts the Deimos Advanced Information Systems logo.<br>
-\[xynlogo\] - Inserts the Xyngergy logo.<br>
+\[xynlogo\] - Inserts the Xynergy logo.<br>
 \[iccgseal\] - Inserts ICCG seal.<br>
 \[fleetlogo\] - Inserts the logo of the SCG Fleet.<br>
 \[sfplogo\] - Inserts the logo of the Sol Federal Police.<br><br>

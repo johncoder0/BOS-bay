@@ -1,10 +1,10 @@
 
 /datum/computer_file/report/recipient/shuttle
-	logo = "\[solcrest\]"
+	logo = "\[sovlogo\]"
 
 /datum/computer_file/report/recipient/docked
-	logo = "\[solcrest\]"
-	form_name = "SCG-SUP-12"
+	logo = "\[sovlogo\]"
+	form_name = "LSS-SUP-12"
 	title = "Docked Vessel Report"
 	available_on_ntnet = 1
 
@@ -15,7 +15,7 @@
 
 /datum/computer_file/report/recipient/docked/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "SGV Dagon Supply and Hangar Management Department")
+	add_field(/datum/report_field/text_label/header, "LRS Antares Supply and Hangar Management Department")
 	add_field(/datum/report_field/text_label/header, "General Info")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/simple_text, "Vessel Name")

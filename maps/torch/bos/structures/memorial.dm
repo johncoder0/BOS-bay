@@ -1,7 +1,7 @@
 /obj/structure/memorial
 	name = "\improper memorial"
 	desc = "A list of dead soldiers who gave their lives for Sovereign Lordania. Hope you don't join them. Add the dog tags of the fallen to memorialize them."
-	icon = 'maps/torch/bos/icons/obj/memorial.dmi'
+	icon = 'maps/torch/bos/icons/obj/structures/memorial.dmi'
 	icon_state = "memorial"
 	density = 1
 	anchored = 1

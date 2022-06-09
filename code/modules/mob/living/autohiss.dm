@@ -16,10 +16,13 @@
 
 /datum/species/unathi
 	autohiss_basic_map = list(
-			"s" = list("ss", "sss", "ssss")
+			"s" = list("ss", "sss", "ssss"),
+			"с" = list("сс", "ссс", "сссс")
 		)
 	autohiss_extra_map = list(
-			"x" = list("ks", "kss", "ksss")
+			"x" = list("ks", "kss", "ksss"),
+			"з" = list("сс", "ссс", "сссс"),
+			"ч" = list("щ", "щщ")
 		)
 	autohiss_exempt = list(
 					LANGUAGE_UNATHI_SINTA,
@@ -28,7 +31,8 @@
 
 /datum/species/tajaran
 	autohiss_basic_map = list(
-			"r" = list("rr", "rrr", "rrrr")
+			"r" = list("rr", "rrr", "rrrr"),
+			"р" = list("рр", "ррр", "рррр")
 		)
 	autohiss_exempt = list(
 					LANGUAGE_TAJARAN
@@ -70,6 +74,9 @@
 					. += capitalize(pick(map[min_char]))
 		else
 			. += pick(map[min_char])
-		message = copytext(message, min_index + 1)
+		if(lowertext(copytext(message, min_index, min_index+1)) == lowertext(copytext(message, min_index+1, min_index+2)))
+			message = copytext(message, min_index + 2) // If the current letter and the subsequent letter are the same, skip the subsequent letter
+		else
+			message = copytext(message, min_index + 1)
 
 	return jointext(., null)

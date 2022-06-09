@@ -26,7 +26,7 @@
 	glove_type = /obj/item/clothing/gloves/rig/unathi/fancy
 
 /obj/item/clothing/head/helmet/space/rig/unathi
-	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
+	species_restricted = list(SPECIES_UNATHI)
 	force = 5
 	sharp = 1 //poking people with the horn
 	armor = list(
@@ -39,7 +39,7 @@
 		rad = ARMOR_RAD_SHIELDED
 		)
 /obj/item/clothing/suit/space/rig/unathi
-	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
+	species_restricted = list(SPECIES_UNATHI)
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RIFLE,
@@ -50,7 +50,7 @@
 		rad = ARMOR_RAD_SHIELDED
 		)
 /obj/item/clothing/shoes/magboots/rig/unathi
-	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
+	species_restricted = list(SPECIES_UNATHI)
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -61,7 +61,7 @@
 		rad = ARMOR_RAD_SHIELDED
 		)
 /obj/item/clothing/gloves/rig/unathi
-	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
+	species_restricted = list(SPECIES_UNATHI)
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,

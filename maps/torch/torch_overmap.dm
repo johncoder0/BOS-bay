@@ -135,5 +135,5 @@
 
 /obj/machinery/computer/shuttle_control/explore/koi
 	name = "Koi control console"
-	shuttle_tag = "Koi shuttle"
+	shuttle_tag = "MUP Koi"
 	req_access = list(access_medical)

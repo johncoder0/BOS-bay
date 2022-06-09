@@ -15,8 +15,8 @@
 	rarity_value = 2
 	strength = STR_HIGH
 
-	min_age = 18
-	max_age = 90
+	min_age = 1
+	max_age = 99
 
 	warning_low_pressure = 50
 	hazard_low_pressure = -1
@@ -68,12 +68,12 @@
 		),
 		TAG_FACTION = list(
 			FACTION_POSITRONICS,
-			FACTION_SOL_CENTRAL,
+//			FACTION_SOL_CENTRAL,
 			FACTION_INDIE_CONFED,
-			FACTION_NANOTRASEN,
+//			FACTION_NANOTRASEN,
 			FACTION_FREETRADE,
-			FACTION_XYNERGY,
-			FACTION_EXPEDITIONARY,
+//			FACTION_XYNERGY,
+//			FACTION_EXPEDITIONARY,
 			FACTION_OTHER
 		)
 	)

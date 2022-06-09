@@ -9,18 +9,18 @@
 	accessible_z_levels = list("1"=1,"2"=3,"3"=1,"4"=1,"5"=1,"6"=1,"9"=30)
 	overmap_size = 35
 	overmap_event_areas = 34
-	usable_email_tlds = list("dagon.nt.exp", "dagon.sec", "freemail.net", "dagon.exp")
+	usable_email_tlds = list("antar.lssf.mil", "antar.lordgov", "freemail.net", "gilgamesh.navy.mil", "antar.oorah.mil")
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
 	station_name  = "LRS Antares"
-	station_short = "Dagon"
+	station_short = "Antares"
 	dock_name     = "TBD"
 	boss_name     = "Operational Headquarters"
 	boss_short    = "OpHQ"
-	company_name  = "Lordanian Sovereign Systems Army"
-	company_short = "LSSA"
+	company_name  = "Lordanian Sovereign Systems Fleet"
+	company_short = "LSSF"
 
 	map_admin_faxes = list("Operational Headquarters")
 
@@ -32,10 +32,10 @@
 
 	evac_controller_type = /datum/evacuation_controller/starship
 
-	default_law_type = /datum/ai_laws/solgov
+	default_law_type = /datum/ai_laws/lordania
 	use_overmap = 1
 	num_exoplanets = 1
 
-	away_site_budget = 1
+	away_site_budget = 5.5
 	//id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
 	id_hud_icons = 'maps/torch/icons/assignment_hud_boh.dmi'

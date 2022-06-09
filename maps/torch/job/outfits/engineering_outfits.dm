@@ -10,37 +10,44 @@
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	name = OUTFIT_JOB_NAME("Senior Engineer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/hazard
+	shoes = /obj/item/clothing/shoes/workboots
 	id_type = /obj/item/weapon/card/id/torch/crew/engineering/senior
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet
 	name = OUTFIT_JOB_NAME("Senior Engineer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
+	shoes = /obj/item/clothing/shoes/lordan
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	name = OUTFIT_JOB_NAME("Engineer - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/hazard
+	shoes = /obj/item/clothing/shoes/workboots
 	id_type = /obj/item/weapon/card/id/torch/crew/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
 	name = OUTFIT_JOB_NAME("Engineer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
+	shoes = /obj/item/clothing/shoes/lordan
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
 	name = OUTFIT_JOB_NAME("Engineering Assistant")
-	uniform = /obj/item/clothing/under/rank/engineer
+	uniform = /obj/item/clothing/under/overalls
 	shoes = /obj/item/clothing/shoes/workboots
 	id_type = /obj/item/weapon/card/id/torch/contractor/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
 
+/decl/hierarchy/outfit/job/torch/crew/engineering/fleetassistant
+	name = OUTFIT_JOB_NAME("Engineering Assistant - Fleet")
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
+	shoes = /obj/item/clothing/shoes/lordan
+	id_type = /obj/item/weapon/card/id/torch/contractor/engineering
+	pda_type = /obj/item/modular_computer/pda/engineering
+
 /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
-	name = OUTFIT_JOB_NAME("Roboticist - Torch")
+	name = OUTFIT_JOB_NAME("Roboticist - Antares")
 	uniform = /obj/item/clothing/under/rank/roboticist
 	shoes = /obj/item/clothing/shoes/black
 	id_type = /obj/item/weapon/card/id/torch/contractor/engineering/roboticist

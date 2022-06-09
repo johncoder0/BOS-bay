@@ -71,7 +71,7 @@ SUBSYSTEM_DEF(vote)
 		var/next_allowed_time = (last_started_time + config.vote_delay)
 		if(next_allowed_time > world.time)
 			return FALSE
-	
+
 	var/datum/vote/new_vote = new vote_type
 	if(!new_vote.setup(creator, automatic))
 		return FALSE
@@ -87,7 +87,7 @@ SUBSYSTEM_DEF(vote)
 	voting |= C
 
 	. = list()
-	. += "<html><head><title>Voting Panel</title></head><body>"
+	. += "<html><meta charset='UTF-8'><head><title>Voting Panel</title></head><body>"
 	if(active_vote)
 		. += active_vote.interface(C.mob)
 		if(admin)

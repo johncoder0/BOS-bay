@@ -1,6 +1,7 @@
 #define WEBHOOK_SUBMAP_LOADED_SKRELL "webhook_submap_skrell"
 
 #include "skrellscoutship_areas.dm"
+#include "skrellscoutship_jobs.dm"
 #include "skrellscoutship_shuttles.dm"
 #include "skrellscoutship_radio.dm"
 
@@ -9,7 +10,7 @@
 	id = "awaysite_skrell_scout"
 	description = "A Skrellian SDTF scouting vessel."
 	suffixes = list("skrellscoutship/skrellscoutship_revamp.dmm")
-	cost = 0.5
+	cost = 1.5 /// was 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship)
 	apc_test_exempt_areas = list()
 	area_coherency_test_subarea_count = list(
@@ -24,17 +25,6 @@
 	initial_restricted_waypoints = list(
 		"Skrellian Scout" = list("nav_skrellscout_start")
 	)
-
-/obj/effect/submap_landmark/joinable_submap/skrellscoutship
-	name = "Xilvuxix"
-	archetype = /decl/submap_archetype/skrellscoutship
-
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship
-	name = "Qrri-Zuumqix"
-	movable_flags = MOVABLE_FLAG_EFFECTMOVE
-
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
-	name = "Qrri-Vuxix"
 
 /decl/webhook/submap_loaded/skrell
 	id = WEBHOOK_SUBMAP_LOADED_SKRELL
@@ -61,67 +51,6 @@
 	color = COLOR_GRAY40
 	detail_color = "#7331c4"
 	access = list(access_skrellscoutship)
-
-/datum/job/submap/skrellscoutship_crew/leader
-	title = "Qrri-Vuxix"
-	supervisors = "your SDTF"
-	total_positions = 1
-	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship/leader
-	allowed_ranks = list(/datum/mil_rank/skrell_fleet/vuxix)
-	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
-	is_semi_antagonist = TRUE
-	min_skill = list(SKILL_EVA = SKILL_ADEPT,
-					SKILL_PILOT = SKILL_ADEPT,
-					SKILL_HAULING = SKILL_ADEPT,
-					SKILL_COMBAT = SKILL_ADEPT,
-					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_ADEPT)
-
-/datum/job/submap/skrellscoutship_crew
-	title = "Qrri-Zuumqix"
-	supervisors = "your Qrri-Vuxix"
-	total_positions = 4
-	whitelisted_species = list("Skrell")
-	branch = /datum/mil_branch/skrell_fleet
-	rank = /datum/mil_rank/skrell_fleet
-	allowed_branches = list(/datum/mil_branch/skrell_fleet)
-	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
-	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
-	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
-	skill_points = 30
-	is_semi_antagonist = TRUE
-	min_skill = list(SKILL_EVA = SKILL_ADEPT,
-					SKILL_HAULING = SKILL_ADEPT,
-					SKILL_COMBAT = SKILL_ADEPT,
-					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_ADEPT)
-
-/datum/job/submap/skrellscoutship_crew/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
-	. = ..(H, alt_title, branch, grade)	//passing through arguments
-	//Limited to subcastes that make sense on the vessel. No need for ground-forces or R&D on such a ship.
-	var/skrellscoutcastes = list(
-		"Malish-Katish" = list(
-			"Mero'ta-Ketish",
-			"Toglo'i-Ketish"
-		),
-		"Kanin-Katish" = list(
-			"Xiqarr-Ketish",
-			"Mero'tol-Ketish",
-			"Goxo'i-Ketish"
-		),
-		"Raskinta-Katish" = list(
-			"Me'kerr-Ketish",
-			"Qi'kerr-Ketish",
-			"Me'xoal-Ketish"
-		)
-	)
-
-	var/skrellcaste = input(H, "What is your Skrell's Caste?", "SDTF Rank") as null|anything in skrellscoutcastes
-	if(skrellcaste)
-		var/skrellsubcaste = input(H, "What is your Skrell's Subcaste?", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
-		var/obj/item/weapon/card/id/C = H.wear_id
-		if(istype(C))
-			C.assignment = skrellsubcaste
 
 // Skrell clothing
 

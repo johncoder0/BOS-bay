@@ -1,10 +1,16 @@
 /datum/game_mode/traitor
-	extended_round_description = "The successes of the SEV Torch's past missions have marked the ship as \
-	a highly valuable target for many organizations and individuals. The varied pasts \
-	and experiences of the crew have left them susceptible to the vices and temptations of humanity. \
-	Are you in the safe self-contained workplace you once thought it was, or has it become a playground \
-	for the evils of the galaxy? Who can you trust? Watch your front. Watch your sides. Watch your back. \
-	The familiar faces that you've passed hundreds of times down the hallways before can be hiding terrible \
-	secrets and deceptions. Every corner is a mystery. Every conversation is a lie. You will be facing your \
-	friends and family as they try to use your emotions and trust to their advantage, leaving you with nothing \
-	but the painful reminder that space is cruel and unforgiving."
+    extended_round_description = "Успех прошлых операций, проводимых ЛРК Антарес сделал из корабля \
+    одну из приоритетных целей для вторжения вражеского агента. \
+    Продолжительные войны измотали огромное количество людей, \
+    сломив их  дух перед пороками и искушениями, которые \
+    может предоставить другая сторона конфликта. В воздухе \
+    повис лишь один вопрос - кому Вы можете доверять? \
+    Знакомые лица, сотни раз проходившие мимо Вас по коридорам, \
+    могут скрывать ужасных скелетов в шкафу. \
+    Каждая комната таит в себе загадку. \
+    Каждая фраза имеет долю лжи. \
+    Скорее всего, Ваши друзья попытаются использовать \
+    Вас ради собственной выгоды, оставив Вас на разбитом \
+    корыте под названием ЛРК Антарес. В прочем, \
+    это лишь ещё одно болезненно напоминание о \
+    жестокости и неумолимости воли космоса.

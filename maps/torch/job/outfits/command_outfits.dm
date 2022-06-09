@@ -1,15 +1,16 @@
 /decl/hierarchy/outfit/job/torch/crew/command
-	name = OUTFIT_JOB_NAME("Torch Command Outfit")
+	name = OUTFIT_JOB_NAME("Antares Command Outfit")
 	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/command
 	l_ear = /obj/item/device/radio/headset/headset_com
 
 /decl/hierarchy/outfit/job/torch/crew/command/CO
 	name = OUTFIT_JOB_NAME("Commanding Officer")
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/captain
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
-	shoes = /obj/item/clothing/shoes/dutyboots
-	head = /obj/item/clothing/head/soft/solgov/expedition/co
+	shoes = /obj/item/clothing/shoes/lordan/service
+	head = /obj/item/clothing/head/lordan/fleet
 	id_type = /obj/item/weapon/card/id/torch/gold
 	pda_type = /obj/item/modular_computer/pda/captain
 
@@ -21,22 +22,21 @@
 
 /decl/hierarchy/outfit/job/torch/crew/command/XO
 	name = OUTFIT_JOB_NAME("Executive Officer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	head = /obj/item/clothing/head/lordan/fleet
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
-	shoes = /obj/item/clothing/shoes/dutyboots
+	shoes = /obj/item/clothing/shoes/lordan/service
 	id_type = /obj/item/weapon/card/id/torch/silver
 	pda_type = /obj/item/modular_computer/pda/heads/hop
 
-/decl/hierarchy/outfit/job/torch/crew/command/XO/fleet
-	name = OUTFIT_JOB_NAME("Executive Officer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
-	shoes = /obj/item/clothing/shoes/dutyboots
-
 /decl/hierarchy/outfit/job/torch/crew/command/cmo
-	name = OUTFIT_JOB_NAME("Chief Medical Officer - Torch")
+	name = OUTFIT_JOB_NAME("Chief Medical Officer - Antares")
 	l_ear  =/obj/item/device/radio/headset/heads/cmo
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/medical
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/medical
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat/blue
+	head = /obj/item/clothing/head/beret/lordan/fleet
+	shoes = /obj/item/clothing/shoes/lordan
 	id_type = /obj/item/weapon/card/id/torch/silver/medical
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
 	pda_slot = slot_l_store
@@ -45,15 +45,11 @@
 	..()
 	BACKPACK_OVERRIDE_MEDICAL
 
-/decl/hierarchy/outfit/job/torch/crew/command/cmo/fleet
-	name = OUTFIT_JOB_NAME("Chief Medical Officer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
-	shoes = /obj/item/clothing/shoes/dutyboots
-
 /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
-	name = OUTFIT_JOB_NAME("Chief Engineer - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	name = OUTFIT_JOB_NAME("Chief Engineer - Antares")
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
+	shoes = /obj/item/clothing/shoes/lordan
+	head = /obj/item/clothing/head/beret/lordan/fleet
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	id_type = /obj/item/weapon/card/id/torch/silver/engineering
 	pda_type = /obj/item/modular_computer/pda/heads/ce
@@ -64,16 +60,13 @@
 	..()
 	BACKPACK_OVERRIDE_ENGINEERING
 
-/decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet
-	name = OUTFIT_JOB_NAME("Chief Engineer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
-
 /decl/hierarchy/outfit/job/torch/crew/command/cos
 	name = OUTFIT_JOB_NAME("Chief of Security")
 	l_ear = /obj/item/device/radio/headset/heads/cos
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/security
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/combat/security
+	suit = /obj/item/clothing/suit/armor/pcarrier/medium
+	head = /obj/item/clothing/head/beret/lordan/fleet
+	shoes = /obj/item/clothing/shoes/lordan
 	id_type = /obj/item/weapon/card/id/torch/silver/security
 	pda_type = /obj/item/modular_computer/pda/heads/hos
 
@@ -81,71 +74,48 @@
 	..()
 	BACKPACK_OVERRIDE_SECURITY
 
-/decl/hierarchy/outfit/job/torch/crew/command/cos/fleet
-	name = OUTFIT_JOB_NAME("Chief of Security - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat/security
-	shoes = /obj/item/clothing/shoes/dutyboots
-
-/decl/hierarchy/outfit/job/torch/passenger/workplace_liaison
-	name = OUTFIT_JOB_NAME("Workplace Liaison")
-	l_ear = /obj/item/device/radio/headset/heads/torchntcommand
-	uniform = /obj/item/clothing/under/suit_jacket/corp
-	shoes = /obj/item/clothing/shoes/laceup
-	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
-	backpack_contents = list(/obj/item/clothing/accessory/badge/nanotrasen = 1)
-
-/decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
-	name = OUTFIT_JOB_NAME("Loss Prevention Associate")
-	l_ear =    /obj/item/device/radio/headset/heads/torchntcommand
-	uniform =  /obj/item/clothing/under/suit_jacket/corp
-	shoes =    /obj/item/clothing/shoes/laceup
-	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
-
-/decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/union
-	name = OUTFIT_JOB_NAME("Union Enforcer")
-	l_pocket = /obj/item/clothing/mask/smokable/cigarette/cigar/cohiba
-	r_pocket = /obj/item/weapon/flame/lighter/zippo
-
-/decl/hierarchy/outfit/job/torch/passenger/workplace_liaison/union_rep
-	name = OUTFIT_JOB_NAME("Union Representative")
-	l_pocket = /obj/item/clothing/mask/smokable/cigarette/cigar/cohiba
-	r_pocket = /obj/item/weapon/flame/lighter/zippo
+/decl/hierarchy/outfit/job/torch/crew/research/cso
+	name = OUTFIT_JOB_NAME("Research Director - Antares")
+	uniform = /obj/item/clothing/under/suit_jacket/really_black
+	l_ear = /obj/item/device/radio/headset/heads/torchntdirector
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec/lordan
+	id_type = /obj/item/weapon/card/id/torch/silver/research
+	pda_type = /obj/item/modular_computer/pda/heads/rd
 
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
-	shoes = /obj/item/clothing/shoes/dutyboots
+	name = OUTFIT_JOB_NAME("Political Officer")
+	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
+	suit = /obj/item/clothing/suit/storage/lordan/service/po
+	head = /obj/item/clothing/head/lordan/fleet/po
+	shoes = /obj/item/clothing/shoes/lordan/service
 	l_ear = /obj/item/device/radio/headset/sea
 	id_type = /obj/item/weapon/card/id/torch/crew/sea
 	pda_type = /obj/item/modular_computer/pda/heads
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
-	name = OUTFIT_JOB_NAME("Bridge Officer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
-	shoes = /obj/item/clothing/shoes/dutyboots
+	name = OUTFIT_JOB_NAME("Second Officer")
+	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	head = /obj/item/clothing/head/beret/lordan/fleet
+	shoes = /obj/item/clothing/shoes/lordan/service
 	id_type = /obj/item/weapon/card/id/torch/crew/bridgeofficer
 	pda_type = /obj/item/modular_computer/pda/heads
 	l_ear = /obj/item/device/radio/headset/bridgeofficer
 
-/decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
-	name = OUTFIT_JOB_NAME("Bridge Officer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
-	shoes = /obj/item/clothing/shoes/dutyboots
-
-/decl/hierarchy/outfit/job/torch/crew/command/solrep
-	name = OUTFIT_JOB_NAME("Sol Gov Representative")
-	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
-	shoes = /obj/item/clothing/shoes/dress
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black
+/decl/hierarchy/outfit/job/torch/crew/command/terrep
+	name = OUTFIT_JOB_NAME("ICCG Representative")
+	uniform = /obj/item/clothing/under/terran/navy/service/command
+	suit = /obj/item/clothing/suit/storage/terran/service/navy/command
+	shoes = /obj/item/clothing/shoes/terran
+	head = /obj/item/clothing/head/terran/navy/service/command
 	id_type = /obj/item/weapon/card/id/torch/crew/representative
 	pda_type = /obj/item/modular_computer/pda/heads
-	l_ear = /obj/item/device/radio/headset/federal
+	l_ear = /obj/item/device/radio/headset/terran
 
-/decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
-	name = OUTFIT_JOB_NAME("Sol Federal Agent")
-	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
-	shoes = /obj/item/clothing/shoes/dress
-	id_type = /obj/item/weapon/card/id/torch/crew/solguard
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black/sfp
-	glasses = /obj/item/clothing/glasses/sunglasses
-	l_ear = /obj/item/device/radio/headset/federal
+/decl/hierarchy/outfit/job/torch/crew/command/ter_bodyguard
+	name = OUTFIT_JOB_NAME("ICCG Bodyguard")
+	uniform = /obj/item/clothing/under/terran/navy/utility
+	shoes = /obj/item/clothing/shoes/terran
+	head = /obj/item/clothing/head/terran/navy/utility
+	id_type = /obj/item/weapon/card/id/torch/crew/terguard
+	l_ear = /obj/item/device/radio/headset/terran

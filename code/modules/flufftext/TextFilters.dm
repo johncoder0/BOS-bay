@@ -1,6 +1,8 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:32
 
-proc/Intoxicated(phrase,var/strength=50) //Strength is 0 to 100
+proc/Intoxicated(var/t as text)
+	return uppertext(t[1]) + copytext(t, 1 + length(t[1]))
+/*proc/Intoxicated(phrase,var/strength=50) //Strength is 0 to 100
 	phrase = html_decode(phrase)
 	var/leng=length(phrase)
 	var/counter=length(phrase)
@@ -19,9 +21,10 @@ proc/Intoxicated(phrase,var/strength=50) //Strength is 0 to 100
 				if(2,4,6,15) newletter="[uppertext(newletter)]"
 				if(7) newletter+="'"
 		newphrase+="[newletter]";counter-=1
-	return newphrase
-
-proc/NewStutter(phrase,stunned,var/strength=50)
+	return newphrase */
+proc/NewStutter(var/t as text)
+	return uppertext(t[1]) + copytext(t, 1 + length(t[1]))
+/*proc/NewStutter(phrase,stunned,var/strength=50)
 	phrase = html_decode(phrase)
 
 	var/list/split_phrase = splittext(phrase," ") //Split it up into words.
@@ -55,7 +58,7 @@ proc/NewStutter(phrase,stunned,var/strength=50)
 
 		split_phrase[index] = word
 
-	return sanitize(jointext(split_phrase," "))
+	return sanitize(jointext(split_phrase," ")) */
 
 proc/Stagger(mob/M,d) //Technically not a filter, but it relates to drunkenness.
 	step(M, pick(d,turn(d,90),turn(d,-90)))

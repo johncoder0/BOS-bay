@@ -1,10 +1,14 @@
-# Bastion of Slavs
+# BoS-BAY - Страдающий Чатик Edition
 Модификация модификации, да. Вы всё правильно поняли.
 
 Оригинал - [Baystation12](https://github.com/baystation12/baystation12)
 
 Модифицируемая модификация - [Bastion of Hestia](https://github.com/BoHBranch/BoH-Bay) 
 
+Модульные приколы:
+`BOS-bay/code/bos`
+`BOS-bay/icons/bos`
+`BOS-bay/maps/torch/bos`
 ### LICENSE
 
 The code for Baystation12, Bastion of Hestia and Bastion of Slavs is licensed under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl.html), which can be found in full in [/LICENSE](/LICENSE).
