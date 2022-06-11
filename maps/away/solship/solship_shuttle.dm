@@ -1,9 +1,9 @@
 /datum/shuttle/autodock/overmap/texas
-	name = "Texas Red"
+	name = "Texas-Red"
 	warmup_time = 15
 	current_location = "nav_hangar_texas"
 	range = 2
-	shuttle_area = /area/ship/reaper
+	shuttle_area = /area/ship/texas
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
 	skill_needed = SKILL_NONE
@@ -11,19 +11,19 @@
 
 /obj/machinery/computer/shuttle_control/explore/away_gunship/texas
 	name = "Texas Red Shuttle control console"
-	req_access = list(access_away_cavalry)
-	shuttle_tag = "Texas Red"
+	req_access = list(access_away_solship_main)
+	shuttle_tag = "Texas-Red"
 
 /obj/effect/overmap/visitable/ship/landable/texas
-	name = "Texas Red"
+	name = "Texas-Red"
 	desc = "A military dropship of particular design."
-	shuttle = "Texas Red"
+	shuttle = "Texas-Red"
 	fore_dir = WEST
 	color = "#000000"
 	vessel_mass = 250
 	vessel_size = SHIP_SIZE_TINY
 
-/area/ship/reaper
+/area/ship/texas
 	name = "\improper Texas Red"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor
@@ -34,7 +34,7 @@
 /obj/effect/shuttle_landmark/texas/start
 	name = "Dock"
 	landmark_tag = "nav_hangar_texas"
-	base_area = /area/ship/patrol/command/hangar
+	base_area = /area/solship/dock
 	base_turf = /turf/simulated/floor/plating
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 

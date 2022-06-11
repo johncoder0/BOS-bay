@@ -1,6 +1,6 @@
 /decl/hierarchy/outfit/job/solship/crew/fleet
 	name = OUTFIT_JOB_NAME("Solship Fleet Outfit")
-	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/fleet
+	hierarchy_type = /decl/hierarchy/outfit/job/solship/crew/fleet
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/away_solship
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_ear = /obj/item/device/radio/headset/gunship
@@ -107,7 +107,7 @@ decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet/pettyofficer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/eng/officer
 	name = "Fleet engineering CO"
@@ -173,7 +173,7 @@ decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet/pettyofficer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sec/officer
 	name = "Fleet security CO"
@@ -240,7 +240,7 @@ decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet/pettyofficer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/med/officer
 	name = "Fleet medical CO"
@@ -305,7 +305,7 @@ decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet/pettyofficer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sup/officer
 	name = "Fleet supply CO"
@@ -382,7 +382,7 @@ decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet/pettyofficer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/srv/officer
 	name = "Fleet service CO"
@@ -431,7 +431,7 @@ decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet/pettyofficer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/exp/officer
 	name = "Fleet exploration CO"
@@ -473,7 +473,7 @@ decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet/pettyofficer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/spt/officer
 	name = "Fleet command support CO"

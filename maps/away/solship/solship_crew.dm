@@ -1,22 +1,16 @@
-#define WEBHOOK_SUBMAP_LOADED_MERC	"webhook_submap_merc"
-
 /obj/effect/submap_landmark/joinable_submap/solship
-	name = "Excelsior"
+	name = "SCGG Big Iron"
 	archetype = /decl/submap_archetype/solship
 
 /decl/submap_archetype/solship
-	descriptor = "Mercenary Vessel"
-	map = "Mercenary Ship"
+	descriptor = "SCG Gunship"
+	map = "Big Iron"
 	crew_jobs = list(
-		/datum/job/submap/solship/captain,
-		/datum/job/submap/solship/lieutenant,
-		/datum/job/submap/solship/specialist
-		/datum/job/submap/solship/shocktrooper,
+		/datum/job/submap/solship,
 		/datum/job/submap/solship/medic,
 		/datum/job/submap/solship/engineer,
-		/datum/job/submap/solship/operative,
+		/datum/job/submap/solship/captain
 	)
-	call_webhook = WEBHOOK_SUBMAP_LOADED_MERC
 
 /obj/effect/submap_landmark/spawnpoint/solship
 	name = "Gunship Vessel Crew"
