@@ -97,21 +97,21 @@
 ///Texas///
 ///////////
 
-/area/solship/texas
+/area/exploration_shuttle/texas
 	name = "\improper Texas Cockpit"
 	icon_state = "texas"
 
-/area/solship/texas/pass
+/area/exploration_shuttle/texas/pass
 	name = "\improper Texas Passengers"
 
-/area/solship/texas/med
+/area/exploration_shuttle/texas/med
 	name = "\improper Texas Medical"
 
-/area/solship/texas/can
+/area/exploration_shuttle/texas/can
 	name = "\improper Texas Canisters"
 
-/area/solship/texas/jail
+/area/exploration_shuttle/texas/jail
 	name = "\improper Texas Jail"
 
-/area/solship/texas/airlock
+/area/exploration_shuttle/texas/airlock
 	name = "\improper Texas Airlock"

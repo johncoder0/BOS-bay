@@ -2,23 +2,23 @@
  * ========
  */
 
-/obj/item/card/id/solship
+/obj/item/weapon/card/id/solship
 	desc = "An identification card issued to SolGov crewmembers."
 	icon_state = "base"
 	color = "#666666"
-//	access = list(access_away_solship_main)
+	access = list(access_away_solship_main)
 
-/obj/item/card/id/solship/engineer
+/obj/item/weapon/card/id/solship/engineer
 	desc = "An identification card issued to SolGov crewmembers."
-//	access = list(access_away_solship_main, access_away_solship_eng)
+	access = list(access_away_solship_main, access_away_solship_eng)
 
-/obj/item/card/id/solship/medic
+/obj/item/weapon/card/id/solship/medic
 	desc = "An identification card issued to SolGov crewmembers."
-//	access = list(access_away_solship_main, access_away_solship_med)
+	access = list(access_away_solship_main, access_away_solship_med)
 
-/obj/item/card/id/solship/captain
+/obj/item/weapon/card/id/solship/captain
 	desc = "An identification card issued to SolGov crewmembers."
-//	access = list(access_away_solship_main, access_away_solship_eng, access_away_solship_med, access_away_solship_captain)
+	access = list(access_away_solship_main, access_away_solship_eng, access_away_solship_med, access_away_solship_captain)
 
 /* RADIOHEADS
  * ========
