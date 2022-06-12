@@ -24,7 +24,7 @@
 	id = "awaysite_garbage_asteroid"
 	description = "A group of small asteroids, with one particularly large."
 	suffixes = list("garb_aster/garb_aster.dmm")
-	cost = 1
+	cost = 20
 	accessibility_weight = 10
 	apc_test_exempt_areas = list(
 		/area/garb_asteroid = NO_SCRUBBER|NO_VENT|NO_APC,
