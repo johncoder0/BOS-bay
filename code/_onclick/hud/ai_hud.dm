@@ -1,4 +1,4 @@
-/datum/hud/proc/ai_hud(ui_style = 'icons/mob/screen_ai.dmi') //~KareTa
+/datum/hud/proc/ai_hud(ui_style = 'icons/bos/mob/screen_ai.dmi') //~KareTa
 
 /mob/living/silicon/ai //from infinity
 	hud_type = /datum/hud/ai
