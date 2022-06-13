@@ -5,7 +5,6 @@
 #define ui_ai_cam_light "WEST+3:14,SOUTH:5"
 #define ui_ai_cam_change_network "WEST+4:16,SOUTH:5"
 #define ui_ai_sensor "CENTER-2:18,SOUTH:5"
-#define ui_ai_crew_manifest "CENTER-1:20,SOUTH:5"
 #define ui_ai_take_image "CENTER:22,SOUTH:5"
 #define ui_ai_view_images "CENTER+1:24,SOUTH:5"
 #define ui_ai_state_laws "CENTER+2:26,SOUTH:5"
