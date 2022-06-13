@@ -2,7 +2,7 @@
 /obj/screen/ai_button
 	var/mob/living/silicon/ai/ai_verb
 	var/list/input_procs = list()
-	icon = 'icons/mob/screen_ai.dmi'
+	icon = 'icons/bos/mob/screen_ai.dmi'
 	var/list/template_icon = list(null, "template")
 	var/image/template_undelay
 
