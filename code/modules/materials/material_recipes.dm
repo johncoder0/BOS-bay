@@ -162,6 +162,10 @@
 		return
 	. += new/datum/stack_recipe/tile/walnut(src)
 
+/material/steel/generate_recipes(var/reinforce_material) //from infinity
+	. = ..()
+	. += new/datum/stack_recipe/chem_mine(src)
+
 /material/cardboard/generate_recipes(var/reinforce_material)
 	. = ..()
 	if(reinforce_material)	//recipies below don't support composite materials
