@@ -524,6 +524,8 @@
 #include "code\datums\wires\apc.dm"
 #include "code\datums\wires\camera.dm"
 #include "code\datums\wires\explosive.dm"
+#include "code\bos\game\objects\items\weapons\chem_mine.dm"
+#include "code\bos\game\objects\items\weapons\mine.dm"
 #include "code\datums\wires\fabricator.dm"
 #include "code\datums\wires\nuclearbomb.dm"
 #include "code\datums\wires\particle_accelerator.dm"
