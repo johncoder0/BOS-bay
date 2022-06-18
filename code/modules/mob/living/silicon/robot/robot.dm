@@ -3,7 +3,7 @@
 /mob/living/silicon/robot
 	name = "Cyborg"
 	real_name = "Cyborg"
-	icon = 'icons/mob/robots.dmi'
+	icon = 'icons/bos/mob/robots.dmi'
 	icon_state = "robot"
 	maxHealth = 300
 	health = 300
@@ -243,7 +243,7 @@
 				icontype = "Custom"
 			else
 				icontype = module_sprites[1]
-				icon = 'icons/mob/robots.dmi'
+				icon = 'icons/bos/mob/robots.dmi'
 				to_chat(src, "<span class='warning'>Custom Sprite Sheet does not contain a valid icon_state for [ckey]-[modtype]</span>")
 		else
 			icontype = module_sprites[1]
