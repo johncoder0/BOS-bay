@@ -14,7 +14,8 @@
 	sprites = list(
 		"Basic" = "Miner_old",
 		"Advanced Droid" = "droid-miner",
-		"Treadhead" = "Miner"
+		"Treadhead" = "Miner",
+		"Crab" = "motile-desert"
 	)
 	supported_upgrades = list(
 		/obj/item/borg/upgrade/jetpack
