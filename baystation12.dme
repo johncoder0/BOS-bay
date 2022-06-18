@@ -170,6 +170,7 @@
 #include "code\bos\game\objects\items\weapons\chem_mine.dm"
 #include "code\bos\game\objects\items\weapons\mine.dm"
 #include "code\bos\game\objects\structures\barrier.dm"
+#include "code\bos\game\objects\structures\flora.dm"
 #include "code\bos\game\verbs\emote.dm"
 #include "code\bos\modules\clothing\suit.dm"
 #include "code\bos\modules\culture_descriptor\culture\cultures_human.dm"
