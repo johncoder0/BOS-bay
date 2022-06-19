@@ -74,7 +74,6 @@
 	icon_state = "GCC"
 	bypass_colorize = TRUE
 
-
 /decl/ai_holo/malfcursor
 	name = "Middle Finger"
 	requires_malf = TRUE
