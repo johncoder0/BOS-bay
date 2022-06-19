@@ -47,8 +47,8 @@
 /decl/ai_holo/singularity
 	icon_state = "Singularity"
 
-/decl/ai_holo/nullicon
-	icon_state = "null"
+/decl/ai_holo/null
+	icon_state = "Null"
 
 /decl/ai_holo/cat
 	icon_state = "Cat"
@@ -56,6 +56,24 @@
 /decl/ai_holo/clippy
 	name = "Clippy"
 	icon_state = "clippy"
+
+/decl/ai_holo/drone
+	icon_state = "Drone"
+	
+/decl/ai_holo/wheel
+	icon_state = "Wheel"
+	
+/decl/ai_holo/shodan
+	icon_state = "Shodan"
+	bypass_colorize = TRUE
+	
+/decl/ai_holo/vega
+	icon_state = "Vega"
+	
+/decl/ai_holo/GCC
+	icon_state = "GCC"
+	bypass_colorize = TRUE
+
 
 /decl/ai_holo/malfcursor
 	name = "Middle Finger"
@@ -71,11 +89,5 @@
 /decl/ai_holo/malfsingularity
 	name = "Singularity"
 	icon_state = "malf-singularity"
-	requires_malf = TRUE
-	bypass_colorize = TRUE
-
-/decl/ai_holo/malftcc
-	name = "TCC"
-	icon_state = "malf-TCC"
 	requires_malf = TRUE
 	bypass_colorize = TRUE
