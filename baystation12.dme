@@ -178,6 +178,8 @@
 #include "code\bos\modules\guns\revolver.dm"
 #include "code\bos\modules\mob\cat.dm"
 #include "code\bos\modules\mob\language\lordanian.dm"
+#include "code\bos\modules\reagents\Chemistry-Reagents-Recipes.dm"
+#include "code\bos\modules\reagents\Chemistry-Reagents\Chemistry-Reagents-Food-Drinks.dm"
 #include "code\bos\modules\sprite_accessories\_accessory_markings.dm"
 #include "code\bos\modules\sprite_accessories\_accessory_skrell.dm"
 #include "code\bos\modules\sprite_accessories\_accessory_tajara.dm"
