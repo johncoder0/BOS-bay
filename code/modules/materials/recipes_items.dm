@@ -100,6 +100,11 @@
 	result_type = /obj/item/weapon/grenade/chem_grenade
 	difficulty = 3
 
+/datum/stack_recipe/chem_mine //from infinity
+	title = "mine casing"
+	result_type = /obj/item/mine/chem_mine
+	difficulty = 3
+
 /datum/stack_recipe/light
 	title = "light fixture frame"
 	result_type = /obj/item/frame/light
