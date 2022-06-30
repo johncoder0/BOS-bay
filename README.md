@@ -1,4 +1,4 @@
-# BoS-BAY - Страдающий Чатик Edition
+# BoS-BAY - Большой Прикол Edition
 Модификация модификации, да. Вы всё правильно поняли.
 
 Оригинал - [Baystation12](https://github.com/baystation12/baystation12)
