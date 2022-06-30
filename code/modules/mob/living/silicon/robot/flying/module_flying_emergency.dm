@@ -6,7 +6,8 @@
 	subsystems = list(/datum/nano_module/crew_monitor)
 	sprites = list(
 		"Drone" = "drone-medical",
-		"Eyebot" = "eyebot-medical"
+		"Eyebot" = "eyebot-medical",
+		"VER 06" = "wer6-Crisis"
 	)
 	equipment = list(
 		/obj/item/device/flash,

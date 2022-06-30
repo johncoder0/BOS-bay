@@ -43,7 +43,8 @@
 		"Black Knight" = "securityrobot",
 		"Bloodhound" = "bloodhound",
 		"Bloodhound - Treaded" = "secborg+tread",
-		"Tridroid" = "orb-security"
+		"Tridroid" = "orb-security",
+		"Crab" = "motile-sec"
 	)
 	equipment = list(
 		/obj/item/device/flash,

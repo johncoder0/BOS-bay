@@ -9,7 +9,8 @@
 	)
 	sprites = list(
 		"Drone" = "drone-sec",
-		"Eyebot" = "eyebot-security"
+		"Eyebot" = "eyebot-security",
+		"VER 06" = "wer6-Security"
 	)
 	equipment = list(
 		/obj/item/swabber,

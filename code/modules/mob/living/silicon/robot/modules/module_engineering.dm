@@ -18,7 +18,8 @@
 		"Basic" = "Engineering",
 		"Antique" = "engineerrobot",
 		"Landmate" = "landmate",
-		"Landmate - Treaded" = "engiborg+tread"
+		"Landmate - Treaded" = "engiborg+tread",
+		"Crab" = "motile-eng"
 	)
 	no_slip = 1
 	equipment = list(
