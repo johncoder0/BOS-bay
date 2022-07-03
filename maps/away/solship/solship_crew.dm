@@ -13,7 +13,7 @@
 	)
 
 /obj/effect/submap_landmark/spawnpoint/solship
-	name = "Gunship Vessel Crew"
+	name = "Gunship Trooper"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/submap_landmark/spawnpoint/solship/captain
@@ -65,7 +65,7 @@
 					 SKILL_HAULING = SKILL_BASIC,
 					 SKILL_MEDICAL = SKILL_BASIC,
 					 SKILL_EVA = SKILL_BASIC)
-	access = list(access_away_solship_main, /datum/access/access_away_solship_eng, /datum/access/access_away_solship_captain, /datum/access/access_away_solship_med)
+	access = list(access_away_solship_main, access_away_solship_eng, access_away_solship_captain, access_away_solship_med)
 
 /datum/job/submap/solship/medic
 	title = "Gunship Corpsman"
@@ -83,7 +83,7 @@
 					 SKILL_ANATOMY = SKILL_BASIC,
 					 SKILL_CHEMISTRY = SKILL_BASIC,
 					 SKILL_EVA = SKILL_BASIC)
-	access = list(/datum/access/access_away_solship_main, /datum/access/access_away_solship_med)
+	access = list(access_away_solship_main, access_away_solship_med)
 
 /datum/job/submap/solship/engineer
 	title = "Gunship Technician"
@@ -103,7 +103,7 @@
 					 SKILL_ATMOS  = SKILL_BASIC,
 					 SKILL_ENGINES = SKILL_ADEPT,
 					 SKILL_DEVICES = SKILL_BASIC)
-	access = list(access_away_solship_main, /datum/access/access_away_solship_eng)
+	access = list(access_away_solship_main, access_away_solship_eng)
 
 /* ACCESS
  * =======

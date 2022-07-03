@@ -19,7 +19,7 @@
 	id = "awaysite_solship"
 	description = "---."
 	suffixes = list("solship/solship.dmm")
-	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/texas)
+	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/exploration_shuttle/texas)
 	spawn_weight = 0.67
 
 /obj/effect/overmap/visitable/sector/solship_arrival
@@ -34,4 +34,7 @@
 	color = "#990000"
 	fore_dir = WEST
 	vessel_mass = 350
+	initial_restricted_waypoints = list(
+		"Texas Red" = list("nav_hangar_texas")
+	)
 
